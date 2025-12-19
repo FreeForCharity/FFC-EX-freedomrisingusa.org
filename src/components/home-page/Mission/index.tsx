@@ -8,22 +8,21 @@ const index = () => {
           className="font-[400] text-[40px] lg:text-[48px] leading-[100%] tracking-[0] text-center w-full lg:w-[906px] mx-auto mb-[50px]"
           id="faustina-font"
         >
-          Free For Charity has a simple mission with broad implications
+          Freedom Rising USA supports patriotism through community celebration
         </h1>
         <p
           className="font-[700] text-[25px] leading-[150%] tracking-[0] text-center mb-[30px]"
           id="lato-font"
         >
-          Reduce costs and increase revenues for nonprofits; putting that money back into their
-          charitable mission where it belongs.
+          Our primary mission is to support and raise funds for the 4th of July parade in State
+          College, PA.
         </p>
         <p
           className="font-[500] text-[25px] leading-[150%] tracking-[0] text-center"
           id="lato-font"
         >
-          This charity for charities seeks to replace as many functions as possible that current
-          nonprofits pay for to for-profit companies with free or at cost work from our campus, on
-          site projects, or partnerships with other entities.
+          We bring the community together to celebrate our nation&apos;s independence, fostering
+          patriotism and creating memorable experiences for families in Centre County.
         </p>
         <div className="mt-[50px] flex justify-center">
           <video

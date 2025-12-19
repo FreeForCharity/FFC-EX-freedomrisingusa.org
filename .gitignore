@@ -47,3 +47,10 @@ next-env.d.ts
 # Decap CMS uploads
 /public/uploads
 *.bak
+
+# Backup files
+*.backup
+*-old.ts
+*-old.tsx
+*-old.js
+*-old.jsx

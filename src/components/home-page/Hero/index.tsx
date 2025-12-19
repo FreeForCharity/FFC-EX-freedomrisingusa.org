@@ -4,8 +4,8 @@ import Image from 'next/image'
 const CharityHeroBackground = () => {
   return (
     <div id="hero" className="relative w-full pb-[100px] overflow-hidden">
-      {/* 1. Base Blue Layer */}
-      <div className="absolute inset-0 bg-[#2E6F8E]" />
+      {/* 1. Base Blue Layer - US Flag Blue */}
+      <div className="absolute inset-0 bg-[#002868]" />
       {/* 2. ULTRA-THIN White Diagonal Strip - HALF HEIGHT */}
       <div
         className="absolute inset-0 bg-white"
@@ -14,9 +14,9 @@ const CharityHeroBackground = () => {
         }}
       />
 
-      {/* 3. Orange Bottom-Right Section - Starts exactly where white ends */}
+      {/* 3. Red Bottom-Right Section - US Flag Red - Starts exactly where white ends */}
       <div
-        className="absolute inset-0 bg-[#F57C20]"
+        className="absolute inset-0 bg-[#BF0A30]"
         style={{
           clipPath: 'polygon(0% 111%, 100% 35%, 100% 100%, 0% 100%)',
         }}
@@ -28,13 +28,13 @@ const CharityHeroBackground = () => {
             className="text-[50px] lg:text-[60px] font-[500] text-[#FFFFFF] leading-[120%] mb-[20px]"
             id="faustina-font"
           >
-            Welcome to <br /> Free For Charity
+            Welcome to <br /> Freedom Rising USA
           </h1>
           <p
             className="text-[24px] font-[400] leading-[120%] text-[#FFFFFF] mb-[20px]"
             id="lato-font"
           >
-            Connecting Students, Professionals, & Businesses with Charities in Need
+            Supporting Patriotism in Centre County PA
           </p>
           <a
             href="#volunteer"
