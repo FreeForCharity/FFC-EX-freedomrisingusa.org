@@ -1,6 +1,6 @@
-# Free For Charity Website
+# Freedom Rising USA Website
 
-Single-page Next.js 16.0.7 website built with App Router for Free For Charity nonprofit organization.
+Single-page Next.js 16.0.7 website built with App Router for Freedom Rising USA nonprofit organization.
 
 ## 🎉 Phase 5 Implementation Complete
 
@@ -19,7 +19,7 @@ Single-page Next.js 16.0.7 website built with App Router for Free For Charity no
 
 ## Organization
 
-**Free For Charity** is a 501(c)(3) nonprofit organization (EIN: 46-2471893) dedicated to supporting other nonprofits.
+**Freedom Rising USA** is a 501(c)(3) nonprofit organization dedicated to supporting patriotism in Centre County, PA. Our primary mission is to support and raise funds for the 4th of July parade in State College, PA.
 
 ## CNCF-Compliant Open Source Project
 
@@ -47,19 +47,18 @@ This repository follows **Cloud Native Computing Foundation (CNCF)** standards f
 
 ## Purpose
 
-Free For Charity connects students, professionals, and businesses with nonprofits to reduce operating costs and increase impact. By providing free web hosting, domain names, Microsoft 365 grants assistance, and consulting services, we help nonprofits put more resources back into their charitable missions.
+Freedom Rising USA brings the community together to celebrate our nation's independence. We support and raise funds for the 4th of July parade in State College, PA, fostering patriotism and creating memorable experiences for families in Centre County.
 
 ## Main Calls-to-Action
 
 The site features two primary CTAs accessible throughout the experience via global popups:
 
-- **Donate**: Support our mission with financial contributions
-- **Volunteer**: Join our team of skilled volunteers helping nonprofits
+- **Donate**: Support our 4th of July parade with financial contributions
+- **Volunteer**: Join our team helping to organize and run the parade
 
 ## Deployment
 
-- **Live Site**: [https://ffcworkingsite1.org](https://ffcworkingsite1.org)
-- **GitHub Pages**: [https://freeforcharity.github.io/FFC_Single_Page_Template/](https://freeforcharity.github.io/FFC_Single_Page_Template/)
+- **Live Site**: [https://freedomrisingusa.org](https://freedomrisingusa.org)
 - **Hosting**: GitHub Pages
 - **Deployment**: Automated via GitHub Actions on push to `main` branch
 
@@ -92,7 +91,7 @@ The site is live and fully functional with the following features:
 
 ## Overview
 
-This is a single-page website with **100+ component files** organized into multiple sections that showcase Free For Charity's programs, services, and resources. The homepage is composed of scrollable sections (Hero, Mission, Programs, Team, FAQ, etc.), with 7 additional policy pages for legal content. The site includes a global popup system for donations and volunteer signups (codebase includes the infrastructure, though the popups are currently commented out in `layout.tsx`).
+This is a single-page website with **100+ component files** organized into multiple sections that showcase Freedom Rising USA's mission and programs. The homepage is composed of scrollable sections (Hero, Mission, Programs, Team, FAQ, etc.), with 7 additional policy pages for legal content. The site includes a global popup system for donations and volunteer signups (codebase includes the infrastructure, though the popups are currently commented out in `layout.tsx`).
 
 ### Site Structure
 

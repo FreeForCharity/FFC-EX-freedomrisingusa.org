@@ -19,21 +19,25 @@ import {
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://ffcworkingsite1.org'),
+  metadataBase: new URL('https://freedomrisingusa.org'),
   title: {
-    default: 'Free For Charity | Reduce Costs, Increase Impact',
-    template: '%s | Free For Charity',
+    default: 'Freedom Rising USA | Supporting Patriotism in Centre County PA',
+    template: '%s | Freedom Rising USA',
   },
   description:
-    'Free For Charity connects students, professionals, and businesses with nonprofits to reduce costs and increase revenues—putting more resources back into their missions.',
+    'Freedom Rising USA supports and raises funds for the 4th of July parade in State College, PA, fostering patriotism and community celebration in Centre County.',
   keywords: [
     'nonprofit',
     'charity',
+    '4th of July',
+    'parade',
+    'State College',
+    'Centre County',
+    'Pennsylvania',
+    'patriotism',
+    'community',
     'volunteer',
     'donate',
-    'free hosting',
-    'domains',
-    'Microsoft 365',
   ],
   robots: {
     index: true,
@@ -51,26 +55,24 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: 'website',
-    url: 'https://ffcworkingsite1.org/',
-    siteName: 'Free For Charity',
-    title: 'Free For Charity | Reduce Costs, Increase Impact',
-    description:
-      'Connecting students, professionals, and businesses with nonprofits to reduce costs and increase revenues.',
+    url: 'https://freedomrisingusa.org/',
+    siteName: 'Freedom Rising USA',
+    title: 'Freedom Rising USA | Supporting Patriotism in Centre County PA',
+    description: 'Supporting and raising funds for the 4th of July parade in State College, PA.',
     images: [
       {
         url: '/web-app-manifest-512x512.png',
         width: 512,
         height: 512,
-        alt: 'Free For Charity',
+        alt: 'Freedom Rising USA',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    site: '@freeforcharity',
-    title: 'Free For Charity | Reduce Costs, Increase Impact',
-    description:
-      'Connecting students, professionals, and businesses with nonprofits to reduce costs and increase revenues.',
+    site: '@freedomrisingusa',
+    title: 'Freedom Rising USA | Supporting Patriotism in Centre County PA',
+    description: 'Supporting and raising funds for the 4th of July parade in State College, PA.',
     images: ['/web-app-manifest-512x512.png'],
   },
   icons: {
