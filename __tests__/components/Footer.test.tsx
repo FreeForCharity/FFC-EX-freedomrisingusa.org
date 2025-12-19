@@ -13,9 +13,9 @@ describe('Footer component', () => {
     expect(footer).toBeInTheDocument()
   })
 
-  it('should display Endorsements section', () => {
+  it('should display About section', () => {
     render(<Footer />)
-    expect(screen.getByText('Endorsements')).toBeInTheDocument()
+    expect(screen.getByText('About Freedom Rising USA')).toBeInTheDocument()
   })
 
   it('should display Quick Links section', () => {
@@ -41,10 +41,12 @@ describe('Footer component', () => {
     expect(screen.getByText(new RegExp(currentYear.toString()))).toBeInTheDocument()
   })
 
-  it('should have GuideStar profile link', () => {
+  it('should display organization name and copyright', () => {
     render(<Footer />)
-    const guidestarLink = screen.getByText(/GuideStar Profile/i)
-    expect(guidestarLink).toBeInTheDocument()
+    const currentYear = new Date().getFullYear()
+    expect(
+      screen.getByText(new RegExp(`© ${currentYear} All Rights Reserved by Freedom Rising USA`))
+    ).toBeInTheDocument()
   })
 
   it('should have email contact link', () => {
