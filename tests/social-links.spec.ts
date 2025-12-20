@@ -28,23 +28,23 @@ test.describe('Footer Social Links', () => {
     await page.goto('/')
 
     // Verify Facebook link is present
-    const facebookLink = page.locator('footer a[href*="facebook.com/freeforcharity"]')
+    const facebookLink = page.locator('footer a[href*="facebook.com/freedomrisingusa"]')
     await expect(facebookLink).toBeVisible()
     await expect(facebookLink).toHaveAttribute('aria-label', 'Facebook')
 
     // Verify X (Twitter) link is present
-    const twitterLink = page.locator('footer a[href*="x.com/freeforcharity1"]')
+    const twitterLink = page.locator('footer a[href*="x.com/freedomrisingusa"]')
     await expect(twitterLink).toBeVisible()
     await expect(twitterLink).toHaveAttribute('aria-label', 'X (Twitter)')
 
     // Verify LinkedIn link is present
-    const linkedInLink = page.locator('footer a[href*="linkedin.com/company/freeforcharity"]')
+    const linkedInLink = page.locator('footer a[href*="linkedin.com/company/freedomrisingusa"]')
     await expect(linkedInLink).toBeVisible()
     await expect(linkedInLink).toHaveAttribute('aria-label', 'LinkedIn')
 
     // Verify GitHub link is present
     const githubLink = page.locator(
-      'footer a[href*="github.com/FreeForCharity/FFC_Single_Page_Template"]'
+      'footer a[href*="github.com/FreeForCharity/freedomrisingusa.org"]'
     )
     await expect(githubLink).toBeVisible()
     await expect(githubLink).toHaveAttribute('aria-label', 'GitHub')

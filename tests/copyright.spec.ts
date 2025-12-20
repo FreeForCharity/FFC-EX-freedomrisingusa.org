@@ -18,7 +18,7 @@ test.describe('Footer Copyright Notice', () => {
     const currentYear = new Date().getFullYear()
 
     // Find the footer paragraph containing the copyright text
-    const footerText = page.locator('footer p:has-text("All Rights Are Reserved")')
+    const footerText = page.locator('footer p:has-text("All Rights Reserved")')
 
     // Verify the copyright notice is visible
     await expect(footerText).toBeVisible()
@@ -28,23 +28,26 @@ test.describe('Footer Copyright Notice', () => {
 
     // Verify the complete copyright text is present
     await expect(footerText).toContainText(
-      'All Rights Are Reserved by Free For Charity a US 501c3 Non Profit'
+      'All Rights Reserved by Freedom Rising USA - A 501(c)(3) Non-Profit Organization'
     )
   })
 
-  test('should display link to freeforcharity.org in copyright notice', async ({ page }) => {
+  test('should display organization name in copyright notice', async ({ page }) => {
     // Navigate to the homepage
     await page.goto('/')
 
-    // Find the link within the copyright notice
-    const copyrightLink = page.locator(
-      'footer p:has-text("All Rights Are Reserved") a[href="https://freeforcharity.org"]'
+    // Find the copyright notice
+    const copyrightText = page.locator(
+      'footer p:has-text("All Rights Reserved by Freedom Rising USA")'
     )
 
-    // Verify the link is visible
-    await expect(copyrightLink).toBeVisible()
+    // Verify the copyright notice is visible
+    await expect(copyrightText).toBeVisible()
 
-    // Verify the link text
-    await expect(copyrightLink).toContainText('https://freeforcharity.org')
+    // Verify it contains the organization name
+    await expect(copyrightText).toContainText('Freedom Rising USA')
+
+    // Verify it mentions 501(c)(3) status
+    await expect(copyrightText).toContainText('501(c)(3)')
   })
 })

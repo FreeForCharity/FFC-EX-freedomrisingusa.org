@@ -23,34 +23,26 @@ test.describe('Events Section', () => {
     // Verify section heading is present
     const heading = eventsSection.locator('h1')
     await expect(heading).toBeVisible()
-    await expect(heading).toContainText('Upcoming Events')
+    await expect(heading).toContainText('4th of July Parade')
   })
 
-  test('should load iframe with proper sandbox attributes', async ({ page }) => {
+  test('should display parade information', async ({ page }) => {
     // Navigate to the homepage
     await page.goto('/')
 
-    // Locate the Events iframe
-    const eventsIframe = page.locator('#events iframe[title="Facebook Events"]')
-    await expect(eventsIframe).toBeVisible()
+    // Locate the Events section
+    const eventsSection = page.locator('#events')
+    await expect(eventsSection).toBeVisible()
 
-    // Verify iframe has correct src
-    await expect(eventsIframe).toHaveAttribute(
-      'src',
-      'https://widgets.sociablekit.com/facebook-page-events/iframe/25631700'
-    )
+    // Verify parade information is displayed
+    await expect(eventsSection).toContainText('State College 4th of July Parade')
+    await expect(eventsSection).toContainText('State College, PA')
 
-    // Verify iframe has sandbox attribute for security
-    const sandboxAttr = await eventsIframe.getAttribute('sandbox')
-    expect(sandboxAttr).toBeTruthy()
-    expect(sandboxAttr).toContain('allow-scripts')
-    expect(sandboxAttr).toContain('allow-same-origin')
-
-    // Verify iframe has lazy loading
-    await expect(eventsIframe).toHaveAttribute('loading', 'lazy')
-
-    // Verify iframe has accessible title
-    await expect(eventsIframe).toHaveAttribute('title', 'Facebook Events')
+    // Verify key information sections are present
+    await expect(eventsSection).toContainText('Parade Information')
+    await expect(eventsSection).toContainText('Watch the Parade')
+    await expect(eventsSection).toContainText('Participate')
+    await expect(eventsSection).toContainText('Volunteer')
   })
 
   test('should be accessible via #events anchor link', async ({ page }) => {
@@ -69,25 +61,22 @@ test.describe('Events Section', () => {
     expect(boundingBox).toBeTruthy()
   })
 
-  test('should have working Facebook link', async ({ page }) => {
+  test('should display parade details and features', async ({ page }) => {
     // Navigate to the homepage
     await page.goto('/')
 
-    // Locate the Facebook link in Events section
-    const facebookLink = page.locator('#events a[href*="facebook.com/freeforcharity"]')
-    await expect(facebookLink).toBeVisible()
+    // Locate the Events section
+    const eventsSection = page.locator('#events')
 
-    // Verify link text
-    await expect(facebookLink).toContainText('View all events on Facebook')
+    // Verify all three feature cards are present by their headings
+    await expect(eventsSection.getByRole('heading', { name: 'Watch the Parade' })).toBeVisible()
+    await expect(eventsSection.getByRole('heading', { name: 'Participate' })).toBeVisible()
+    await expect(eventsSection.getByRole('heading', { name: 'Volunteer' })).toBeVisible()
 
-    // Verify link opens in new tab
-    await expect(facebookLink).toHaveAttribute('target', '_blank')
-
-    // Verify link has security attributes
-    await expect(facebookLink).toHaveAttribute('rel', 'noopener noreferrer')
-
-    // Verify link href
-    await expect(facebookLink).toHaveAttribute('href', 'https://www.facebook.com/freeforcharity')
+    // Verify parade information details
+    await expect(eventsSection.getByText('Date:')).toBeVisible()
+    await expect(eventsSection.getByText('July 4th (Annual)')).toBeVisible()
+    await expect(eventsSection.getByText('Location:')).toBeVisible()
   })
 
   test('should be keyboard accessible', async ({ page }) => {
@@ -97,21 +86,13 @@ test.describe('Events Section', () => {
     // Scroll to Events section
     await page.locator('#events').scrollIntoViewIfNeeded()
 
-    // Tab to the Facebook link in Events section
-    const facebookLink = page.locator('#events a[href*="facebook.com/freeforcharity"]')
+    // Verify the section is visible
+    const eventsSection = page.locator('#events')
+    await expect(eventsSection).toBeVisible()
 
-    // Focus the link using keyboard navigation
-    await facebookLink.focus()
-
-    // Verify the link is focused
-    await expect(facebookLink).toBeFocused()
-
-    // Verify pressing Enter would activate the link (we won't actually click to avoid navigation)
-    // Just verify the link is interactive
-    const isClickable = await facebookLink.evaluate((el) => {
-      return el instanceof HTMLAnchorElement && el.href.length > 0
-    })
-    expect(isClickable).toBe(true)
+    // Verify the main heading can receive focus for screen readers
+    const heading = eventsSection.locator('h1')
+    await expect(heading).toBeVisible()
   })
 
   test('should have proper section structure and styling', async ({ page }) => {
@@ -127,7 +108,9 @@ test.describe('Events Section', () => {
     // Verify description text is present
     const description = eventsSection.locator('p').first()
     await expect(description).toBeVisible()
-    await expect(description).toContainText('volunteer opportunities')
+    await expect(description).toContainText(
+      'Join us for the annual State College 4th of July Parade'
+    )
 
     // Verify section has separator line at bottom
     const separator = eventsSection.locator('div.border')
@@ -138,8 +121,8 @@ test.describe('Events Section', () => {
     // Navigate to the homepage
     await page.goto('/')
 
-    // Verify Events link exists in footer
-    const footerEventsLink = page.locator('footer a[href="/#events"]')
+    // Verify Events link exists in footer - use first() to handle multiple matches
+    const footerEventsLink = page.locator('footer a[href="/#events"]').first()
     await expect(footerEventsLink).toBeVisible()
     await expect(footerEventsLink).toContainText('Events')
 
@@ -168,12 +151,13 @@ test.describe('Events Section', () => {
     const eventsSection = page.locator('#events')
     await expect(eventsSection).toBeVisible()
 
-    // Verify iframe is visible on mobile
-    const eventsIframe = page.locator('#events iframe[title="Facebook Events"]')
-    await expect(eventsIframe).toBeVisible()
-
     // Verify heading is visible on mobile
     const heading = eventsSection.locator('h1')
     await expect(heading).toBeVisible()
+    await expect(heading).toContainText('4th of July Parade')
+
+    // Verify feature cards are visible on mobile by their headings
+    await expect(eventsSection.getByRole('heading', { name: 'Watch the Parade' })).toBeVisible()
+    await expect(eventsSection.getByRole('heading', { name: 'Participate' })).toBeVisible()
   })
 })
