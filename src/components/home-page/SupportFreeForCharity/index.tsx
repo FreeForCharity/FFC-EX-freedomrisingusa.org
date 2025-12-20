@@ -43,7 +43,8 @@ const Index = () => {
               className="mb-[20px] font-[400] text-[25px] leading-[150%] tracking-[0] text-center lg:text-left"
               id="lato-font"
             >
-              Your donation helps us organize and support the annual 4th of July parade in State College, PA. Every contribution makes our community celebration bigger and better!
+              Your donation helps us organize and support the annual 4th of July parade in State
+              College, PA. Every contribution makes our community celebration bigger and better!
             </p>
             {/* Pointing hands image - flipped horizontally to point toward the form on the right */}
             <div className="w-full flex justify-center lg:justify-end">

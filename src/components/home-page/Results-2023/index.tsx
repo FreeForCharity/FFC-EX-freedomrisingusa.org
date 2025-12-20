@@ -14,10 +14,7 @@ const index = () => {
         <div className="pt-[30px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[20px]">
           <ResultCard title="[TBD]" description="Parade participants" />
           <ResultCard title="[TBD]" description="Volunteer hours" />
-          <ResultCard
-            title="[TBD]"
-            description="Community members in attendance"
-          />
+          <ResultCard title="[TBD]" description="Community members in attendance" />
           <ResultCard title="[TBD]" description="Local businesses participating" />
         </div>
       </div>

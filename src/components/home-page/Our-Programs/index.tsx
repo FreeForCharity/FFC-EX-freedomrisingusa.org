@@ -26,7 +26,8 @@ const index = () => {
             </h1>
           </div>
           <p className="text-[25px] font-[400] " id="lato-font">
-            We coordinate all aspects of the annual 4th of July parade in State College, PA, including permits, route planning, participant coordination, and safety measures.
+            We coordinate all aspects of the annual 4th of July parade in State College, PA,
+            including permits, route planning, participant coordination, and safety measures.
           </p>
         </div>
 
@@ -35,26 +36,34 @@ const index = () => {
           <OrangeFaqItem title="Route Planning">
             <ul className="list-disc list-inside">
               <li className="">
-                For Participants: Clear route maps and instructions to ensure smooth participation in the parade
+                For Participants: Clear route maps and instructions to ensure smooth participation
+                in the parade
               </li>
               <li className="">
-                For Spectators: Published parade route information to help families find the best viewing locations
+                For Spectators: Published parade route information to help families find the best
+                viewing locations
               </li>
             </ul>
           </OrangeFaqItem>
           <OrangeFaqItem title="Permits & Safety">
             <ul className="list-disc list-inside">
-              <li className="">For Participants: Properly permitted event ensuring legal compliance and safety</li>
-              <li className="">For Community: Coordinated road closures and traffic management for public safety</li>
+              <li className="">
+                For Participants: Properly permitted event ensuring legal compliance and safety
+              </li>
+              <li className="">
+                For Community: Coordinated road closures and traffic management for public safety
+              </li>
             </ul>
           </OrangeFaqItem>
           <OrangeFaqItem title="Participant Coordination">
             <ul className="list-disc list-inside">
               <li className="">
-                For Businesses & Organizations: Streamlined registration process and clear participation guidelines
+                For Businesses & Organizations: Streamlined registration process and clear
+                participation guidelines
               </li>
               <li className="">
-                For Parade Day: Organized lineup and timing to create a smooth, enjoyable parade experience
+                For Parade Day: Organized lineup and timing to create a smooth, enjoyable parade
+                experience
               </li>
             </ul>
           </OrangeFaqItem>
@@ -72,7 +81,8 @@ const index = () => {
             </h1>
           </div>
           <p className="text-[25px] font-[400]  " id="lato-font">
-            Building patriotic spirit and community connections through inclusive celebration of American independence:
+            Building patriotic spirit and community connections through inclusive celebration of
+            American independence:
           </p>
         </div>
 
@@ -91,10 +101,12 @@ const index = () => {
           <OrangeFaqItem title="Schools & Youth Groups">
             <ul className="list-disc list-inside">
               <li className="">
-                For Students: Hands-on civic engagement and patriotic education through parade participation
+                For Students: Hands-on civic engagement and patriotic education through parade
+                participation
               </li>
               <li className="">
-                For Families: Creating lasting memories and teaching values of citizenship and community service
+                For Families: Creating lasting memories and teaching values of citizenship and
+                community service
               </li>
             </ul>
           </OrangeFaqItem>
@@ -122,7 +134,8 @@ const index = () => {
             </h1>
           </div>
           <p className="text-[25px] font-[400]  " id="lato-font">
-            Raising funds to cover parade costs and ensure a high-quality celebration for Centre County families year after year.
+            Raising funds to cover parade costs and ensure a high-quality celebration for Centre
+            County families year after year.
           </p>
         </div>
 
@@ -140,13 +153,19 @@ const index = () => {
           </OrangeFaqItem>
           <OrangeFaqItem title="Business Sponsorships">
             <ul className="list-disc list-inside">
-              <li className="">For Sponsors: Community visibility and recognition for supporting local events</li>
-              <li className="">For the Parade: Sustained funding enabling year-over-year parade improvements</li>
+              <li className="">
+                For Sponsors: Community visibility and recognition for supporting local events
+              </li>
+              <li className="">
+                For the Parade: Sustained funding enabling year-over-year parade improvements
+              </li>
             </ul>
           </OrangeFaqItem>
           <OrangeFaqItem title="Volunteer Support">
             <ul className="list-disc list-inside">
-              <li className="">For Volunteers: Meaningful community service and parade coordination experience</li>
+              <li className="">
+                For Volunteers: Meaningful community service and parade coordination experience
+              </li>
               <li className="">
                 For the Organization: Reduced operational costs through dedicated volunteer support
               </li>

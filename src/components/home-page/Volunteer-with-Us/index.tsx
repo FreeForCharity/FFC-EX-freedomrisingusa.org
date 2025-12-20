@@ -15,7 +15,9 @@ const index = () => {
           className="mb-[13px] w-[85%] mx-auto font-[500] text-[20px] leading-[30px] text-center text-white"
           id="lato-font"
         >
-          Help make the 4th of July parade a success! Whether you can help with planning, setup, parade day coordination, or cleanup, your time and energy make a difference in creating a memorable celebration for our community.
+          Help make the 4th of July parade a success! Whether you can help with planning, setup,
+          parade day coordination, or cleanup, your time and energy make a difference in creating a
+          memorable celebration for our community.
         </p>
         <a
           href="#volunteer-form-placeholder"
