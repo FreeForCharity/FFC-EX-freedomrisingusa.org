@@ -13,16 +13,16 @@ test.describe('Mission Video', () => {
     await page.goto('/')
 
     // Find the video element with the aria-label
-    const missionVideo = page.locator('video[aria-label="Free For Charity mission video"]')
+    const missionVideo = page.locator('video[aria-label="Freedom Rising USA mission video"]')
 
     // Verify the video exists and is visible
     await expect(missionVideo).toBeVisible()
 
     // Verify the video has the correct accessibility attributes
-    await expect(missionVideo).toHaveAttribute('aria-label', 'Free For Charity mission video')
+    await expect(missionVideo).toHaveAttribute('aria-label', 'Freedom Rising USA mission video')
     await expect(missionVideo).toHaveAttribute(
       'title',
-      "Learn about Free For Charity's mission to help nonprofits reduce costs"
+      "Learn about Freedom Rising USA's mission to support the 4th of July parade"
     )
 
     // Verify the video has controls enabled
@@ -34,7 +34,7 @@ test.describe('Mission Video', () => {
     await page.goto('/')
 
     // Find the video source element
-    const videoSource = page.locator('video[aria-label="Free For Charity mission video"] source')
+    const videoSource = page.locator('video[aria-label="Freedom Rising USA mission video"] source')
 
     // Verify the source exists
     await expect(videoSource).toHaveCount(1)

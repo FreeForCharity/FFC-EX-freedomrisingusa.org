@@ -3,17 +3,16 @@ import { test, expect } from '@playwright/test'
 /**
  * Application Form Button Tests
  *
- * These tests verify the ApplicationFormButton modal functionality:
- * 1. Modal opens and closes correctly
- * 2. Microsoft Forms iframe loads with proper sandbox attributes
- * 3. Focus management works properly
- * 4. Escape key closes the modal
- * 5. Click-outside closes the modal
- * 6. Loading indicator displays before iframe loads
- * 7. Body scroll is locked when modal is open
+ * NOTE: These tests are currently skipped because the ApplicationFormButton component
+ * is not used in the Freedom Rising USA parade organization website. This component
+ * was specific to the Free For Charity charity application process and is not relevant
+ * to the parade organization mission.
+ *
+ * These tests have been preserved in case the component is needed in the future,
+ * but are marked as skipped to prevent CI failures.
  */
 
-test.describe('Application Form Button', () => {
+test.describe.skip('Application Form Button (Not in use - Charity specific)', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto('/')
     // Wait for page to be loaded
@@ -234,7 +233,7 @@ test.describe('Application Form Button', () => {
   })
 })
 
-test.describe('Application Form Iframe Loading', () => {
+test.describe.skip('Application Form Iframe Loading (Not in use - Charity specific)', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto('/')
     await page.waitForLoadState('domcontentloaded')
