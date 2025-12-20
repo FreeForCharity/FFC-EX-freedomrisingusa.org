@@ -43,7 +43,20 @@ This repository follows **Cloud Native Computing Foundation (CNCF)** standards f
 
 **Why CNCF Alignment?** Following CNCF standards strengthens project credibility, simplifies onboarding of contributors, and prepares us for cloud-native ecosystem integrations. It demonstrates our commitment to open source best practices and professional project management.
 
-**Primary Contact**: Clarke Moyer ([@clarkemoyer](https://github.com/clarkemoyer)) - clarkemoyer@freeforcharity.org
+**Primary Contact**: info@freedomrisingusa.org
+
+## ⚠️ Content Placeholders
+
+**This site has been converted from "Free For Charity" to "Freedom Rising USA".** All homepage content has been updated, but several placeholders remain that need official content:
+
+- Board member names and LinkedIn profiles
+- Real testimonials from parade supporters
+- Actual parade statistics
+- Organization logo
+- Real phone number
+- Volunteer and donation form URLs
+
+**See [CONTENT_PLACEHOLDERS.md](./CONTENT_PLACEHOLDERS.md) for complete list of placeholders and what needs to be provided.**
 
 ## Purpose
 

@@ -31,8 +31,8 @@ const index = () => {
             playsInline
             preload="metadata"
             poster="/videos/mission-video-poster.webp"
-            aria-label="Free For Charity mission video"
-            title="Learn about Free For Charity's mission to help nonprofits reduce costs"
+            aria-label="Freedom Rising USA mission video"
+            title="Learn about Freedom Rising USA's mission to support the 4th of July parade"
           >
             {/* <source src="/videos/mission-video.mp4" type="video/mp4" /> */}
             <source src="https://ffcsites.org/videos/mission-video.mp4" type="video/mp4" />

@@ -10,28 +10,28 @@ const Home: React.FC = () => {
             className="font-[400] text-[40px] lg:text-[48px] leading-[100%] tracking-[0] text-center mx-auto mb-[30px]"
             id="faustina-font"
           >
-            Free For Charity Endowment Features
+            Why Support Freedom Rising USA
           </h1>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-[24px]">
             <SustainableFundingCard
               imageUrl="/Svgs/sustainable-funding.svg"
-              title="Sustainable Funding"
-              text="The Endowment ensures that only the investment gains are used, providing a sustainable funding source for the Free For Charity Domain Program."
+              title="Community Celebration"
+              text="The 4th of July parade brings together families, businesses, and organizations to celebrate American independence and foster community spirit in Centre County."
             />
             <SustainableFundingCard
               imageUrl="/Svgs/Long-Term-Impact.svg"
-              title="Long-Term Impact"
-              text="By supporting the Endowment, you contribute to a lasting legacy that will continuously support charities in need of digital resources."
+              title="Lasting Memories"
+              text="By supporting the parade, you help create cherished memories for children and families that will last a lifetime, building a tradition of patriotic celebration."
             />
             <SustainableFundingCard
               imageUrl="/Svgs/Goal-of-$1,000,000.svg"
-              title="Goal of $1,000,000"
-              text="Our target is to raise $1,000,000 to secure the future of the program, ensuring ongoing support for countless charities."
+              title="Annual Event Funding"
+              text="Your contributions ensure we can cover the costs of permits, insurance, safety equipment, and entertainment to put on a safe and exciting parade each year."
             />
             <SustainableFundingCard
               imageUrl="/Svgs/Be-a-Champion.svg"
-              title="Be a Champion for Change"
-              text="By taking donations on our behalf, you become an essential part of our mission, creating a ripple effect of generosity and support."
+              title="Be a Patriotic Champion"
+              text="By supporting Freedom Rising USA, you become an essential part of celebrating our nation's values and bringing the community together in patriotic spirit."
             />
           </div>
         </div>

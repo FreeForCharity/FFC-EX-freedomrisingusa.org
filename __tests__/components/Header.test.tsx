@@ -30,10 +30,10 @@ describe('Header component', () => {
     expect(screen.getByRole('banner')).toBeInTheDocument()
   })
 
-  it('should display the Free For Charity logo', () => {
+  it('should display the Freedom Rising USA logo', () => {
     render(<Header />)
     // Check for logo image with alt text
-    expect(screen.getByAltText('Free For Charity')).toBeInTheDocument()
+    expect(screen.getByAltText('Freedom Rising USA')).toBeInTheDocument()
   })
 
   it('should display Home navigation link', () => {

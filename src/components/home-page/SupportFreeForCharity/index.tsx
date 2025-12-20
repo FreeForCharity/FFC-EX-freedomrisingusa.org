@@ -33,7 +33,7 @@ const Index = () => {
           className="font-[400] text-[40px] lg:text-[48px] leading-[100%] tracking-[0] text-center mx-auto mb-[60px]"
           id="faustina-font"
         >
-          Support Free For Charity
+          Support Freedom Rising USA
         </h1>
 
         <div className="flex items-center flex-col lg:flex-row gap-[40px] lg:gap-[20px]">
@@ -43,15 +43,15 @@ const Index = () => {
               className="mb-[20px] font-[400] text-[25px] leading-[150%] tracking-[0] text-center lg:text-left"
               id="lato-font"
             >
-              By donating you help drive our mission and allow us to support more charities with our
-              Domain, Website, and other services.
+              Your donation helps us organize and support the annual 4th of July parade in State
+              College, PA. Every contribution makes our community celebration bigger and better!
             </p>
             {/* Pointing hands image - flipped horizontally to point toward the form on the right */}
             <div className="w-full flex justify-center lg:justify-end">
               <div className="relative w-full max-w-[400px] aspect-[578/386]">
                 <Image
                   src="/Images/support-free-for-charity.webp"
-                  alt="support free for charity image"
+                  alt="support freedom rising usa image"
                   fill
                   className="object-contain scale-x-[-1]"
                   loading="lazy"

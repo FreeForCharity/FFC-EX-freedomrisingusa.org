@@ -18,119 +18,52 @@ const index = () => {
           <div className="mb-[40px]  flex items-center gap-[20px]">
             <div className="w-[100px] flex items-center justify-center p-2 h-[100px] bg-[#2A6682] rounded-full">
               <div className="relative w-[56px] h-[56px]">
-                <Image src="/Svgs/FFC-Domains.svg" alt="FFC-Domains" fill></Image>
+                <Image src="/Svgs/FFC-Domains.svg" alt="Parade Planning" fill></Image>
               </div>
             </div>
             <h1 className="text-[36px] font-[400] " id="lato-font">
-              FFC Domains
+              Parade Planning
             </h1>
           </div>
           <p className="text-[25px] font-[400] " id="lato-font">
-            Provides free .org domain names, Microsoft 365 with Outlook email, & Microsoft Teams to
-            501c3 charities.
+            We coordinate all aspects of the annual 4th of July parade in State College, PA,
+            including permits, route planning, participant coordination, and safety measures.
           </p>
         </div>
 
         {/* faqs  */}
         <div>
-          <OrangeFaqItem title=".org Domain Registration">
+          <OrangeFaqItem title="Route Planning">
             <ul className="list-disc list-inside">
               <li className="">
-                For You: Leverage a .org domain name to enhance your charitys credibility,
-                trustworthiness, and online presence, making it easier to attract donors and
-                supporters
+                For Participants: Clear route maps and instructions to ensure smooth participation
+                in the parade
+              </li>
+              <li className="">
+                For Spectators: Published parade route information to help families find the best
+                viewing locations
               </li>
             </ul>
           </OrangeFaqItem>
-          <OrangeFaqItem title="Cloudflare DNS">
-            <ul className="list-disc list-inside">
-              <li className="">For You: Faster website load times and enhanced security</li>
-              <li className="">For Us: Centralized management and automation tools.</li>
-            </ul>
-          </OrangeFaqItem>
-          <OrangeFaqItem title="Charity Email Address">
+          <OrangeFaqItem title="Permits & Safety">
             <ul className="list-disc list-inside">
               <li className="">
-                For You: Using a charity email address (e.g., yourname@yourcharity.org) enhances
-                your organizations credibility and professionalism, making it easier to build trust
-                with donors, volunteers, and stakeholders
+                For Participants: Properly permitted event ensuring legal compliance and safety
               </li>
               <li className="">
-                For Us: We benefit by ensuring charities use professional email addresses, which
-                helps maintain our servers integrity and provides a more secure and reliable
-                communication platform for our volunteers
+                For Community: Coordinated road closures and traffic management for public safety
               </li>
             </ul>
           </OrangeFaqItem>
-          <OrangeFaqItem title="Microsoft 365">
-            <ul className="list-disc list-inside">
-              <li className="">For You: Professional email and collaboration tools</li>
-              <li className="">For Us: Streamlined communication and support processes</li>
-            </ul>
-          </OrangeFaqItem>
-        </div>
-
-        <div className="mt-[60px]">
-          <div className="lg:pl-[50px] mb-[40px]  flex items-center gap-[20px]">
-            <div className="w-[100px] flex items-center justify-center p-2 h-[100px] bg-[#2A6682] rounded-full">
-              <div className="relative w-[56px] h-[56px]">
-                <Image src="/Svgs/FFC-Hosting.svg" alt="FFC-Domains" fill></Image>
-              </div>
-            </div>
-            <h1 className="text-[36px] font-[400]  " id="lato-font">
-              FFC Hosting
-            </h1>
-          </div>
-          <p className="text-[25px] font-[400]  " id="lato-font">
-            Free static site hosting for nonprofit organizations using Microsoft GitHub Pages, with
-            websites built using GitHub Copilot AI:
-          </p>
-        </div>
-
-        {/* faqs  */}
-        <div>
-          <OrangeFaqItem title="GitHub Pages Hosting">
+          <OrangeFaqItem title="Participant Coordination">
             <ul className="list-disc list-inside">
               <li className="">
-                For You: Free, reliable static site hosting with automatic HTTPS and custom domain
-                support
+                For Businesses & Organizations: Streamlined registration process and clear
+                participation guidelines
               </li>
               <li className="">
-                For Us: Simplified deployment and maintenance with version-controlled websites
-              </li>
-            </ul>
-          </OrangeFaqItem>
-          <OrangeFaqItem title="GitHub Copilot AI Development">
-            <ul className="list-disc list-inside">
-              <li className="">
-                For You: Professional, modern websites built using AI-assisted development for
-                faster delivery
-              </li>
-              <li className="">
-                For Us: Efficient website creation and consistent code quality across all charity
-                projects
-              </li>
-            </ul>
-          </OrangeFaqItem>
-          <OrangeFaqItem title="Static Site Architecture">
-            <ul className="list-disc list-inside">
-              <li className="">
-                For You: Fast-loading, secure websites with no server maintenance required
-              </li>
-              <li className="">
-                For Us: Zero hosting costs and reduced security vulnerabilities for partner
-                organizations
-              </li>
-            </ul>
-          </OrangeFaqItem>
-          <OrangeFaqItem title="Modern Web Technologies">
-            <ul className="list-disc list-inside">
-              <li className="">
-                For You: Beautiful, responsive websites built with React, Next.js, and Tailwind CSS
-              </li>
-              <li className="">
-                For Us: Standardized tech stack enabling efficient support and training for our
-                volunteers
+                For Parade Day: Organized lineup and timing to create a smooth, enjoyable parade
+                experience
               </li>
             </ul>
           </OrangeFaqItem>
@@ -140,55 +73,101 @@ const index = () => {
           <div className="lg:pl-[50px] mb-[40px]  flex items-center gap-[20px]">
             <div className="w-[100px] flex items-center justify-center p-2 h-[100px] bg-[#2A6682] rounded-full">
               <div className="relative w-[56px] h-[56px]">
-                <Image src="/Svgs/FFC-Consulting.svg" alt="FFC-Domains" fill></Image>
+                <Image src="/Svgs/FFC-Hosting.svg" alt="Community Engagement" fill></Image>
               </div>
             </div>
             <h1 className="text-[36px] font-[400]  " id="lato-font">
-              FFC Consulting
+              Community Engagement
             </h1>
           </div>
           <p className="text-[25px] font-[400]  " id="lato-font">
-            FFC Consulting is about helping charities get the most out of their digital
-            infrastructure including from other charities for charities like ours or from partners.
-            We introduce charities to each major service that supports the charity mission of our
-            sponsored organizations. We benefit when you use these services as well as your
-            organization benefiting.
+            Building patriotic spirit and community connections through inclusive celebration of
+            American independence:
           </p>
         </div>
 
         {/* faqs  */}
         <div>
-          <OrangeFaqItem title="Northwest Registered Agent">
+          <OrangeFaqItem title="Local Business Participation">
             <ul className="list-disc list-inside">
               <li className="">
-                For You: Leverage Northwest Registered Agents services to maintain compliance with
-                state requirements, including registered agent services, nonprofit corporation
-                filing, and initial charity IRS application.
+                For Businesses: Opportunity to showcase your business and connect with the community
               </li>
               <li className="">
-                For Us: Efficiently support charities by ensuring they meet legal requirements and
-                train our volunteers on managing compliance, business formation processes, and IRS
-                applications.
+                For Community: Support for local commerce and community partnerships
               </li>
             </ul>
           </OrangeFaqItem>
-          <OrangeFaqItem title="Idealist.org / VolunteerMatch.org">
+          <OrangeFaqItem title="Schools & Youth Groups">
             <ul className="list-disc list-inside">
-              <li className="">For You: Access to a large pool of potential volunteers</li>
-              <li className="">For Us: Validation of your active community engagement</li>
-            </ul>
-          </OrangeFaqItem>
-          <OrangeFaqItem title="TechSoup.org">
-            <ul className="list-disc list-inside">
-              <li className="">For You: Access to discounted software and technology resources</li>
-              <li className="">For Us: Additional validation of your non-profit status</li>
-            </ul>
-          </OrangeFaqItem>
-          <OrangeFaqItem title="PayPal / Zeffy">
-            <ul className="list-disc list-inside">
-              <li className="">For You: Easy, secure online donation processing</li>
               <li className="">
-                For Us: Standardized financial transaction system for all partners
+                For Students: Hands-on civic engagement and patriotic education through parade
+                participation
+              </li>
+              <li className="">
+                For Families: Creating lasting memories and teaching values of citizenship and
+                community service
+              </li>
+            </ul>
+          </OrangeFaqItem>
+          <OrangeFaqItem title="Veterans Recognition">
+            <ul className="list-disc list-inside">
+              <li className="">
+                For Veterans: Honoring service and sacrifice with special recognition in the parade
+              </li>
+              <li className="">
+                For Community: Showing appreciation and respect for those who served our nation
+              </li>
+            </ul>
+          </OrangeFaqItem>
+        </div>
+
+        <div className="mt-[60px]">
+          <div className="lg:pl-[50px] mb-[40px]  flex items-center gap-[20px]">
+            <div className="w-[100px] flex items-center justify-center p-2 h-[100px] bg-[#2A6682] rounded-full">
+              <div className="relative w-[56px] h-[56px]">
+                <Image src="/Svgs/FFC-Consulting.svg" alt="Fundraising" fill></Image>
+              </div>
+            </div>
+            <h1 className="text-[36px] font-[400]  " id="lato-font">
+              Fundraising & Support
+            </h1>
+          </div>
+          <p className="text-[25px] font-[400]  " id="lato-font">
+            Raising funds to cover parade costs and ensure a high-quality celebration for Centre
+            County families year after year.
+          </p>
+        </div>
+
+        {/* faqs  */}
+        <div>
+          <OrangeFaqItem title="Individual Donations">
+            <ul className="list-disc list-inside">
+              <li className="">
+                For Donors: Tax-deductible contributions supporting patriotic community celebration
+              </li>
+              <li className="">
+                For the Parade: Funding for permits, insurance, safety equipment, and entertainment
+              </li>
+            </ul>
+          </OrangeFaqItem>
+          <OrangeFaqItem title="Business Sponsorships">
+            <ul className="list-disc list-inside">
+              <li className="">
+                For Sponsors: Community visibility and recognition for supporting local events
+              </li>
+              <li className="">
+                For the Parade: Sustained funding enabling year-over-year parade improvements
+              </li>
+            </ul>
+          </OrangeFaqItem>
+          <OrangeFaqItem title="Volunteer Support">
+            <ul className="list-disc list-inside">
+              <li className="">
+                For Volunteers: Meaningful community service and parade coordination experience
+              </li>
+              <li className="">
+                For the Organization: Reduced operational costs through dedicated volunteer support
               </li>
             </ul>
           </OrangeFaqItem>
@@ -196,11 +175,24 @@ const index = () => {
 
         <div className="lg:w-[90%] mx-auto text-center pb-[54px] pt-[20px]">
           <h1 className="text-[36px] font-[400] pt-[22px] pb-[30px]" id="lato-font">
-            Ready to Get Started Now?
+            Get Involved Today
           </h1>
 
-          <div className="flex items-center justify-center">
-            <ApplicationFormButton />
+          <div className="flex items-center justify-center gap-4">
+            <a
+              href="#volunteer"
+              className="bg-[#2A6682] text-white px-8 py-4 rounded-full text-[20px] font-[500] hover:bg-[#1f4d5f] transition-colors"
+              id="lato-font"
+            >
+              Volunteer
+            </a>
+            <a
+              href="#donate"
+              className="bg-[#BF0A30] text-white px-8 py-4 rounded-full text-[20px] font-[500] hover:bg-[#9a0826] transition-colors"
+              id="lato-font"
+            >
+              Donate
+            </a>
           </div>
         </div>
       </div>

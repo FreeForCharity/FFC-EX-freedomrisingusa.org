@@ -20,23 +20,23 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    heading: 'American Legion Ahwatukee Post 64',
-    text: 'Knowing that I can reach out to the owner of another veteran to aid with our website’s charities’ needs completely across the country has been amazing for this disabled veteran.',
-    name: 'David Green, Public Affairs Officer',
-    location: 'American Legion Ahwatukee Post 64',
+    heading: '[Local Family - TBD]',
+    text: 'The 4th of July parade is a highlight of our summer. Our kids love seeing the floats, marching bands, and celebrating with the community. Thank you Freedom Rising USA for organizing this wonderful tradition!',
+    name: '[Testimonial Author - TBD]',
+    location: 'State College, PA',
   },
   {
-    heading: 'TaShonda Payne',
-    text: '…I’m so glad the universe aligned me with you',
-    name: 'Melanin Magic Foundation',
+    heading: '[Local Business - TBD]',
+    text: "…I'm so glad we can participate in this community celebration",
+    name: '[Business Owner - TBD]',
   },
   {
-    heading: 'Pardhasaradhi Namburi',
-    text: 'Free For Charity was absolutely and outstanding — they really did a terrific job for us, they provided us the proper tech guidance and tools in order to help support the nonprofits that we support at Online Impacts.',
+    heading: '[Parade Volunteer - TBD]',
+    text: "Freedom Rising USA does an outstanding job organizing the parade — they provide the community with a wonderful celebration that brings us all together to honor our nation's independence.",
   },
   {
-    heading: 'Keith Ray',
-    text: 'An awesome charity that helps and supports other charities with technology support',
+    heading: '[Community Member - TBD]',
+    text: 'An awesome organization that brings the community together every 4th of July to celebrate American values and patriotism',
   },
 ]
 
@@ -116,11 +116,9 @@ const TestimonialSlider: React.FC = () => {
                   )}
 
                   {t.location && (
-                    <a href="https://americanlegionpost64.org/">
-                      <p className="text-[14px] font-medium text-[#2EA3F2]" id="aria-font">
-                        {t.location}
-                      </p>
-                    </a>
+                    <p className="text-[14px] font-medium text-[#2EA3F2]" id="aria-font">
+                      {t.location}
+                    </p>
                   )}
 
                   {/* Right Quote */}
