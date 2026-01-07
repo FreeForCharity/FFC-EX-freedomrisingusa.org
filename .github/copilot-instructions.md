@@ -229,6 +229,57 @@ src/
 - **FAQ content**: Update `src/app/data/faqs.ts`
 - **Testimonials**: Edit `src/app/data/testimonials.ts`
 
+### Board Member / Team Photos
+
+**Live Site URL**: The production site is at **freedomrisingusa.org** (NOT ffcworkingsite1.org - the CNAME file may be outdated)
+
+**Component Location**: `src/components/home-page/TheFreeForCharityTeam/index.tsx`
+
+**TeamMemberCard Props**:
+
+```tsx
+<TeamMemberCard
+  imageUrl="/Images/member-name.jpg" // Photo path in public/Images/
+  name="Full Name" // Display name
+  title="Board Title" // e.g., "President", "Vice President"
+  linkedinUrl="https://linkedin.com/in/profile" // Full LinkedIn URL
+/>
+```
+
+**Adding/Updating Board Member Photos**:
+
+1. **Download photos from LinkedIn** (if provided as direct URLs):
+
+   ```powershell
+   Invoke-WebRequest -Uri "LINKEDIN_PHOTO_URL" -OutFile "public/Images/firstname-lastname.jpg"
+   ```
+
+2. **Update component** with new image path:
+
+   ```tsx
+   imageUrl = '/Images/firstname-lastname.jpg'
+   ```
+
+3. **Supported formats**: .jpg, .png, .webp (jpg preferred for photos)
+
+4. **Photo dimensions**: LinkedIn profile photos are typically 800x800px, which works well with the circular crop in TeamMemberCard
+
+**Current Board Members** (as of January 2026):
+| Position | Name | Photo File |
+|----------|------|------------|
+| President | Donald J Watkins | dj-watkins.jpg |
+| Vice President | Mitch DeLong | mitch-delong.jpg |
+| Secretary | Lauri DeLong | lauri-delong.jpg |
+| Treasurer | Carol King | carol-king.png (placeholder) |
+| Member at Large | Clarke Moyer | clarke-moyer.jpg |
+
+**Important Notes**:
+
+- LinkedIn photos can be downloaded if direct URLs are provided
+- Photos are stored in `public/Images/` directory
+- Use kebab-case for photo filenames (e.g., `firstname-lastname.jpg`)
+- Placeholder images (`member1.webp`, etc.) exist as fallbacks
+
 ### SEO and Metadata
 
 - **Site metadata**: Edit `metadata` object in `src/app/layout.tsx`
