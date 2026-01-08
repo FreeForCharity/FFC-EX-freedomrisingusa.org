@@ -322,7 +322,7 @@ export default function PrivacyPolicy() {
             </li>
           </ul>
           <p className="text-[14px] text-[#666] pb-[10px] leading-[24px] font-[500]">
-            To exercise these rights, please contact us at 520-222-8104.
+            To exercise these rights, please contact us at (571) 257-6411.
           </p>
 
           {/* Section 8 */}
@@ -459,7 +459,9 @@ export default function PrivacyPolicy() {
               <a href="mailto:clarkemoyer@freeforcharity.org" className="text-[#007bff] underline">
                 clarkemoyer@freeforcharity.org
               </a>{' '}
-              520-222-8104
+              <a href="tel:571-257-6411" className="text-[#007bff] underline">
+                (571) 257-6411
+              </a>
             </li>
           </ul>
 
@@ -485,7 +487,9 @@ export default function PrivacyPolicy() {
               <a href="mailto:clarkemoyer@freeforcharity.org" className="text-[#007bff] underline">
                 clarkemoyer@freeforcharity.org
               </a>{' '}
-              520-222-8104
+              <a href="tel:571-257-6411" className="text-[#007bff] underline">
+                (571) 257-6411
+              </a>
             </li>
           </ul>
 

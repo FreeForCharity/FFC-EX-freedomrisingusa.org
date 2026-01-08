@@ -10,7 +10,7 @@ interface ContactInfo {
 
 const contact: ContactInfo = {
   email: 'clarkemoyer@freeforcharity.org',
-  phone: '(520) 222-8104',
+  phone: '(571) 257-6411',
   mainAddress: '4030 Wake Forest Road STE 349 Raleigh North Carolina 27609',
   paAddress: '301 Science Park Rd Suite 119 State College PA 16803',
 }

@@ -77,7 +77,7 @@ export default function DonationPolicy() {
               clarkemoyer@freeforcharity.org
             </a>
             <br />
-            Phone: (520) 222-8104
+            Phone: (571) 257-6411
           </p>
         </div>
       </div>

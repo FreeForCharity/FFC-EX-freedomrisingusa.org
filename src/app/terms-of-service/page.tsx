@@ -241,7 +241,7 @@ export default function TermsOfService() {
             </a>
           </p>
           <p className="text-[14px] text-[#666] pb-[10px] leading-[24px] font-[500]">
-            Phone: 520-222-8104
+            Phone: (571) 257-6411
           </p>
           <p className="text-[14px] text-[#666] pb-[10px] leading-[24px] font-[500]">
             Thank you for supporting Free For Charity and for complying with these Terms of Service.
