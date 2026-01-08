@@ -26,6 +26,9 @@ test.describe('Logo and Image Visibility', () => {
 
     // Verify the logo has the correct alt text
     await expect(headerLogo).toHaveAttribute('alt', 'Freedom Rising USA')
+
+    // Verify the logo has the correct src
+    await expect(headerLogo).toHaveAttribute('src', '/Images/logo.webp')
   })
 
   test('should display hero section image', async ({ page }) => {

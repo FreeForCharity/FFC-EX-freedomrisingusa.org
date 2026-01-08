@@ -98,7 +98,7 @@ const Header: React.FC = () => {
             >
               <Link href="/" onClick={handleLinkClick} className="block">
                 <img
-                  src="/Images/logo-placeholder.png"
+                  src="/Images/logo.webp"
                   alt="Freedom Rising USA"
                   className={`transition-all duration-300 ${isScrolled ? 'h-7' : 'h-11'}`}
                 />
