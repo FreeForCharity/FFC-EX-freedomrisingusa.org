@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
   const currentYear = React.useMemo(() => new Date().getFullYear(), [])
   const socialLinks = [
     { icon: FaFacebookF, href: 'https://www.facebook.com/freedomrisingusa', label: 'Facebook' },
-    { icon: FaXTwitter, href: 'https://x.com/freedomrisingusa', label: 'X (Twitter)' },
+    { icon: FaXTwitter, href: 'https://x.com/USFreedomRising', label: 'X (Twitter)' },
     {
       icon: FaLinkedinIn,
       href: 'https://www.linkedin.com/company/freedomrisingusa/',
