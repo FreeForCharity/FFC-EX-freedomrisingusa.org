@@ -2,6 +2,24 @@
 
 This document lists all content placeholders that need to be replaced with official content once available.
 
+**Last Updated:** December 22, 2024
+
+## Recent Updates (December 22, 2024)
+
+✅ **Fixed Issues:**
+
+1. Clarke Moyer moved to Member at Large position with real LinkedIn profile
+2. Testimonials updated - all Free For Charity references removed
+3. Donation form URL changed to placeholder (was pointing to wrong organization)
+4. Policy pages cleaned up - removed confusing "free-for-charity-donation-policy" folder
+5. Unused components removed - deleted 6 unused components with FFC references
+6. Created USER_FACING_BACKLOG.md with comprehensive placeholder tracking
+
+⚠️ **Critical Remaining:**
+
+- Donation form needs real Zeffy URL for Freedom Rising USA
+- Board positions (President, VP, Secretary, Treasurer) need real names and LinkedIn profiles
+
 ## Overview
 
 The website has been converted from "Free For Charity" (a charity-for-charities nonprofit) to "Freedom Rising USA" (a 4th of July parade organization). All references to the previous organization have been removed and replaced with appropriate content for the parade organization.
@@ -16,51 +34,57 @@ The following team member placeholders need official names and LinkedIn profiles
    - File: `src/data/team/clarke-moyer.json`
    - Current: `[Board President - TBD]`
    - LinkedIn: `#placeholder-linkedin`
+   - Image: `/public/Images/member1.webp` (placeholder)
 
 2. **Vice President**
    - File: `src/data/team/chris-rae.json`
    - Current: `[Board Vice President - TBD]`
    - LinkedIn: `#placeholder-linkedin`
+   - Image: `/public/Images/member2.webp` (placeholder)
 
 3. **Secretary**
    - File: `src/data/team/tyler-carlotto.json`
    - Current: `[Board Secretary - TBD]`
    - LinkedIn: `#placeholder-linkedin`
+   - Image: `/public/Images/member3.webp` (placeholder)
 
 4. **Treasurer**
    - File: `src/data/team/brennan-darling.json`
    - Current: `[Board Treasurer - TBD]`
    - LinkedIn: `#placeholder-linkedin`
+   - Image: `/public/Images/member4.webp` (placeholder)
 
-5. **Member at Large**
+5. **Member at Large** ✅ COMPLETED
    - File: `src/data/team/rebecca-cook.json`
-   - Current: `[Board Member - TBD]`
-   - LinkedIn: `#placeholder-linkedin`
+   - Current: Clarke Moyer
+   - LinkedIn: https://www.linkedin.com/in/clarke-moyer/
+   - Image: `/public/Images/member5.webp` (Clarke Moyer's photo with red background)
 
-## Testimonials
+## Testimonials ✅ UPDATED
 
-**Location:** `src/data/testimonials/*.json` and `src/components/home/Testimonials/index.tsx`
+**Location:** `src/data/testimonials/*.json` and `src/components/home-page/VoicesofGratitude/index.tsx`
 
 The following testimonial placeholders need real testimonials from parade supporters:
 
 1. **Testimonial 1**
    - File: `src/data/testimonials/testimonial-1.json`
-   - Author: `[Parade Supporter Name - TBD]`
-   - Quote: Placeholder about community celebration
+   - Author: `[Parade Supporter - TBD]`
+   - Quote: Parade-related placeholder (Free For Charity references removed)
 
 2. **Testimonial 2**
    - File: `src/data/testimonials/testimonial-2.json`
    - Author: `[Local Business Owner - TBD]`
-   - Quote: Placeholder about business participation
+   - Quote: Parade-related placeholder (Free For Charity references removed)
 
 3. **Testimonial 3**
    - File: `src/data/testimonials/testimonial-3.json`
    - Author: `[Parade Volunteer - TBD]`
-   - Quote: Placeholder about volunteering experience
+   - Quote: Parade-related placeholder (Free For Charity references removed)
 
-4. **Hardcoded Testimonials** (in Testimonials component)
-   - File: `src/components/home/Testimonials/index.tsx`
-   - 4 testimonials with TBD placeholders for names and quotes
+4. **Hardcoded Testimonials** (in VoicesofGratitude component) ✅ FIXED
+   - File: `src/components/home-page/VoicesofGratitude/index.tsx`
+   - 3 testimonials updated with parade-related placeholders
+   - Free For Charity references removed
 
 ## Parade Statistics
 
@@ -102,11 +126,13 @@ All existing images from Free For Charity remain in place and may need to be rep
 - **Current:** Link to `#volunteer-form-placeholder`
 - **Needed:** Actual volunteer signup form URL
 
-### Donation Form
+### Donation Form ⚠️ CRITICAL - FIXED TO PLACEHOLDER
 
 - **Location:** `src/components/home-page/SupportFreeForCharity/index.tsx`
-- **Current:** Still using Zeffy donation form URL: `https://www.zeffy.com/embed/donation-form/free-for-charity-endowment-fund`
+- **Previous Issue:** Was using Free For Charity Zeffy URL (WRONG ORGANIZATION!)
+- **Current:** Placeholder URL `#donation-form-placeholder-zeffy-url-needed`
 - **Needed:** New donation form URL for Freedom Rising USA
+- **Action Required:** Create Zeffy account for Freedom Rising USA and update URL
 
 ## Contact Information
 
@@ -118,12 +144,14 @@ Current placeholder contact information:
 - **Phone:** (814) 555-1234 ⚠️ (placeholder - needs real number)
 - **Address:** State College, PA 16803 ✅ (general location appropriate)
 
-## Policy Pages
+## Policy Pages ✅ FIXED
 
-**Location:** `src/app/free-for-charity-donation-policy/`
+**Previous Issue:** Confusing folder structure with "free-for-charity-donation-policy" containing Freedom Rising USA content
 
-- **Issue:** There's still a policy page called "free-for-charity-donation-policy"
-- **Needed:** Review and rename/update this policy page
+**Resolution:**
+
+- **Main donation policy** (`src/app/donation-policy/`) now has correct Freedom Rising USA content
+- **Removed:** `src/app/free-for-charity-donation-policy/` directory (was confusingly named)
 
 ## Component Cleanup - COMPLETED ✅
 
