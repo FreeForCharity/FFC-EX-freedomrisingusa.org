@@ -3,6 +3,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { Mail, Phone, MapPin, ArrowRight } from 'lucide-react'
+import { assetPath } from '@/lib/assetPath'
 
 import { FaFacebookF, FaLinkedinIn, FaGithub } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
@@ -100,6 +101,23 @@ const Footer: React.FC = () => {
                   </Link>
                 </li>
               ))}
+            </ul>
+          </div>
+
+          <div className="space-y-3 pt-6">
+            <h4 className="text-[28px] text-white">Documentation</h4>
+            <ul className="space-y-1 text-sm" id="lato-font">
+              <li>
+                <a
+                  href={assetPath('/Documents/IRS-Letter.pdf')}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#F58C23] hover:tracking-widest transition-all text-[16px] font-[500] flex items-center gap-2"
+                >
+                  <ArrowRight className="w-4 h-4 text-orange-500" />
+                  IRS 501(c)(3) Status Letter
+                </a>
+              </li>
             </ul>
           </div>
         </div>
