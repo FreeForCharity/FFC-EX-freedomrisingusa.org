@@ -244,7 +244,7 @@ The temporary 1-second workflow runs observed in the screenshots are expected be
 
 - **SHA:** 038851c79adc2a42ac7fe1616a35862b475de729
 - **Message:** "Merge pull request #83 from FreeForCharity/copilot/update-readme-documentation"
-- **Author:** Clarke Moyer <clarkemoyer@freeforcharity.org>
+- **Author:** Clarke Moyer <contact@freedomrisingusa.org>
 - **Date:** December 7, 2024 01:54:54 UTC
 - **Tree:** 4c11e2e9c0cfa15e083738d161d80dc5b9f7fcad
 

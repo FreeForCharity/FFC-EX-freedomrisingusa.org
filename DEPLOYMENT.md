@@ -458,4 +458,4 @@ Before merging to main (which triggers deployment):
 
 ---
 
-**Questions?** Open an issue or contact the maintainers at hello@freeforcharity.org
+**Questions?** Open an issue or contact the maintainers at contact@freedomrisingusa.org

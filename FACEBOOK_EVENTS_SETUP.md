@@ -554,7 +554,7 @@ These steps must be completed **outside the codebase** before implementation:
 
 1. **Choose App Type:** Select "Business"
 2. **App Name:** "Free For Charity Events Integration"
-3. **App Contact Email:** Use privacy@freeforcharity.org or clarkemoyer@freeforcharity.org
+3. **App Contact Email:** Use contact@freedomrisingusa.org
 4. **Business Account:** Select or create Free For Charity business account
 5. Click "Create App"
 
@@ -1125,7 +1125,7 @@ Set up monitoring for:
 **Technical Issues:**
 
 - Repository: https://github.com/FreeForCharity/FFC_Single_Page_Template/issues
-- Email: clarkemoyer@freeforcharity.org
+- Email: contact@freedomrisingusa.org
 
 **Facebook Developer Support:**
 
@@ -1134,7 +1134,7 @@ Set up monitoring for:
 
 **Privacy/Legal Questions:**
 
-- Email: privacy@freeforcharity.org
+- Email: contact@freedomrisingusa.org
 
 ---
 

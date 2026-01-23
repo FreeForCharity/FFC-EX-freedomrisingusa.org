@@ -63,7 +63,7 @@ reported to the community leaders responsible for enforcement at:
 
 **Clarke Moyer**  
 Founder, Free For Charity  
-Email: clarkemoyer@freeforcharity.org  
+Email: contact@freedomrisingusa.org  
 Phone: 520-222-8104 (text preferred)
 
 All complaints will be reviewed and investigated promptly and fairly.

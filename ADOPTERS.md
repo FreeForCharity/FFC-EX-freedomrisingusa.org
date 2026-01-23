@@ -46,7 +46,7 @@ If you're using this template, we'd love to hear from you! Add your organization
 - **Deployment**: GitHub Pages with custom domain
 - **Launch Date**: December 2025
 - **Modifications**: Original template creator - includes all features
-- **Contact**: clarkemoyer@freeforcharity.org
+- **Contact**: contact@freedomrisingusa.org
 
 ---
 
@@ -73,7 +73,7 @@ Listing your organization here is entirely voluntary. You may:
 If you have questions about adopter listings:
 
 - Open a [GitHub Discussion](https://github.com/FreeForCharity/FFC_Single_Page_Template/discussions)
-- Email: clarkemoyer@freeforcharity.org
+- Email: contact@freedomrisingusa.org
 
 ## Success Stories
 
@@ -84,7 +84,7 @@ We'd love to hear how this template helped your organization! Share your story:
 - **Time Saved**: Development time saved by using the template
 - **Lessons Learned**: Tips for other adopters
 
-Submit success stories via pull request or email them to clarkemoyer@freeforcharity.org.
+Submit success stories via pull request or email them to contact@freedomrisingusa.org.
 
 ## Community Support
 

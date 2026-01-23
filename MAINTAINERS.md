@@ -11,7 +11,7 @@ Founder, Free For Charity
 
 - **Role**: Founder, Lead Maintainer, Project Owner
 - **GitHub**: [@clarkemoyer](https://github.com/clarkemoyer)
-- **Email**: clarkemoyer@freeforcharity.org
+- **Email**: contact@freedomrisingusa.org
 - **Phone**: 520-222-8104 (text preferred)
 - **Scope**: All areas of the project
 - **Responsibilities**:
@@ -142,7 +142,7 @@ For maintainer-related questions:
 - **General inquiries**: Open a GitHub Discussion
 - **Contribution questions**: See [CONTRIBUTING.md](./CONTRIBUTING.md)
 - **Security issues**: See [SECURITY.md](./SECURITY.md)
-- **Code of Conduct violations**: Contact Clarke Moyer at clarkemoyer@freeforcharity.org
+- **Code of Conduct violations**: Contact Clarke Moyer at contact@freedomrisingusa.org
 
 ## Acknowledgments
 

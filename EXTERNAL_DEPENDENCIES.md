@@ -233,7 +233,7 @@ Users have the right to:
 - Opt-out of analytics and marketing
 - Withdraw consent at any time
 
-Contact: privacy@freeforcharity.org or 520-222-8104
+Contact: contact@freedomrisingusa.org or 520-222-8104
 
 ## Performance Optimization
 
@@ -292,9 +292,9 @@ To improve performance, we preconnect to frequently used domains:
 
 For questions about our external dependencies or privacy practices:
 
-- **Email:** clarkemoyer@freeforcharity.org
+- **Email:** contact@freedomrisingusa.org
 - **Phone:** 520-222-8104
-- **Privacy Contact:** privacy@freeforcharity.org
+- **Privacy Contact:** contact@freedomrisingusa.org
 
 ## Related Documentation
 

@@ -769,7 +769,7 @@ docs: update contributing guidelines
 
 For sensitive matters, contact the maintainers directly:
 
-- **Email**: hello@freeforcharity.org
+- **Email**: contact@freedomrisingusa.org
 
 ---
 
