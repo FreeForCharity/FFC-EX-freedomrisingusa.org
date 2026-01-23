@@ -322,7 +322,8 @@ export default function PrivacyPolicy() {
             </li>
           </ul>
           <p className="text-[14px] text-[#666] pb-[10px] leading-[24px] font-[500]">
-            To exercise these rights, please contact us at contact@freedomrisingusa.org or (571) 257-6411.
+            To exercise these rights, please contact us at contact@freedomrisingusa.org or (571)
+            257-6411.
           </p>
 
           {/* Section 8 */}

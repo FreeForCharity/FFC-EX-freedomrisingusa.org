@@ -492,7 +492,10 @@ export default function CookiePolicy() {
           <ul className="list-inside list-disc space-y-[4px] pb-[1em]">
             <li className="text-[14px] text-[#666] leading-[24px] font-[500]">
               <strong>Email:</strong>{' '}
-              <a href="mailto:contact@freedomrisingusa.org" className="text-blue-600 hover:underline">
+              <a
+                href="mailto:contact@freedomrisingusa.org"
+                className="text-blue-600 hover:underline"
+              >
                 contact@freedomrisingusa.org
               </a>
             </li>
