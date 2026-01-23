@@ -269,7 +269,7 @@ src/
 |----------|------|------------|
 | President | Donald J Watkins | dj-watkins.jpg |
 | Vice President | Mitch DeLong | mitch-delong.jpg |
-| Secretary | Lauri DeLong | lauri-delong.jpg |
+| Secretary | Laurie DeLong | lauri-delong.jpg |
 | Treasurer | Carol King | carol-king.png (placeholder) |
 | Member at Large | Clarke Moyer | clarke-moyer.jpg |
 
