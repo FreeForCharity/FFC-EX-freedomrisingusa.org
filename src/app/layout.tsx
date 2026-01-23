@@ -108,6 +108,11 @@ export default function RootLayout({
           fetchPriority="high"
         />
 
+        {/* Ensure GTM-compatible dataLayer exists as early as possible */}
+        <script
+          dangerouslySetInnerHTML={{ __html: 'window.dataLayer = window.dataLayer || [];' }}
+        />
+
         <GoogleTagManager />
       </head>
       <body
