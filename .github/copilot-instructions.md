@@ -269,7 +269,7 @@ src/
 |----------|------|------------|
 | President | Donald J Watkins | dj-watkins.jpg |
 | Vice President | Mitch DeLong | mitch-delong.jpg |
-| Secretary | Laurie DeLong | lauri-delong.jpg |
+| Secretary | Lauri DeLong | lauri-delong.jpg |
 | Treasurer | Carol King | carol-king.png (placeholder) |
 | Member at Large | Clarke Moyer | clarke-moyer.jpg |
 
@@ -307,7 +307,7 @@ import { assetPath } from "../lib/assetPath";
 
 **Why this is needed:**
 
-- Custom domain (ffcworkingsite1.org): images at `/my-image.png`
+- Custom domain (freedomrisingusa.org): images at `/my-image.png`
 - GitHub Pages: images at `/FFC_Single_Page_Template/my-image.png`
 - The helper automatically handles both scenarios based on the `NEXT_PUBLIC_BASE_PATH` environment variable
 

@@ -6,18 +6,18 @@ import Image from 'next/image'
 export default function TestimonialSlider() {
   const testimonials = [
     {
-      name: 'Name',
-      text: '“Thanks to Free For Charity, our organization now has a professional online presence, which has significantly increased our visibility and donor engagement.”',
+      name: '[Parade Supporter - TBD]',
+      text: `"The 4th of July parade brings our community together and creates lasting memories for families. We're proud to support Freedom Rising USA's mission."`,
       rating: 5,
     },
     {
-      name: 'Name',
-      text: '“The free domain and email setup provided by Free For Charity have been invaluable in helping us streamline our communications and expand our reach.”',
+      name: '[Local Business Owner - TBD]',
+      text: '"Participating in the State College 4th of July parade is a highlight of our year. The patriotic spirit and community involvement is incredible."',
       rating: 5,
     },
     {
-      name: 'Name',
-      text: '“We are grateful for the support from Free For Charity. Their services have allowed us to focus more on our core mission and less on administrative tasks.”',
+      name: '[Parade Volunteer - TBD]',
+      text: `"Volunteering for the parade is so rewarding. Seeing the joy on children's faces and bringing the community together to celebrate our nation's independence is priceless."`,
       rating: 5,
     },
   ]

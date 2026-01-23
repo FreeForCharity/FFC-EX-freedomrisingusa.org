@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Cookie Policy | Free For Charity',
-  description: 'Cookie Policy for Free For Charity website',
+  title: 'Cookie Policy | Freedom Rising USA',
+  description: 'Cookie Policy for Freedom Rising USA website',
 }
 
 // Update this date when the policy changes

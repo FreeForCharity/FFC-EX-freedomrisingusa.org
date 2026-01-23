@@ -27,7 +27,7 @@ const index = () => {
           />
           <TeamMemberCard
             imageUrl="/Images/lauri-delong.jpg"
-            name="Laurie DeLong"
+            name="Lauri DeLong"
             title="Secretary"
             linkedinUrl="https://www.linkedin.com/in/laurie-delong-016845258/"
           />
