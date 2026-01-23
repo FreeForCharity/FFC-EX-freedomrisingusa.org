@@ -32,7 +32,7 @@ The project is led by the **Founder** and **Board of Directors**, with day-to-da
 
 **Contact**:
 
-- Email: clarkemoyer@freeforcharity.org
+- Email: contact@freedomrisingusa.org
 - Phone: 520-222-8104 (text preferred)
 
 ### Maintainers
@@ -198,7 +198,7 @@ Primary communication platform:
 
 For private or sensitive matters:
 
-- Founder: clarkemoyer@freeforcharity.org
+- Founder: contact@freedomrisingusa.org
 - Security: See [SECURITY.md](./SECURITY.md)
 
 ### Response Times

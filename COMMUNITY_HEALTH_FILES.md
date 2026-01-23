@@ -309,7 +309,7 @@ Follow these conventions:
 
 For questions about community health files or documentation:
 
-- **Email**: clarkemoyer@freeforcharity.org
+- **Email**: contact@freedomrisingusa.org
 - **Create an issue**: [Documentation issue](https://github.com/FreeForCharity/FFC_Single_Page_Template/issues/new?template=documentation.md)
 
 ---

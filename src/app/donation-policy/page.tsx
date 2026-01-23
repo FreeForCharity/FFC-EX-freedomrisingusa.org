@@ -70,11 +70,8 @@ export default function DonationPolicy() {
           <p>For questions about donations or this policy, please contact us at:</p>
           <p>
             Email:{' '}
-            <a
-              href="mailto:clarkemoyer@freeforcharity.org"
-              className="text-primary hover:underline"
-            >
-              clarkemoyer@freeforcharity.org
+            <a href="mailto:contact@freedomrisingusa.org" className="text-primary hover:underline">
+              contact@freedomrisingusa.org
             </a>
             <br />
             Phone: (571) 257-6411

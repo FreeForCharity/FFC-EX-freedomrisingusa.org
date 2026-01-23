@@ -695,7 +695,7 @@ If your issue isn't covered here:
    - [TESTING.md](./TESTING.md)
    - [DEPLOYMENT.md](./DEPLOYMENT.md)
 3. **Open a discussion**: GitHub Discussions for questions
-4. **Contact maintainers**: hello@freeforcharity.org
+4. **Contact maintainers**: contact@freedomrisingusa.org
 
 ---
 

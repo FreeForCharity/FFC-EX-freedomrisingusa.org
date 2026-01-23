@@ -578,4 +578,4 @@ This prevents unnecessary runs and saves CI/CD resources.
 
 ---
 
-**Questions?** Open an issue or contact the maintainers at hello@freeforcharity.org
+**Questions?** Open an issue or contact the maintainers at contact@freedomrisingusa.org
