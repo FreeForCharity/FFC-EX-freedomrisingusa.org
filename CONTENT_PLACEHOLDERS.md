@@ -105,8 +105,8 @@ All existing images from Free For Charity remain in place and may need to be rep
 ### Donation Form
 
 - **Location:** `src/components/home-page/SupportFreeForCharity/index.tsx`
-- **Current:** Still using Zeffy donation form URL: `https://www.zeffy.com/embed/donation-form/free-for-charity-endowment-fund`
-- **Needed:** New donation form URL for Freedom Rising USA
+- **Current:** Using Zeffy donation form URL for State College Independence Day Parade: `https://www.zeffy.com/embed/donation-form/state-college-independence-day-parade`
+- **Status:** ✅ Updated with correct Freedom Rising USA donation campaign
 
 ## Contact Information
 
