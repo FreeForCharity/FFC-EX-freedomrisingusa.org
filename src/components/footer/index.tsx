@@ -132,11 +132,11 @@ const Footer: React.FC = () => {
               <div>
                 <p className="font-[500] text-[22px]">E-mail</p>
                 <a
-                  href="mailto:info@freedomrisingusa.org"
+                  href="mailto:contact@freedomrisingusa.org"
                   className="font-[500] text-[15px] hover:text-cyan-400 transition-colors break-all"
                   id="aria-font"
                 >
-                  info@freedomrisingusa.org
+                  contact@freedomrisingusa.org
                 </a>
               </div>
             </div>

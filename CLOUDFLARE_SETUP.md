@@ -360,4 +360,4 @@ After configuring Cloudflare:
 
 **Last Updated:** 2025-12-05
 
-For questions or issues, contact Free For Charity at hello@freeforcharity.org
+For questions or issues, contact Free For Charity at contact@freedomrisingusa.org
