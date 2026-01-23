@@ -71,10 +71,10 @@ export default function DonationPolicy() {
           <p>
             Email:{' '}
             <a
-              href="mailto:clarkemoyer@freeforcharity.org"
+              href="mailto:contact@freedomrisingusa.org"
               className="text-primary hover:underline"
             >
-              clarkemoyer@freeforcharity.org
+              contact@freedomrisingusa.org
             </a>
             <br />
             Phone: (571) 257-6411
