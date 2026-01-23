@@ -33,7 +33,7 @@ test.describe('Footer Social Links', () => {
     await expect(facebookLink).toHaveAttribute('aria-label', 'Facebook')
 
     // Verify X (Twitter) link is present
-    const twitterLink = page.locator('footer a[href*="x.com/freedomrisingusa"]')
+    const twitterLink = page.locator('footer a[href*="x.com/USFreedomRising"]')
     await expect(twitterLink).toBeVisible()
     await expect(twitterLink).toHaveAttribute('aria-label', 'X (Twitter)')
 

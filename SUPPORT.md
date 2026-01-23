@@ -8,7 +8,7 @@ Thank you for using the Free For Charity website template! This document provide
 
 If you have general questions about using this template or Free For Charity's services:
 
-- **Email**: clarkemoyer@freeforcharity.org
+- **Email**: contact@freedomrisingusa.org
 - **Phone**: 520-222-8104 (text preferred)
 - **Website**: [freeforcharity.org](https://ffcworkingsite1.org)
 
@@ -30,7 +30,7 @@ If you encounter technical issues, bugs, or need development help:
 
 Please follow our [Security Policy](./SECURITY.md) and report vulnerabilities privately:
 
-- **Email**: clarkemoyer@freeforcharity.org
+- **Email**: contact@freedomrisingusa.org
 - **Subject**: "SECURITY: [Brief Description]"
 
 We will respond within 48 hours and work with you to address the issue.

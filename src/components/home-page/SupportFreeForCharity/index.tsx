@@ -21,7 +21,7 @@ const Index = () => {
   const donationFormProps: ExtendedIframeProps = {
     title: 'Donation form powered by Zeffy',
     style: donationFormStyle,
-    src: 'https://www.zeffy.com/en-US/embed/donation-form/state-college-independence-day-parade',
+    src: 'https://www.zeffy.com/embed/donation-form/state-college-independence-day-parade',
     allowpaymentrequest: '',
     allowtransparency: 'true',
   }

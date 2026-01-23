@@ -613,7 +613,7 @@ If you have questions about code quality standards:
 2. Review existing code for examples
 3. Ask in pull request reviews
 4. Open a discussion on GitHub
-5. Contact maintainers at hello@freeforcharity.org
+5. Contact maintainers at contact@freedomrisingusa.org
 
 ---
 

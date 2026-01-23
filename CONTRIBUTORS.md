@@ -27,7 +27,7 @@ Contributors are recognized in several ways:
 **Clarke Moyer** ([@clarkemoyer](https://github.com/clarkemoyer))
 
 - **Role**: Founder, Lead Maintainer, Project Owner
-- **Email**: clarkemoyer@freeforcharity.org
+- **Email**: contact@freedomrisingusa.org
 - **Contributions**: Project vision, architecture, initial codebase, ongoing maintenance
 - **Organization**: Free For Charity (501(c)(3) nonprofit)
 
@@ -203,7 +203,7 @@ All contributors are expected to:
 
 If you have questions about contributor recognition:
 
-- **Email**: clarkemoyer@freeforcharity.org
+- **Email**: contact@freedomrisingusa.org
 - **GitHub Discussions**: [Ask a question](https://github.com/FreeForCharity/FFC_Single_Page_Template/discussions)
 - **Support Guide**: [SUPPORT.md](./SUPPORT.md)
 

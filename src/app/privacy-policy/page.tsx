@@ -322,7 +322,8 @@ export default function PrivacyPolicy() {
             </li>
           </ul>
           <p className="text-[14px] text-[#666] pb-[10px] leading-[24px] font-[500]">
-            To exercise these rights, please contact us at 520-222-8104.
+            To exercise these rights, please contact us at contact@freedomrisingusa.org or (571)
+            257-6411.
           </p>
 
           {/* Section 8 */}
@@ -456,10 +457,12 @@ export default function PrivacyPolicy() {
           <ul className="list-inside list-disc space-y-[4px] pb-[1em]">
             <li className="text-[14px] text-[#666] leading-[24px] font-[500]">
               <strong>Email:</strong>{' '}
-              <a href="mailto:info@freedomrisingusa.org" className="text-[#007bff] underline">
-                info@freedomrisingusa.org
+              <a href="mailto:contact@freedomrisingusa.org" className="text-[#007bff] underline">
+                contact@freedomrisingusa.org
               </a>{' '}
-              520-222-8104
+              <a href="tel:571-257-6411" className="text-[#007bff] underline">
+                (571) 257-6411
+              </a>
             </li>
           </ul>
 
@@ -482,10 +485,12 @@ export default function PrivacyPolicy() {
           <ul className="list-inside list-disc space-y-[4px] pb-[1em]">
             <li className="text-[14px] text-[#666] leading-[24px] font-[500]">
               <strong>Contact DPO:</strong> Clarke Moyer{' '}
-              <a href="mailto:info@freedomrisingusa.org" className="text-[#007bff] underline">
-                info@freedomrisingusa.org
+              <a href="mailto:contact@freedomrisingusa.org" className="text-[#007bff] underline">
+                contact@freedomrisingusa.org
               </a>{' '}
-              520-222-8104
+              <a href="tel:571-257-6411" className="text-[#007bff] underline">
+                (571) 257-6411
+              </a>
             </li>
           </ul>
 

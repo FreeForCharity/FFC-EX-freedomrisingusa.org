@@ -170,10 +170,10 @@ const index = () => {
 
           <p className="text-[14px] text-[#666] pb-[10px] leading-[24px] font-[500]">
             For any questions or further information about our donation policy, please contact us at{' '}
-            <a href="mailto:info@freedomrisingusa.org" className="text-[#2ea3f2] break-words">
-              info@freedomrisingusa.org
-            </a>{' '}
-            or call (814) 555-1234.
+            <a href="mailto:contact@freedomrisingusa.org" className="text-[#2ea3f2] break-words">
+              contact@freedomrisingusa.org
+            </a>
+            .
           </p>
         </div>
       </div>

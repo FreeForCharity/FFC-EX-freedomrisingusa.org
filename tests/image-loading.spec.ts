@@ -7,7 +7,7 @@ import { test, expect } from '@playwright/test'
  * The tests check that images in the header and hero section are visible
  * and load properly with successful HTTP responses.
  *
- * Note: The hero image is a local asset (/Images/figma-hero-img.png) that
+ * Note: The hero image is a local asset (/Images/freedom-rising-logo.jpg) that
  * should load correctly in all deployment scenarios including GitHub Pages.
  */
 
@@ -18,7 +18,7 @@ test.describe('Image Loading', () => {
 
     // Find the logo images
     const headerLogo = page.locator('header a[href="/"] img[alt="Freedom Rising USA"]')
-    const heroImage = page.locator('img[alt="Hero image"]')
+    const heroImage = page.locator('img[alt="Freedom Rising USA - Statue of Liberty logo"]')
 
     // Verify both images are visible (meaning they loaded successfully)
     await expect(headerLogo).toBeVisible()
@@ -38,7 +38,7 @@ test.describe('Image Loading', () => {
     const imageRequests: Array<{ url: string; status: number }> = []
 
     page.on('response', (response) => {
-      if (response.url().includes('figma-hero-img')) {
+      if (response.url().includes('freedom-rising-logo')) {
         imageRequests.push({
           url: response.url(),
           status: response.status(),
@@ -50,7 +50,7 @@ test.describe('Image Loading', () => {
     await page.goto('/')
 
     // Wait for hero image to be visible
-    const heroImage = page.locator('img[alt="Hero image"]')
+    const heroImage = page.locator('img[alt="Freedom Rising USA - Statue of Liberty logo"]')
     await expect(heroImage).toBeVisible()
 
     // Verify at least one image request was made for the hero image
@@ -70,7 +70,7 @@ test.describe('Image Loading', () => {
     await page.goto('/')
 
     // Find the hero image
-    const heroImage = page.locator('img[alt="Hero image"]')
+    const heroImage = page.locator('img[alt="Freedom Rising USA - Statue of Liberty logo"]')
 
     // Wait for the image to be visible
     await expect(heroImage).toBeVisible()

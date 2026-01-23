@@ -236,12 +236,12 @@ export default function TermsOfService() {
           </p>
           <p className="text-[14px] text-[#666] pb-[10px] leading-[24px] font-[500]">
             Email:{' '}
-            <a href="mailto:info@freedomrisingusa.org" className="text-[#007bff] underline">
-              info@freedomrisingusa.org
+            <a href="mailto:contact@freedomrisingusa.org" className="text-[#007bff] underline">
+              contact@freedomrisingusa.org
             </a>
           </p>
           <p className="text-[14px] text-[#666] pb-[10px] leading-[24px] font-[500]">
-            Phone: 520-222-8104
+            Phone: (571) 257-6411
           </p>
           <p className="text-[14px] text-[#666] pb-[10px] leading-[24px] font-[500]">
             Thank you for supporting Freedom Rising USA and for complying with these Terms of

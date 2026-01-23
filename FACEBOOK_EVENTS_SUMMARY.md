@@ -400,9 +400,9 @@ The Facebook Events integration will significantly increase visibility of Free F
 
 **Questions about this integration:**
 
-- Technical: Repository issues or clarkemoyer@freeforcharity.org
-- Privacy/Legal: privacy@freeforcharity.org
-- General: clarkemoyer@freeforcharity.org | (520) 222-8104
+- Technical: Repository issues or contact@freedomrisingusa.org
+- Privacy/Legal: contact@freedomrisingusa.org
+- General: contact@freedomrisingusa.org | (520) 222-8104
 
 ---
 
