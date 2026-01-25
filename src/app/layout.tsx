@@ -58,7 +58,8 @@ export const metadata: Metadata = {
     url: 'https://freedomrisingusa.org/',
     siteName: 'Freedom Rising USA',
     title: 'Freedom Rising USA | Supporting Patriotism in Centre County PA',
-    description: 'Supporting and raising funds for the 4th of July parade in State College, PA.',
+    description:
+      'Honoring heritage and celebrating service. We celebrate and preserve American holiday traditions, honor veterans, and strengthen community bonds through vibrant events in Centre County, PA.',
     images: [
       {
         url: '/web-app-manifest-512x512.png',
@@ -72,7 +73,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@freedomrisingusa',
     title: 'Freedom Rising USA | Supporting Patriotism in Centre County PA',
-    description: 'Supporting and raising funds for the 4th of July parade in State College, PA.',
+    description:
+      'Honoring heritage and celebrating service. We celebrate and preserve American holiday traditions, honor veterans, and strengthen community bonds through vibrant events in Centre County, PA.',
     images: ['/web-app-manifest-512x512.png'],
   },
   icons: {
