@@ -69,11 +69,15 @@ const AnimatedNumber: React.FC<AnimatedNumberProps> = ({ value, className = '', 
     return () => unsubscribe()
   }, [springValue, prefersReducedMotion])
 
+  // Format number with thousand separators
+  const formattedValue = displayValue.toLocaleString('en-US')
+  const formattedStaticValue = value.toLocaleString('en-US')
+
   // When reduced motion is preferred, render a plain span without animation
   if (prefersReducedMotion) {
     return (
       <span ref={ref} className={className} id={id}>
-        {value}
+        {formattedStaticValue}
       </span>
     )
   }
@@ -87,7 +91,7 @@ const AnimatedNumber: React.FC<AnimatedNumberProps> = ({ value, className = '', 
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
       transition={{ duration: 0.5 }}
     >
-      {displayValue}
+      {formattedValue}
     </motion.span>
   )
 }
