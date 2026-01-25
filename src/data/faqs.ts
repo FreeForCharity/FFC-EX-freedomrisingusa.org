@@ -3,7 +3,7 @@ export type Faq = { question: string; answer: string }
 export const faqs: Faq[] = [
   {
     question: 'What is Freedom Rising USA?',
-    answer: `Freedom Rising USA is a 501(c)(3) nonprofit organization dedicated to supporting patriotism in Centre County, PA. Our primary mission is to support and raise funds for the annual 4th of July parade in State College, PA.`,
+    answer: `Freedom Rising USA is a 501(c)(3) nonprofit organization dedicated to honoring heritage and celebrating service in Centre County, PA. Our mission is to celebrate and preserve the rich traditions of American holidays and the values they represent – unity, gratitude, service, and freedom. We are dedicated to honoring the brave service of our veterans, providing support to veterans groups, and creating meaningful experiences that educate and inspire future generations.`,
   },
   {
     question: 'What does Freedom Rising USA do?',
