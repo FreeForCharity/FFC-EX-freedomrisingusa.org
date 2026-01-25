@@ -25,9 +25,10 @@ const index = () => {
 
           <FrequentlyAskedQuestions title="What does Freedom Rising USA do?">
             <p className="mb-[30px]">
-              We organize, coordinate, and raise funds for the Independence Day parade in Central Pennsylvania. This includes working with local businesses, community groups, and volunteers to
-              create a memorable celebration of American independence for families throughout Centre
-              County.
+              We organize, coordinate, and raise funds for the Independence Day parade in Central
+              Pennsylvania. This includes working with local businesses, community groups, and
+              volunteers to create a memorable celebration of American independence for families
+              throughout Centre County.
             </p>
           </FrequentlyAskedQuestions>
 
@@ -42,9 +43,9 @@ const index = () => {
 
           <FrequentlyAskedQuestions title="When is the Independence Day parade?">
             <p className="mb-[30px]">
-              The parade is held annually on or around July 4th in Central Pennsylvania. Specific dates
-              and times are announced several months in advance. Check our Events section or contact
-              us directly for the most current information.
+              The parade is held annually on or around July 4th in Central Pennsylvania. Specific
+              dates and times are announced several months in advance. Check our Events section or
+              contact us directly for the most current information.
             </p>
           </FrequentlyAskedQuestions>
 
