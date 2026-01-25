@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 const Events = () => {
   return (
@@ -40,15 +41,14 @@ const Events = () => {
             </div>
           </div>
           <div className="mt-6 text-center">
-            <a
-              href="https://github.com/user-attachments/files/24847674/2026.Parade.Brief.pptx"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/parade-brief"
               className="inline-block bg-white text-[#002868] px-8 py-3 rounded-full text-[18px] font-[500] hover:bg-gray-100 transition-colors"
               id="lato-font"
+              aria-label="View detailed 2026 Parade Brief with schedule, requirements, and participation information"
             >
-              Parade Information
-            </a>
+              View Parade Brief
+            </Link>
           </div>
         </div>
 
