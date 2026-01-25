@@ -7,12 +7,12 @@ export default function TestimonialSlider() {
   const testimonials = [
     {
       name: '[Parade Supporter - TBD]',
-      text: `"The 4th of July parade brings our community together and creates lasting memories for families. We're proud to support Freedom Rising USA's mission."`,
+      text: `"The Independence Day parade brings our community together and creates lasting memories for families. We're proud to support Freedom Rising USA's mission."`,
       rating: 5,
     },
     {
       name: '[Local Business Owner - TBD]',
-      text: '"Participating in the State College 4th of July parade is a highlight of our year. The patriotic spirit and community involvement is incredible."',
+      text: '"Participating in the Central Pennsylvania Independence Day Parade is a highlight of our year. The patriotic spirit and community involvement is incredible."',
       rating: 5,
     },
     {

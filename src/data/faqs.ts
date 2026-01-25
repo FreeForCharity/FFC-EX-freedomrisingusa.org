@@ -7,15 +7,15 @@ export const faqs: Faq[] = [
   },
   {
     question: 'What does Freedom Rising USA do?',
-    answer: `We organize, coordinate, and raise funds for the 4th of July parade in State College, PA. This includes working with local businesses, community groups, and volunteers to create a memorable celebration of American independence for families throughout Centre County.`,
+    answer: `We organize, coordinate, and raise funds for the Independence Day parade in Central Pennsylvania. This includes working with local businesses, community groups, and volunteers to create a memorable celebration of American independence for families throughout Centre County.`,
   },
   {
-    question: 'How can I support the 4th of July parade?',
+    question: 'How can I support the Independence Day parade?',
     answer: `There are several ways to support our mission: You can make a financial donation to help cover parade costs, volunteer your time to help organize and run the parade, or participate in the parade with your business or community group. Every contribution helps make our celebration bigger and better!`,
   },
   {
-    question: 'When is the 4th of July parade?',
-    answer: `The parade is held annually on or around July 4th in State College, PA. Specific dates and times are announced several months in advance. Check our Events section or contact us directly for the most current information.`,
+    question: 'When is the Independence Day parade?',
+    answer: `The parade is held annually on or around July 4th in Central Pennsylvania. Specific dates and times are announced several months in advance. Check our Events section or contact us directly for the most current information.`,
   },
   {
     question: 'Can my business or organization participate in the parade?',
@@ -23,7 +23,7 @@ export const faqs: Faq[] = [
   },
   {
     question: 'How are donations used?',
-    answer: `All donations go directly toward supporting the 4th of July parade. This includes costs for permits, insurance, safety equipment, promotional materials, entertainment, and other necessary expenses to put on a safe and exciting parade for our community.`,
+    answer: `All donations go directly toward supporting the Independence Day parade. This includes costs for permits, insurance, safety equipment, promotional materials, entertainment, and other necessary expenses to put on a safe and exciting parade for our community.`,
   },
   {
     question: 'Is Freedom Rising USA a registered charity?',
