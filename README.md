@@ -19,7 +19,7 @@ Single-page Next.js 16.0.7 website built with App Router for Freedom Rising USA 
 
 ## Organization
 
-**Freedom Rising USA** is a 501(c)(3) nonprofit organization dedicated to supporting patriotism in Centre County, PA. Our primary mission is to support and raise funds for the 4th of July parade in State College, PA.
+**Freedom Rising USA** is a 501(c)(3) nonprofit organization dedicated to honoring heritage and celebrating service in Centre County, PA. Our mission is to celebrate and preserve the rich traditions of American holidays, honor veterans, and strengthen community bonds through vibrant community events.
 
 ## CNCF-Compliant Open Source Project
 
@@ -60,14 +60,14 @@ This repository follows **Cloud Native Computing Foundation (CNCF)** standards f
 
 ## Purpose
 
-Freedom Rising USA brings the community together to celebrate our nation's independence. We support and raise funds for the 4th of July parade in State College, PA, fostering patriotism and creating memorable experiences for families in Centre County.
+Freedom Rising USA celebrates and preserves the rich traditions of American holidays and the values they represent – unity, gratitude, service, and freedom. We honor the brave service of our veterans, provide support to veterans groups, and create meaningful experiences that educate and inspire future generations. Through vibrant community events, we strengthen community bonds, promote patriotism, and ensure that the sacrifices of our veterans are recognized and celebrated.
 
 ## Main Calls-to-Action
 
 The site features two primary CTAs accessible throughout the experience via global popups:
 
-- **Donate**: Support our 4th of July parade with financial contributions
-- **Volunteer**: Join our team helping to organize and run the parade
+- **Donate**: Support our mission to celebrate American heritage and honor veterans
+- **Volunteer**: Join our team helping to organize community events and support veterans
 
 ## Deployment
 
