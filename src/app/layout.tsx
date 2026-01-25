@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     template: '%s | Freedom Rising USA',
   },
   description:
-    'Freedom Rising USA supports and raises funds for the 4th of July parade in State College, PA, fostering patriotism and community celebration in Centre County.',
+    'Honoring heritage and celebrating service. We celebrate and preserve American holiday traditions, honor veterans, and strengthen community bonds through vibrant events in Centre County, PA.',
   keywords: [
     'nonprofit',
     'charity',

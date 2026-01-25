@@ -33,9 +33,10 @@ const Footer: React.FC = () => {
 
           <div className="space-y-4">
             <p className="text-[16px] font-[400]" id="lato-font">
-              Freedom Rising USA is a 501(c)(3) nonprofit organization dedicated to supporting
-              patriotism in Centre County, PA. Our primary mission is to support and raise funds for
-              the 4th of July parade in State College, PA.
+              Freedom Rising USA is a 501(c)(3) nonprofit organization dedicated to honoring
+              heritage and celebrating service in Centre County, PA. We celebrate and preserve the
+              rich traditions of American holidays, honor veterans, and strengthen community bonds
+              through vibrant community events.
             </p>
           </div>
         </div>
