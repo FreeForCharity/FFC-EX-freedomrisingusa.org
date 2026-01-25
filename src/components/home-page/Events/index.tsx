@@ -8,12 +8,12 @@ const Events = () => {
           className="font-[400] text-[40px] lg:text-[48px] leading-[100%] tracking-[0] text-center mx-auto mb-[50px]"
           id="faustina-font"
         >
-          4th of July Parade
+          Independence Day Parade
         </h1>
 
         <div className="text-center mb-8">
           <p className="text-[20px] lg:text-[25px] font-[500] mb-4" id="lato-font">
-            Join us for the annual State College 4th of July Parade!
+            Join us for the annual Central Pennsylvania Independence Day Parade!
           </p>
           <p className="text-[18px] lg:text-[20px] font-[400]" id="lato-font">
             Celebrate American independence with your community. The parade features local
@@ -36,8 +36,19 @@ const Events = () => {
             </div>
             <div className="flex items-start gap-4">
               <span className="font-[700] min-w-[100px]">Time:</span>
-              <span>Details announced closer to the event</span>
+              <span>Line up at 10:00 AM, the parade steps off at 11:00 AM sharp</span>
             </div>
+          </div>
+          <div className="mt-6 text-center">
+            <a
+              href="https://github.com/user-attachments/files/24847674/2026.Parade.Brief.pptx"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-white text-[#002868] px-8 py-3 rounded-full text-[18px] font-[500] hover:bg-gray-100 transition-colors"
+              id="lato-font"
+            >
+              Parade Information
+            </a>
           </div>
         </div>
 

@@ -23,7 +23,7 @@ test.describe('Events Section', () => {
     // Verify section heading is present
     const heading = eventsSection.locator('h1')
     await expect(heading).toBeVisible()
-    await expect(heading).toContainText('4th of July Parade')
+    await expect(heading).toContainText('Independence Day Parade')
   })
 
   test('should display parade information', async ({ page }) => {
@@ -35,7 +35,7 @@ test.describe('Events Section', () => {
     await expect(eventsSection).toBeVisible()
 
     // Verify parade information is displayed
-    await expect(eventsSection).toContainText('State College 4th of July Parade')
+    await expect(eventsSection).toContainText('Central Pennsylvania Independence Day Parade')
     await expect(eventsSection).toContainText('State College, PA')
 
     // Verify key information sections are present
@@ -109,7 +109,7 @@ test.describe('Events Section', () => {
     const description = eventsSection.locator('p').first()
     await expect(description).toBeVisible()
     await expect(description).toContainText(
-      'Join us for the annual State College 4th of July Parade'
+      'Join us for the annual Central Pennsylvania Independence Day Parade'
     )
 
     // Verify section has separator line at bottom
@@ -154,7 +154,7 @@ test.describe('Events Section', () => {
     // Verify heading is visible on mobile
     const heading = eventsSection.locator('h1')
     await expect(heading).toBeVisible()
-    await expect(heading).toContainText('4th of July Parade')
+    await expect(heading).toContainText('Independence Day Parade')
 
     // Verify feature cards are visible on mobile by their headings
     await expect(eventsSection.getByRole('heading', { name: 'Watch the Parade' })).toBeVisible()

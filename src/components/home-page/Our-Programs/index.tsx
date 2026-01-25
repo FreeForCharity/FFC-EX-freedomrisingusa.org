@@ -26,7 +26,7 @@ const index = () => {
             </h1>
           </div>
           <p className="text-[25px] font-[400] " id="lato-font">
-            We coordinate all aspects of the annual 4th of July parade in State College, PA,
+            We coordinate all aspects of the annual Independence Day parade in Central Pennsylvania,
             including permits, route planning, participant coordination, and safety measures.
           </p>
         </div>
