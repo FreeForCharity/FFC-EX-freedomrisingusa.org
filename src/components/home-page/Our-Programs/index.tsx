@@ -182,7 +182,7 @@ const index = () => {
               </li>
             </ul>
           </OrangeFaqItem>
-          <OrangeFaqItem title="Support for Local Veteran's Organizations">
+          <OrangeFaqItem title="Support for Local Veterans Organizations">
             <ul className="list-disc list-inside">
               <li className="">
                 For Veteran Organizations: Partnership and collaboration to support veteran programs
@@ -245,16 +245,6 @@ const index = () => {
               </li>
               <li className="">
                 For Families: Learning about the history and significance of the American flag
-              </li>
-            </ul>
-          </OrangeFaqItem>
-          <OrangeFaqItem title="Veterans Recognition">
-            <ul className="list-disc list-inside">
-              <li className="">
-                For Veterans: Honoring service and sacrifice with special recognition in the parade
-              </li>
-              <li className="">
-                For Community: Showing appreciation and respect for those who served our nation
               </li>
             </ul>
           </OrangeFaqItem>
