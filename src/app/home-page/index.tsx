@@ -10,6 +10,7 @@ import Testimonials from '@/components/home/Testimonials'
 import TheFreeForCharityTeam from '@/components/home-page/TheFreeForCharityTeam'
 import FrequentlyAskedQuestions from '@/components/home-page/FrequentlyAskedQuestions'
 import Events from '@/components/home-page/Events'
+import FundraisingEvents from '@/components/home-page/Fundraising-Events'
 
 const index = () => {
   return (
@@ -20,6 +21,7 @@ const index = () => {
       <Testimonials />
       <VolunteerwithUs />
       <Events />
+      <FundraisingEvents />
       <SupportFreeForCharity />
       <EndowmentFeatures />
       <OurPrograms />
