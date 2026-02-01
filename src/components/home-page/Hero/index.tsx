@@ -37,6 +37,15 @@ const CharityHeroBackground = () => {
             Supporting Patriotism in Centre County PA
           </p>
           <a
+            href="https://www.zeffy.com/en-US/ticketing/lent-friday-fish-fry"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="top-[378px] w-[300px] lg:w-[351px] h-[54px] opacity-100 rounded-[27px] px-[32px] py-[18px] flex items-center justify-center gap-[10px] bg-[#FFFFFF] text-[#113563] text-[20px] font-[400] leading-[100%] mb-[10px] whitespace-nowrap"
+            id="lato-font"
+          >
+            Order Fish &amp; Chips
+          </a>
+          <a
             href="#volunteer"
             className="top-[378px] w-[300px] lg:w-[351px] h-[54px] opacity-100 rounded-[27px] px-[32px] py-[18px] flex items-center justify-center gap-[10px] bg-[#FFFFFF] text-[#113563] text-[20px] font-[400] leading-[100%] mb-[10px] whitespace-nowrap"
             id="lato-font"
