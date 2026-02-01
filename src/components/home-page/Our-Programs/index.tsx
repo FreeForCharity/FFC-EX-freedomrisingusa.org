@@ -3,6 +3,9 @@ import Image from 'next/image'
 import OrangeFaqItem from '@/components/ui/OrangeFaqItem'
 import ApplicationFormButton from '@/components/ui/ApplicationFormButton'
 
+const VOLUNTEER_URL =
+  'https://www.idealist.org/en/volunteer-opportunity/a606cbae2be344b69beff812dac6e11c-parade-marshal-freedom-rising-usa-state-college'
+
 const index = () => {
   return (
     <div id="programs" className="py-[52px]">
@@ -264,7 +267,7 @@ const index = () => {
 
           <div className="flex items-center justify-center gap-4">
             <a
-              href="https://www.idealist.org/en/volunteer-opportunity/a606cbae2be344b69beff812dac6e11c-parade-marshal-freedom-rising-usa-state-college"
+              href={VOLUNTEER_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#2A6682] text-white px-8 py-4 rounded-full text-[20px] font-[500] hover:bg-[#1f4d5f] transition-colors"
