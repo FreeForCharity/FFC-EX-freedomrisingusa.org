@@ -26,7 +26,7 @@ const index = () => {
             linkedinUrl="https://www.linkedin.com/in/mitchdelong"
           />
           <TeamMemberCard
-            imageUrl="/Images/lauri-delong.jpg"
+            imageUrl="/Images/laurie-delong.jpg"
             name="Laurie DeLong"
             title="Treasurer"
             linkedinUrl="https://www.linkedin.com/in/laurie-delong-016845258/"
@@ -34,7 +34,7 @@ const index = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-center mt-[40px] gap-[30px]">
           <TeamMemberCard
-            imageUrl="/Images/carol-king-new.jpg"
+            imageUrl="/Images/carol-king.jpg"
             name="Carol King"
             title="Secretary"
             linkedinUrl="https://www.linkedin.com/in/carol-king-b308395a"
