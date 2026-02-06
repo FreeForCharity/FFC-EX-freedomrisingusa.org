@@ -27,16 +27,16 @@ const index = () => {
           />
           <TeamMemberCard
             imageUrl="/Images/lauri-delong.jpg"
-            name="Lauri DeLong"
-            title="Secretary"
+            name="Laurie DeLong"
+            title="Treasurer"
             linkedinUrl="https://www.linkedin.com/in/laurie-delong-016845258/"
           />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-center mt-[40px] gap-[30px]">
           <TeamMemberCard
-            imageUrl="/Images/carol-king.png"
+            imageUrl="/Images/carol-king-new.jpg"
             name="Carol King"
-            title="Treasurer"
+            title="Secretary"
             linkedinUrl="https://www.linkedin.com/in/carol-king-b308395a"
           />
           <TeamMemberCard
