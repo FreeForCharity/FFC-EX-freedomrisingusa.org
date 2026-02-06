@@ -3,6 +3,9 @@ import Image from 'next/image'
 import OrangeFaqItem from '@/components/ui/OrangeFaqItem'
 import ApplicationFormButton from '@/components/ui/ApplicationFormButton'
 
+const VOLUNTEER_URL =
+  'https://www.idealist.org/en/volunteer-opportunity/a606cbae2be344b69beff812dac6e11c-parade-marshal-freedom-rising-usa-state-college'
+
 const index = () => {
   return (
     <div id="programs" className="py-[52px]">
@@ -18,11 +21,11 @@ const index = () => {
           <div className="mb-[40px]  flex items-center gap-[20px]">
             <div className="w-[100px] flex items-center justify-center p-2 h-[100px] bg-[#2A6682] rounded-full">
               <div className="relative w-[56px] h-[56px]">
-                <Image src="/Svgs/FFC-Domains.svg" alt="Parade Planning" fill></Image>
+                <Image src="/Svgs/FFC-Domains.svg" alt="Independence Day Parade" fill></Image>
               </div>
             </div>
             <h1 className="text-[36px] font-[400] " id="lato-font">
-              Parade Planning
+              Independence Day Parade
             </h1>
           </div>
           <p className="text-[25px] font-[400] " id="lato-font">
@@ -67,27 +70,6 @@ const index = () => {
               </li>
             </ul>
           </OrangeFaqItem>
-        </div>
-
-        <div className="mt-[60px]">
-          <div className="lg:pl-[50px] mb-[40px]  flex items-center gap-[20px]">
-            <div className="w-[100px] flex items-center justify-center p-2 h-[100px] bg-[#2A6682] rounded-full">
-              <div className="relative w-[56px] h-[56px]">
-                <Image src="/Svgs/FFC-Hosting.svg" alt="Community Engagement" fill></Image>
-              </div>
-            </div>
-            <h1 className="text-[36px] font-[400]  " id="lato-font">
-              Community Engagement
-            </h1>
-          </div>
-          <p className="text-[25px] font-[400]  " id="lato-font">
-            Building patriotic spirit and community connections through inclusive celebration of
-            American independence:
-          </p>
-        </div>
-
-        {/* faqs  */}
-        <div>
           <OrangeFaqItem title="Local Business Participation">
             <ul className="list-disc list-inside">
               <li className="">
@@ -110,37 +92,6 @@ const index = () => {
               </li>
             </ul>
           </OrangeFaqItem>
-          <OrangeFaqItem title="Veterans Recognition">
-            <ul className="list-disc list-inside">
-              <li className="">
-                For Veterans: Honoring service and sacrifice with special recognition in the parade
-              </li>
-              <li className="">
-                For Community: Showing appreciation and respect for those who served our nation
-              </li>
-            </ul>
-          </OrangeFaqItem>
-        </div>
-
-        <div className="mt-[60px]">
-          <div className="lg:pl-[50px] mb-[40px]  flex items-center gap-[20px]">
-            <div className="w-[100px] flex items-center justify-center p-2 h-[100px] bg-[#2A6682] rounded-full">
-              <div className="relative w-[56px] h-[56px]">
-                <Image src="/Svgs/FFC-Consulting.svg" alt="Fundraising" fill></Image>
-              </div>
-            </div>
-            <h1 className="text-[36px] font-[400]  " id="lato-font">
-              Fundraising & Support
-            </h1>
-          </div>
-          <p className="text-[25px] font-[400]  " id="lato-font">
-            Raising funds to cover parade costs and ensure a high-quality celebration for Centre
-            County families year after year.
-          </p>
-        </div>
-
-        {/* faqs  */}
-        <div>
           <OrangeFaqItem title="Individual Donations">
             <ul className="list-disc list-inside">
               <li className="">
@@ -173,6 +124,132 @@ const index = () => {
           </OrangeFaqItem>
         </div>
 
+        <div className="mt-[60px]">
+          <div className="lg:pl-[50px] mb-[40px]  flex items-center gap-[20px]">
+            <div className="w-[100px] flex items-center justify-center p-2 h-[100px] bg-[#2A6682] rounded-full">
+              <div className="relative w-[56px] h-[56px]">
+                <Image
+                  src="/Svgs/FFC-Hosting.svg"
+                  alt="Veteran and Military Family Support"
+                  fill
+                ></Image>
+              </div>
+            </div>
+            <h1 className="text-[36px] font-[400]  " id="lato-font">
+              Veteran and Military Family Support
+            </h1>
+          </div>
+          <p className="text-[25px] font-[400]  " id="lato-font">
+            Honoring and supporting those who have served our nation and their families through
+            meaningful programs and recognition.
+          </p>
+        </div>
+
+        {/* faqs  */}
+        <div>
+          <OrangeFaqItem title="Gold Star Family Dinner">
+            <ul className="list-disc list-inside">
+              <li className="">
+                For Gold Star Families: A heartfelt dinner honoring families who have lost a loved
+                one in military service
+              </li>
+              <li className="">
+                For Community: An opportunity to show gratitude and support for the ultimate
+                sacrifice
+              </li>
+            </ul>
+          </OrangeFaqItem>
+          <OrangeFaqItem title="Blue Star Family Day">
+            <ul className="list-disc list-inside">
+              <li className="">
+                For Blue Star Families: Recognition and celebration for families with members
+                currently serving in the military
+              </li>
+              <li className="">
+                For Community: Building connections and showing appreciation for active-duty service
+                members and their families
+              </li>
+            </ul>
+          </OrangeFaqItem>
+          <OrangeFaqItem title="Enlistment Recognition">
+            <ul className="list-disc list-inside">
+              <li className="">
+                For New Enlistees: Public recognition and celebration of those beginning their
+                military service
+              </li>
+              <li className="">
+                For Community: Honoring the commitment and courage of our newest service members
+              </li>
+            </ul>
+          </OrangeFaqItem>
+          <OrangeFaqItem title="Support for Local Veterans Organizations">
+            <ul className="list-disc list-inside">
+              <li className="">
+                For Veteran Organizations: Partnership and collaboration to support veteran programs
+                and initiatives
+              </li>
+              <li className="">
+                For Veterans: Enhanced access to resources, support, and community connections
+              </li>
+            </ul>
+          </OrangeFaqItem>
+        </div>
+
+        <div className="mt-[60px]">
+          <div className="lg:pl-[50px] mb-[40px]  flex items-center gap-[20px]">
+            <div className="w-[100px] flex items-center justify-center p-2 h-[100px] bg-[#2A6682] rounded-full">
+              <div className="relative w-[56px] h-[56px]">
+                <Image src="/Svgs/FFC-Consulting.svg" alt="Community Celebrations" fill></Image>
+              </div>
+            </div>
+            <h1 className="text-[36px] font-[400]  " id="lato-font">
+              Community Celebrations
+            </h1>
+          </div>
+          <p className="text-[25px] font-[400]  " id="lato-font">
+            Bringing our community together to honor our nation&apos;s history and those who have
+            served through meaningful ceremonies and celebrations.
+          </p>
+        </div>
+
+        {/* faqs  */}
+        <div>
+          <OrangeFaqItem title="Holiday Flag Raisings at Pine Hall Cemetery">
+            <ul className="list-disc list-inside">
+              <li className="">
+                For Community Members: Participation in ceremonial flag raisings honoring national
+                holidays at Pine Hall Cemetery
+              </li>
+              <li className="">
+                For Veterans: Recognition and remembrance of service through patriotic ceremony
+              </li>
+            </ul>
+          </OrangeFaqItem>
+          <OrangeFaqItem title="Memorial Day Services at Shiloh Church and Pine Hall Cemetery">
+            <ul className="list-disc list-inside">
+              <li className="">
+                For Attendees: Solemn services honoring those who made the ultimate sacrifice for
+                our nation
+              </li>
+              <li className="">
+                For Community: Preserving tradition and teaching younger generations about sacrifice
+                and service
+              </li>
+            </ul>
+          </OrangeFaqItem>
+          <OrangeFaqItem title="Flag Day at American Legion Post 245">
+            <ul className="list-disc list-inside">
+              <li className="">
+                For Veterans and Community: Celebration of our nation&apos;s flag with ceremony and
+                education at American Legion Post 245
+              </li>
+              <li className="">
+                For Families: Learning about the history and significance of the American flag
+              </li>
+            </ul>
+          </OrangeFaqItem>
+        </div>
+
         <div className="lg:w-[90%] mx-auto text-center pb-[54px] pt-[20px]">
           <h1 className="text-[36px] font-[400] pt-[22px] pb-[30px]" id="lato-font">
             Get Involved Today
@@ -180,7 +257,9 @@ const index = () => {
 
           <div className="flex items-center justify-center gap-4">
             <a
-              href="#volunteer"
+              href={VOLUNTEER_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-[#2A6682] text-white px-8 py-4 rounded-full text-[20px] font-[500] hover:bg-[#1f4d5f] transition-colors"
               id="lato-font"
             >
