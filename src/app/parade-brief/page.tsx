@@ -46,13 +46,7 @@ const slides = [
                 <strong>City:</strong> State College, PA
               </li>
               <li>
-                <strong>Route:</strong> Downtown State College
-              </li>
-              <li>
-                <strong>Start:</strong> TBD
-              </li>
-              <li>
-                <strong>End:</strong> TBD
+                <strong>Route:</strong> Downtown State College (details to be announced)
               </li>
             </ul>
           </div>
@@ -151,7 +145,7 @@ const slides = [
           <ul className="list-disc list-inside space-y-2 text-gray-700">
             <li>Complete registration form by deadline</li>
             <li>Provide proof of insurance for motorized vehicles</li>
-            <li>Attend mandatory participant meeting (date TBD)</li>
+            <li>Attend mandatory participant meeting (date to be announced)</li>
             <li>Follow parade marshal instructions at all times</li>
             <li>Maintain family-friendly content and behavior</li>
           </ul>

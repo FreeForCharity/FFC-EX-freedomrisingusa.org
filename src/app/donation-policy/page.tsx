@@ -20,7 +20,7 @@ const index = () => {
           </p>
 
           <p className="text-[14px] text-[#666] pb-[10px] leading-[24px] font-[500]">
-            <em>Effective Date: [TBD]</em>
+            <em>Effective Date: January 1, 2025</em>
           </p>
 
           <h1 className="text-[30px] text-[#333] pb-[10px] leading-[30px] font-[500]">

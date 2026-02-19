@@ -93,9 +93,9 @@ const index = () => {
 
           <FrequentlyAskedQuestions title="How can I contact Freedom Rising USA?">
             <p>
-              You can reach us by email at info@freedomrisingusa.org or by phone at (814) 555-1234.
-              We&apos;re based in State College, PA and welcome questions, suggestions, and
-              inquiries about the parade or our organization.
+              You can reach us by email at info@freedomrisingusa.org. We&apos;re based in State
+              College, PA and welcome questions, suggestions, and inquiries about the parade or our
+              organization.
             </p>
           </FrequentlyAskedQuestions>
         </div>
