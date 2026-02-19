@@ -5,10 +5,9 @@ import { test, expect } from '@playwright/test'
  *
  * These tests verify that:
  * 1. The Events section renders correctly on the homepage
- * 2. The iframe loads with proper sandbox attributes
- * 3. The section is accessible via the #events anchor
- * 4. The Facebook link works correctly
- * 5. The component is keyboard accessible
+ * 2. The section is accessible via the #events anchor
+ * 3. The parade information, registration, and other events display correctly
+ * 4. The component is keyboard accessible
  */
 
 test.describe('Events Section', () => {
@@ -23,7 +22,7 @@ test.describe('Events Section', () => {
     // Verify section heading is present
     const heading = eventsSection.locator('h1')
     await expect(heading).toBeVisible()
-    await expect(heading).toContainText('4th of July Parade')
+    await expect(heading).toContainText('Events & Celebrations')
   })
 
   test('should display parade information', async ({ page }) => {
@@ -35,7 +34,7 @@ test.describe('Events Section', () => {
     await expect(eventsSection).toBeVisible()
 
     // Verify parade information is displayed
-    await expect(eventsSection).toContainText('State College 4th of July Parade')
+    await expect(eventsSection).toContainText('Central Pennsylvania Independence Day Parade')
     await expect(eventsSection).toContainText('State College, PA')
 
     // Verify key information sections are present
@@ -79,6 +78,50 @@ test.describe('Events Section', () => {
     await expect(eventsSection.getByText('Location:')).toBeVisible()
   })
 
+  test('should display parade brief and registration links', async ({ page }) => {
+    // Navigate to the homepage
+    await page.goto('/')
+
+    const eventsSection = page.locator('#events')
+
+    // Verify View Parade Brief link
+    const briefLink = eventsSection.getByRole('link', { name: 'View Parade Brief' })
+    await expect(briefLink).toBeVisible()
+    await expect(briefLink).toHaveAttribute('href', '/parade-brief')
+
+    // Verify Register to Participate link
+    const registerLink = eventsSection.getByRole('link', { name: 'Register to Participate' })
+    await expect(registerLink).toBeVisible()
+    await expect(registerLink).toHaveAttribute('href', '/parade-registration')
+  })
+
+  test('should display veteran and community event sections', async ({ page }) => {
+    // Navigate to the homepage
+    await page.goto('/')
+
+    const eventsSection = page.locator('#events')
+
+    // Verify Veteran and Military Family Support section
+    await expect(
+      eventsSection.getByRole('heading', { name: 'Veteran and Military Family Support' })
+    ).toBeVisible()
+    await expect(
+      eventsSection.getByRole('heading', { name: 'Gold Star Family Dinner' })
+    ).toBeVisible()
+    await expect(eventsSection.getByRole('heading', { name: 'Blue Star Family Day' })).toBeVisible()
+
+    // Verify Community Celebrations section
+    await expect(
+      eventsSection.getByRole('heading', { name: 'Community Celebrations' })
+    ).toBeVisible()
+    await expect(
+      eventsSection.getByRole('heading', { name: 'Holiday Flag Raisings' })
+    ).toBeVisible()
+    await expect(
+      eventsSection.getByRole('heading', { name: 'Memorial Day Services' })
+    ).toBeVisible()
+  })
+
   test('should be keyboard accessible', async ({ page }) => {
     // Navigate to the homepage
     await page.goto('/')
@@ -106,10 +149,8 @@ test.describe('Events Section', () => {
     expect(classes).toContain('py-[52px]')
 
     // Verify description text is present
-    const description = eventsSection.locator('p').first()
-    await expect(description).toBeVisible()
-    await expect(description).toContainText(
-      'Join us for the annual State College 4th of July Parade'
+    await expect(eventsSection).toContainText(
+      'Join us for the annual Central Pennsylvania Independence Day Parade'
     )
 
     // Verify section has separator line at bottom
@@ -154,7 +195,7 @@ test.describe('Events Section', () => {
     // Verify heading is visible on mobile
     const heading = eventsSection.locator('h1')
     await expect(heading).toBeVisible()
-    await expect(heading).toContainText('4th of July Parade')
+    await expect(heading).toContainText('Events & Celebrations')
 
     // Verify feature cards are visible on mobile by their headings
     await expect(eventsSection.getByRole('heading', { name: 'Watch the Parade' })).toBeVisible()
