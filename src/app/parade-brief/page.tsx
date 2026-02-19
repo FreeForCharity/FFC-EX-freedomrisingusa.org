@@ -266,6 +266,7 @@ export default function ParadeBrief() {
             href={assetPath('/Documents/2026-Parade-Brief.pptx')}
             download
             className="flex items-center gap-2 bg-[#002868] text-white px-4 py-2 rounded-lg hover:bg-[#001a4d] transition-colors"
+            aria-label="Download Slides"
           >
             <Download size={20} />
             <span className="hidden sm:inline">Download Slides</span>
@@ -292,6 +293,7 @@ export default function ParadeBrief() {
               onClick={prevSlide}
               disabled={currentSlide === 0}
               className="flex items-center gap-2 bg-[#002868] text-white px-6 py-3 rounded-lg hover:bg-[#001a4d] transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed"
+              aria-label="Previous slide"
             >
               <ChevronLeft size={20} />
               <span className="hidden sm:inline">Previous</span>
@@ -317,6 +319,7 @@ export default function ParadeBrief() {
               onClick={nextSlide}
               disabled={currentSlide === slides.length - 1}
               className="flex items-center gap-2 bg-[#002868] text-white px-6 py-3 rounded-lg hover:bg-[#001a4d] transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed"
+              aria-label="Next slide"
             >
               <span className="hidden sm:inline">Next</span>
               <ChevronRight size={20} />

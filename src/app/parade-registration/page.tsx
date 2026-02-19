@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Metadata } from 'next'
+import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Parade Registration - Central Pennsylvania Independence Day Parade',
@@ -18,7 +18,7 @@ export default function ParadeRegistration() {
           </h1>
           <p className="text-lg md:text-xl opacity-90" id="lato-font">
             Line up for the 2026 Central Pennsylvania 250th Independence Day Parade will start at
-            10:00 AM on North and South Burrows Street. The parade will step off at 11:00 AM Sharp
+            10:00 AM on North and South Burrowes Street. The parade will step off at 11:00 AM Sharp
             and travel backwards up College Avenue for 6 blocks to the Shortlidge Road/Garner Street
             intersection.
           </p>
@@ -88,8 +88,9 @@ export default function ParadeRegistration() {
                 Elected Officials and candidates for public office are encouraged to participate in
                 the parade as citizens only. Likewise, no participating individual or group may
                 promote political agendas, wear campaign attire or distribute campaign
-                material/literature. The 4th of July is an American holiday &ndash; we put political
-                differences aside and celebrate our great nation and the heroes it produces!
+                material/literature. Independence Day is an American holiday &ndash; we put
+                political differences aside and celebrate our great nation and the heroes it
+                produces!
               </p>
             </div>
 
