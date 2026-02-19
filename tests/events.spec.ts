@@ -84,15 +84,25 @@ test.describe('Events Section', () => {
 
     const eventsSection = page.locator('#events')
 
-    // Verify View Parade Brief link
+    // Verify View Parade Brief link and click through
     const briefLink = eventsSection.getByRole('link', { name: 'View Parade Brief' })
     await expect(briefLink).toBeVisible()
     await expect(briefLink).toHaveAttribute('href', '/parade-brief')
+    await briefLink.click()
+    await expect(page).toHaveURL(/\/parade-brief$/)
+    await expect(page.getByRole('heading', { level: 2 })).toBeVisible()
 
-    // Verify Register to Participate link
-    const registerLink = eventsSection.getByRole('link', { name: 'Register to Participate' })
+    // Navigate back to homepage to test registration link
+    await page.goto('/')
+    const eventsAfterBrief = page.locator('#events')
+
+    // Verify Register to Participate link and click through
+    const registerLink = eventsAfterBrief.getByRole('link', { name: 'Register to Participate' })
     await expect(registerLink).toBeVisible()
     await expect(registerLink).toHaveAttribute('href', '/parade-registration')
+    await registerLink.click()
+    await expect(page).toHaveURL(/\/parade-registration$/)
+    await expect(page.getByRole('heading', { level: 1 })).toBeVisible()
   })
 
   test('should display veteran and community event sections', async ({ page }) => {

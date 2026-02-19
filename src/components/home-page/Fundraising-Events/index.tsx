@@ -64,6 +64,7 @@ const FundraisingEvents = () => {
               rel="noopener noreferrer"
               className="inline-block bg-[#002868] text-white px-8 py-4 rounded-full text-[20px] font-[500] hover:bg-[#001a4d] transition-colors shadow-md"
               id="lato-font"
+              aria-label={`${fishFry.orderLabel} (opens in a new tab)`}
             >
               {fishFry.orderLabel}
             </a>
