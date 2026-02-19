@@ -26,6 +26,7 @@ const Header: React.FC = () => {
       { label: 'Home', path: '/#hero' },
       { label: 'Mission', path: '/#mission' },
       { label: 'Programs', path: '/#programs' },
+      { label: 'Events', path: '/#events' },
       { label: 'Volunteer', path: '/#volunteer' },
       { label: 'Donate', path: '/#donate' },
       { label: 'FAQ', path: '/#faq' },

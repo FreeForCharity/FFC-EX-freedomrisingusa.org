@@ -30,10 +30,10 @@ const index = () => {
         </a>
 
         <Image
-          src="/Images/Volunteer-with-Us.webp"
-          alt="Volunteer with Freedom Rising USA"
+          src="/Images/Parade-Graphic.webp"
+          alt="4th of July Parade in State College"
           width={1083}
-          height={607}
+          height={610}
           className="mx-auto mt-[40px]"
           loading="lazy"
         ></Image>

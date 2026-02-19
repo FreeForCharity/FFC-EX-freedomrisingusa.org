@@ -28,12 +28,13 @@ const index = () => {
           </h1>
 
           <p className="text-[14px] text-[#666] pb-[10px] leading-[24px] font-[500]">
-            Freedom Rising USA, a US 501(c)(3) non-profit organization, is dedicated to supporting
-            patriotism in Centre County, PA. Our primary mission is to support and raise funds for
-            the annual 4th of July parade in State College, PA. This donation policy outlines the
-            guidelines and principles governing the acceptance, management, and acknowledgment of
-            donations to ensure transparency, accountability, and compliance with applicable laws
-            and regulations.
+            Freedom Rising USA, a US 501(c)(3) non-profit organization, is dedicated to honoring
+            heritage and celebrating service in Centre County, PA. We celebrate and preserve the
+            rich traditions of American holidays, honor veterans, and strengthen community bonds
+            through vibrant community events. This donation policy outlines the guidelines and
+            principles governing the acceptance, management, and acknowledgment of donations to
+            ensure transparency, accountability, and compliance with applicable laws and
+            regulations.
           </p>
 
           <h1 className="text-[30px] text-[#333] pb-[10px] leading-[30px] font-[500]">

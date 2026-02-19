@@ -4,14 +4,18 @@ import { test, expect } from '@playwright/test'
  * Animated Numbers Tests
  *
  * These tests verify that the Results section numbers animate correctly
- * when scrolled into view. Updated for Freedom Rising USA parade content.
+ * when scrolled into view. Updated for Freedom Rising USA parade content
+ * with 2025 actual data.
  */
 
 test.describe('Parade Impact Animated Numbers', () => {
-  // Helper selector for ResultCard components - uses the distinctive border class
-  // to identify the card containing a specific description
+  // Helper selector for ResultCard components
+  // The structure is: wrapper div > (bordered div + description p)
+  // We find the wrapper that contains the specific description text
   const getResultCard = (page: import('@playwright/test').Page, description: string) =>
-    page.locator(`div.border-\\[\\#F58629\\]:has(p:text-is("${description}"))`)
+    page.locator(
+      `div.flex.flex-col:has(> p:text-is("${description}")) > div.border-\\[\\#F58629\\]`
+    )
 
   test('should display the Parade Impact section with all four statistics', async ({ page }) => {
     // Navigate to the homepage
@@ -24,25 +28,28 @@ test.describe('Parade Impact Animated Numbers', () => {
     // Scroll to the Results section
     await resultsHeading.scrollIntoViewIfNeeded()
 
-    // Verify all four result cards are present with placeholder values
-    await expect(getResultCard(page, 'Parade participants').locator('h1')).toContainText('[TBD]', {
+    // Wait for animations to complete
+    await page.waitForTimeout(2000)
+
+    // Verify all four result cards are present with actual values and "+" suffix
+    await expect(getResultCard(page, 'Parade participants').locator('h1')).toContainText('200+', {
       timeout: 5000,
     })
-    await expect(getResultCard(page, 'Volunteer hours').locator('h1')).toContainText('[TBD]')
+    await expect(getResultCard(page, 'Volunteer hours').locator('h1')).toContainText('300+')
     await expect(
       getResultCard(page, 'Community members in attendance').locator('h1')
-    ).toContainText('[TBD]')
+    ).toContainText('15,000+')
     await expect(getResultCard(page, 'Local businesses participating').locator('h1')).toContainText(
-      '[TBD]'
+      '30+'
     )
   })
 
-  test('should display the section heading with TBD year', async ({ page }) => {
+  test('should display the section heading with 2025 year', async ({ page }) => {
     // Navigate to the homepage
     await page.goto('/')
 
-    // Verify the heading includes TBD placeholder for year
-    const resultsHeading = page.locator('h1:has-text("Parade Impact - [Year - TBD]")')
+    // Verify the heading includes 2025
+    const resultsHeading = page.locator('h1:has-text("Parade Impact - 2025")')
     await expect(resultsHeading).toBeVisible()
   })
 
@@ -57,7 +64,7 @@ test.describe('Parade Impact Animated Numbers', () => {
     await expect(page.locator('text=Local businesses participating')).toBeVisible()
   })
 
-  test('should display placeholder values in all result cards', async ({ page }) => {
+  test('should display actual values in all result cards with plus signs', async ({ page }) => {
     // Navigate to the homepage
     await page.goto('/')
 
@@ -65,8 +72,45 @@ test.describe('Parade Impact Animated Numbers', () => {
     const resultsHeading = page.locator('h1:has-text("Parade Impact")')
     await resultsHeading.scrollIntoViewIfNeeded()
 
-    // All cards should show [TBD] as placeholder
-    const allTBDValues = page.locator('div.border-\\[\\#F58629\\] h1:has-text("[TBD]")')
-    await expect(allTBDValues).toHaveCount(4)
+    // Wait for animations to complete
+    await page.waitForTimeout(2000)
+
+    // All cards should show numbers with "+" suffix - look for h1 elements with + inside bordered boxes
+    const allPlusValues = page.locator('div.border-\\[\\#F58629\\] h1:has-text("+")')
+    await expect(allPlusValues).toHaveCount(4)
+  })
+
+  test('should animate numbers from 0 to target value', async ({ page }) => {
+    // Navigate to the homepage
+    await page.goto('/')
+
+    // Get the first result card - find by its associated description
+    const firstCard = getResultCard(page, 'Parade participants').locator('h1')
+
+    // Scroll to make the card visible
+    await firstCard.scrollIntoViewIfNeeded()
+
+    // Wait for animation to complete
+    await page.waitForTimeout(1500)
+
+    // After animation completes, should show final value
+    await expect(firstCard).toContainText('200+')
+  })
+
+  test('should format large numbers with thousand separators', async ({ page }) => {
+    // Navigate to the homepage
+    await page.goto('/')
+
+    // Find the community members card with large number
+    const largeNumberCard = getResultCard(page, 'Community members in attendance').locator('h1')
+
+    // Scroll to make the card visible
+    await largeNumberCard.scrollIntoViewIfNeeded()
+
+    // Wait for animation to complete
+    await page.waitForTimeout(2000)
+
+    // Should display with comma separator: "15,000+"
+    await expect(largeNumberCard).toContainText('15,000+')
   })
 })

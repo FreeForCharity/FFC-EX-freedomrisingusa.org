@@ -14,22 +14,25 @@ const index = () => {
         <div>
           <FrequentlyAskedQuestions title="What is Freedom Rising USA?">
             <p className="mb-[30px]">
-              Freedom Rising USA is a 501(c)(3) nonprofit organization dedicated to supporting
-              patriotism in Centre County, PA. Our primary mission is to support and raise funds for
-              the annual 4th of July parade in State College, PA.
+              Freedom Rising USA is a 501(c)(3) nonprofit organization dedicated to honoring
+              heritage and celebrating service in Centre County, PA. Our mission is to celebrate and
+              preserve the rich traditions of American holidays and the values they represent –
+              unity, gratitude, service, and freedom. We are dedicated to honoring the brave service
+              of our veterans, providing support to veterans groups, and creating meaningful
+              experiences that educate and inspire future generations.
             </p>
           </FrequentlyAskedQuestions>
 
           <FrequentlyAskedQuestions title="What does Freedom Rising USA do?">
             <p className="mb-[30px]">
-              We organize, coordinate, and raise funds for the 4th of July parade in State College,
-              PA. This includes working with local businesses, community groups, and volunteers to
-              create a memorable celebration of American independence for families throughout Centre
-              County.
+              We organize, coordinate, and raise funds for the Independence Day parade in Central
+              Pennsylvania. This includes working with local businesses, community groups, and
+              volunteers to create a memorable celebration of American independence for families
+              throughout Centre County.
             </p>
           </FrequentlyAskedQuestions>
 
-          <FrequentlyAskedQuestions title="How can I support the 4th of July parade?">
+          <FrequentlyAskedQuestions title="How can I support the Independence Day parade?">
             <p className="mb-[30px]">
               There are several ways to support our mission: You can make a financial donation to
               help cover parade costs, volunteer your time to help organize and run the parade, or
@@ -38,11 +41,11 @@ const index = () => {
             </p>
           </FrequentlyAskedQuestions>
 
-          <FrequentlyAskedQuestions title="When is the 4th of July parade?">
+          <FrequentlyAskedQuestions title="When is the Independence Day parade?">
             <p className="mb-[30px]">
-              The parade is held annually on or around July 4th in State College, PA. Specific dates
-              and times are announced several months in advance. Check our Events section or contact
-              us directly for the most current information.
+              The parade is held annually on or around July 4th in Central Pennsylvania. Specific
+              dates and times are announced several months in advance. Check our Events section or
+              contact us directly for the most current information.
             </p>
           </FrequentlyAskedQuestions>
 
