@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { ChevronLeft, ChevronRight, Download, Home } from 'lucide-react'
 import Link from 'next/link'
+import { assetPath } from '@/lib/assetPath'
 
 const slides = [
   {
@@ -139,8 +140,8 @@ const slides = [
           <h3 className="font-semibold text-lg mb-2">Important Safety Guidelines</h3>
           <ul className="list-disc list-inside space-y-2 text-gray-700">
             <li>All participants must stay within designated parade areas</li>
-            <li>No throwing items from floats or vehicles</li>
-            <li>Candy distribution must be handed directly to spectators, not thrown</li>
+            <li>Candy may be tossed on the ground in front of spectators</li>
+            <li>To prevent injury, please do not throw candy directly at spectators</li>
             <li>All vehicles must pass safety inspection</li>
             <li>First aid stations will be available along the route</li>
           </ul>
@@ -262,7 +263,7 @@ export default function ParadeBrief() {
           </Link>
           <h1 className="text-xl font-semibold text-[#002868]">2026 Parade Brief</h1>
           <a
-            href="/Documents/2026-Parade-Brief.pptx"
+            href={assetPath('/Documents/2026-Parade-Brief.pptx')}
             download
             className="flex items-center gap-2 bg-[#002868] text-white px-4 py-2 rounded-lg hover:bg-[#001a4d] transition-colors"
           >
