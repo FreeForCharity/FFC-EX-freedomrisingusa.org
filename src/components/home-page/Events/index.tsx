@@ -131,10 +131,10 @@ const Events = () => {
             </div>
             <div className="bg-white border-2 border-[#002868] rounded-lg p-6">
               <h3 className="text-[22px] font-[500] text-[#002868] mb-3" id="faustina-font">
-                Support for Local Veteran&apos;s Organizations
+                Support for Local Veterans&apos; Organizations
               </h3>
               <p className="text-[16px]" id="lato-font">
-                Partnering with and supporting local veteran&apos;s organizations to strengthen
+                Partnering with and supporting local veterans&apos; organizations to strengthen
                 their impact in the community.
               </p>
             </div>
