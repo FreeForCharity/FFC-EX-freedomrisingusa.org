@@ -600,8 +600,7 @@ src/
 │   └── web-developer-training-guide/          # Web developer training guide components
 ├── data/                                      # Static content
 │   ├── faqs/                                  # FAQ JSON files
-│   ├── team/                                  # Team member data
-│   └── testimonials/                          # Testimonial data
+│   └── fundraising-events.ts                  # Fish Fry event data
 ├── lib/                                       # Utility functions
 │   └── assetPath.ts                           # Helper for GitHub Pages basePath support
 └── public/                                    # Static assets (icons, images, fonts)
