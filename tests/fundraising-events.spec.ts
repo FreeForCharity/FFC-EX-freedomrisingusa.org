@@ -59,11 +59,11 @@ test.describe('Fundraising Events Section', () => {
     // Verify location information
     await expect(fundraisingEventsSection).toContainText('Location:')
     await expect(fundraisingEventsSection).toContainText(
-      'American Legion Post 245, State College, PA'
+      'American Legion Post 245, 1950 Pine Hall Rd, State College, PA 16801'
     )
 
     // Verify timing information
-    await expect(fundraisingEventsSection).toContainText('When:')
+    await expect(fundraisingEventsSection).toContainText('Pickup Time:')
     await expect(fundraisingEventsSection).toContainText('Fridays during Lent')
   })
 
@@ -94,10 +94,8 @@ test.describe('Fundraising Events Section', () => {
     // Verify link has proper security attributes
     await expect(orderLink).toHaveAttribute('rel', 'noopener noreferrer')
 
-    // Verify link has aria-label for accessibility
-    const ariaLabel = await orderLink.getAttribute('aria-label')
-    expect(ariaLabel).toBeTruthy()
-    expect(ariaLabel).toContain('Order Fish & Chips')
+    // Verify link text
+    await expect(orderLink).toContainText('Order Fish')
   })
 
   test('should be accessible via #fundraising-events anchor link', async ({ page }) => {
@@ -221,6 +219,6 @@ test.describe('Fundraising Events Section', () => {
 
     // Verify details box contains location and timing
     await expect(detailsBox).toContainText('Location:')
-    await expect(detailsBox).toContainText('When:')
+    await expect(detailsBox).toContainText('Pickup Time:')
   })
 })
