@@ -8,8 +8,7 @@ This guide helps you test the Free For Charity web application, including conten
 
 ```bash
 # Verify data files
-ls -la src/data/faqs/
-ls -la src/data/fundraising-events.ts
+ls -la src/data/
 ```
 
 ### 2. Test Development Server
@@ -710,8 +709,8 @@ FFC_Single_Page_Template/
 │   └── lighthouse.yml             # Performance monitoring
 ├── public/                         # Static assets
 ├── src/data/
-│   ├── faqs/                      # FAQ JSON files
-│   ├── faqs.ts                    # Imports FAQ JSON files
+│   ├── constants.ts               # Shared URLs and constants
+│   ├── faqs.ts                    # FAQ data
 │   └── fundraising-events.ts      # Fish Fry event data
 ├── TESTING.md                     # This file
 └── README.md                      # Project overview with testing summary

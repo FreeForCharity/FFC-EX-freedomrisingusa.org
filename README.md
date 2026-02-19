@@ -56,7 +56,7 @@ This repository follows **Cloud Native Computing Foundation (CNCF)** standards f
 - Real phone number
 - Volunteer and donation form URLs
 
-**See [CONTENT_PLACEHOLDERS.md](./CONTENT_PLACEHOLDERS.md) for complete list of placeholders and what needs to be provided.**
+**Remaining placeholder items are tracked as [GitHub issues](https://github.com/FreeForCharity/FFC-EX-freedomrisingusa.org/issues).**
 
 ## Purpose
 
@@ -599,7 +599,8 @@ src/
 │   ├── volunteer-proving-ground/              # Volunteer proving ground components
 │   └── web-developer-training-guide/          # Web developer training guide components
 ├── data/                                      # Static content
-│   ├── faqs/                                  # FAQ JSON files
+│   ├── constants.ts                           # Shared URLs and constants
+│   ├── faqs.ts                                # FAQ data
 │   └── fundraising-events.ts                  # Fish Fry event data
 ├── lib/                                       # Utility functions
 │   └── assetPath.ts                           # Helper for GitHub Pages basePath support

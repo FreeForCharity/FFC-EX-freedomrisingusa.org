@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import { VOLUNTEER_URL } from '@/data/constants'
 
 const index = () => {
   return (
@@ -20,7 +21,7 @@ const index = () => {
           memorable celebration for our community.
         </p>
         <a
-          href="https://www.idealist.org/en/volunteer-opportunity/a606cbae2be344b69beff812dac6e11c-parade-marshal-freedom-rising-usa-state-college"
+          href={VOLUNTEER_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="w-[216px] h-[62px] top-[261px] left-[611px] rounded-[27px] 
