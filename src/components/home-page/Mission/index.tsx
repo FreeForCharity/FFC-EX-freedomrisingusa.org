@@ -51,12 +51,14 @@ const Mission = () => {
         <div
           className="mt-[50px] grid grid-cols-2 md:grid-cols-4 gap-6 max-w-[800px] mx-auto"
           aria-label="Core values"
+          style={{ fontFamily: 'var(--font-lato), sans-serif' }}
         >
           {CORE_VALUES.map((value) => (
             <div
               key={value.label}
               className="flex flex-col items-center gap-3 rounded-xl p-6 shadow-md"
               style={{ border: `2px solid ${value.color}` }}
+              aria-label={value.label}
             >
               <span className="text-[40px]" role="img" aria-hidden="true">
                 {value.icon}
@@ -64,7 +66,6 @@ const Mission = () => {
               <span
                 className="font-[600] text-[18px] tracking-wide uppercase"
                 style={{ color: value.color }}
-                id="lato-font"
               >
                 {value.label}
               </span>
