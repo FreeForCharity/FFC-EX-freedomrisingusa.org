@@ -45,18 +45,13 @@ This repository follows **Cloud Native Computing Foundation (CNCF)** standards f
 
 **Primary Contact**: info@freedomrisingusa.org
 
-## ⚠️ Content Placeholders
+## Remaining Content Items
 
-**This site has been converted from "Free For Charity" to "Freedom Rising USA".** All homepage content has been updated, but several placeholders remain that need official content:
+A few items still need input from site owners and are tracked as GitHub issues:
 
-- Board member names and LinkedIn profiles
-- Real testimonials from parade supporters
-- Actual parade statistics
-- Organization logo
-- Real phone number
-- Volunteer and donation form URLs
-
-**Remaining placeholder items are tracked as [GitHub issues](https://github.com/FreeForCharity/FFC-EX-freedomrisingusa.org/issues).**
+- [#62](https://github.com/FreeForCharity/FFC-EX-freedomrisingusa.org/issues/62) — Real testimonials from parade supporters
+- [#63](https://github.com/FreeForCharity/FFC-EX-freedomrisingusa.org/issues/63) — Real phone number
+- [#66](https://github.com/FreeForCharity/FFC-EX-freedomrisingusa.org/issues/66) — Parade route start/end points
 
 ## Purpose
 
