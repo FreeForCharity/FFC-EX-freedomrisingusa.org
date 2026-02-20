@@ -1,6 +1,29 @@
 import React from 'react'
 
-const index = () => {
+const CORE_VALUES = [
+  {
+    label: 'Unity',
+    icon: '🤝',
+    color: '#002868',
+  },
+  {
+    label: 'Gratitude',
+    icon: '🎖️',
+    color: '#2A6682',
+  },
+  {
+    label: 'Service',
+    icon: '⭐',
+    color: '#BF0A30',
+  },
+  {
+    label: 'Freedom',
+    icon: '🇺🇸',
+    color: '#002868',
+  },
+]
+
+const Mission = () => {
   return (
     <div id="mission" className="py-[52px]">
       <div className="w-[90%] mx-auto py-[27px] mb-[60px] max-w-[1280px]">
@@ -25,20 +48,28 @@ const index = () => {
           past, uplift the present, and inspire future generations to carry forward the spirit of
           America.
         </p>
-        <div className="mt-[50px] flex justify-center">
-          <video
-            className="w-full max-w-[800px] rounded-lg shadow-lg"
-            controls
-            playsInline
-            preload="metadata"
-            poster="/videos/mission-video-poster.webp"
-            aria-label="Freedom Rising USA mission video"
-            title="Learn about Freedom Rising USA's mission to support the 4th of July parade"
-          >
-            {/* <source src="/videos/mission-video.mp4" type="video/mp4" /> */}
-            <source src="https://ffcsites.org/videos/mission-video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+        <div
+          className="mt-[50px] grid grid-cols-2 md:grid-cols-4 gap-6 max-w-[800px] mx-auto"
+          aria-label="Core values"
+          id="lato-font"
+        >
+          {CORE_VALUES.map((value) => (
+            <div
+              key={value.label}
+              className="flex flex-col items-center gap-3 rounded-xl p-6 shadow-md"
+              style={{ border: `2px solid ${value.color}` }}
+            >
+              <span className="text-[40px]" role="img" aria-hidden="true">
+                {value.icon}
+              </span>
+              <span
+                className="font-[600] text-[18px] tracking-wide uppercase"
+                style={{ color: value.color }}
+              >
+                {value.label}
+              </span>
+            </div>
+          ))}
         </div>
       </div>
 
@@ -47,4 +78,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Mission
