@@ -7,10 +7,8 @@ This guide helps you test the Free For Charity web application, including conten
 ### 1. Check Content Structure
 
 ```bash
-# Verify JSON content files
-ls -la src/data/faqs/
-ls -la src/data/team/
-ls -la src/data/testimonials/
+# Verify data files
+ls -la src/data/
 ```
 
 ### 2. Test Development Server
@@ -711,22 +709,9 @@ FFC_Single_Page_Template/
 │   └── lighthouse.yml             # Performance monitoring
 ├── public/                         # Static assets
 ├── src/data/
-│   ├── faqs/
-│   │   ├── what-is-the-organization-aiming-to-accomplish.json
-│   │   └── are-you-really-a-charity.json
-│   ├── team/
-│   │   ├── clarke-moyer.json
-│   │   ├── chris-rae.json
-│   │   ├── tyler-carlotto.json
-│   │   ├── brennan-darling.json
-│   │   └── rebecca-cook.json
-│   ├── testimonials/
-│   │   ├── testimonial-1.json
-│   │   ├── testimonial-2.json
-│   │   └── testimonial-3.json
-│   ├── faqs.ts                    # Imports FAQ JSON files
-│   ├── team.ts                    # Imports team JSON files
-│   └── testimonials.ts            # Imports testimonial JSON files
+│   ├── constants.ts               # Shared URLs and constants
+│   ├── faqs.ts                    # FAQ data
+│   └── fundraising-events.ts      # Fish Fry event data
 ├── TESTING.md                     # This file
 └── README.md                      # Project overview with testing summary
 ```

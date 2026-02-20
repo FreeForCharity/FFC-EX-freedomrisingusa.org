@@ -45,18 +45,13 @@ This repository follows **Cloud Native Computing Foundation (CNCF)** standards f
 
 **Primary Contact**: info@freedomrisingusa.org
 
-## ⚠️ Content Placeholders
+## Remaining Content Items
 
-**This site has been converted from "Free For Charity" to "Freedom Rising USA".** All homepage content has been updated, but several placeholders remain that need official content:
+A few items still need input from site owners and are tracked as GitHub issues:
 
-- Board member names and LinkedIn profiles
-- Real testimonials from parade supporters
-- Actual parade statistics
-- Organization logo
-- Real phone number
-- Volunteer and donation form URLs
-
-**See [CONTENT_PLACEHOLDERS.md](./CONTENT_PLACEHOLDERS.md) for complete list of placeholders and what needs to be provided.**
+- [#62](https://github.com/FreeForCharity/FFC-EX-freedomrisingusa.org/issues/62) — Real testimonials from parade supporters
+- [#63](https://github.com/FreeForCharity/FFC-EX-freedomrisingusa.org/issues/63) — Real phone number
+- [#66](https://github.com/FreeForCharity/FFC-EX-freedomrisingusa.org/issues/66) — Parade route start/end points
 
 ## Purpose
 
@@ -599,9 +594,9 @@ src/
 │   ├── volunteer-proving-ground/              # Volunteer proving ground components
 │   └── web-developer-training-guide/          # Web developer training guide components
 ├── data/                                      # Static content
-│   ├── faqs/                                  # FAQ JSON files
-│   ├── team/                                  # Team member data
-│   └── testimonials/                          # Testimonial data
+│   ├── constants.ts                           # Shared URLs and constants
+│   ├── faqs.ts                                # FAQ data
+│   └── fundraising-events.ts                  # Fish Fry event data
 ├── lib/                                       # Utility functions
 │   └── assetPath.ts                           # Helper for GitHub Pages basePath support
 └── public/                                    # Static assets (icons, images, fonts)

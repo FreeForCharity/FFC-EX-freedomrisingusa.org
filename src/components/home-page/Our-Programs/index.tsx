@@ -2,9 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import OrangeFaqItem from '@/components/ui/OrangeFaqItem'
 import ApplicationFormButton from '@/components/ui/ApplicationFormButton'
-
-const VOLUNTEER_URL =
-  'https://www.idealist.org/en/volunteer-opportunity/a606cbae2be344b69beff812dac6e11c-parade-marshal-freedom-rising-usa-state-college'
+import { VOLUNTEER_URL } from '@/data/constants'
 
 const index = () => {
   return (

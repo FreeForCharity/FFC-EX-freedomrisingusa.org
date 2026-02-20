@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import { VOLUNTEER_URL } from '@/data/constants'
 
 const index = () => {
   return (
@@ -20,7 +21,9 @@ const index = () => {
           memorable celebration for our community.
         </p>
         <a
-          href="#volunteer-form-placeholder"
+          href={VOLUNTEER_URL}
+          target="_blank"
+          rel="noopener noreferrer"
           className="w-[216px] h-[62px] top-[261px] left-[611px] rounded-[27px] 
              flex items-center justify-center px-[32px] py-[18px] gap-[10px] 
              text-[#113563] mx-auto mt-[30px] bg-white text-[20px] font-[400] font-sans text-center"
