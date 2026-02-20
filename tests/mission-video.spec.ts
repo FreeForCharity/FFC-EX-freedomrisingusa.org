@@ -1,45 +1,34 @@
 import { test, expect } from '@playwright/test'
 
 /**
- * Mission Video Tests
+ * Mission Section Tests
  *
- * These tests verify that the mission video is present and properly configured
- * on the homepage mission section.
+ * These tests verify that the mission section displays the core values
+ * and mission content on the homepage.
  */
 
-test.describe('Mission Video', () => {
-  test('should display video in mission section', async ({ page }) => {
-    // Navigate to the homepage
+test.describe('Mission Section', () => {
+  test('should display mission heading and text', async ({ page }) => {
     await page.goto('/')
 
-    // Find the video element with the aria-label
-    const missionVideo = page.locator('video[aria-label="Freedom Rising USA mission video"]')
+    const missionSection = page.locator('#mission')
+    await expect(missionSection).toBeVisible()
 
-    // Verify the video exists and is visible
-    await expect(missionVideo).toBeVisible()
+    await expect(
+      missionSection.getByText('Honoring heritage and celebrating service')
+    ).toBeVisible()
 
-    // Verify the video has the correct accessibility attributes
-    await expect(missionVideo).toHaveAttribute('aria-label', 'Freedom Rising USA mission video')
-    await expect(missionVideo).toHaveAttribute(
-      'title',
-      "Learn about Freedom Rising USA's mission to support the 4th of July parade"
-    )
-
-    // Verify the video has controls enabled
-    await expect(missionVideo).toHaveAttribute('controls', '')
+    await expect(missionSection.getByText(/Our mission is to celebrate/)).toBeVisible()
   })
 
-  test('should have video source configured correctly', async ({ page }) => {
-    // Navigate to the homepage
+  test('should display core values', async ({ page }) => {
     await page.goto('/')
 
-    // Find the video source element
-    const videoSource = page.locator('video[aria-label="Freedom Rising USA mission video"] source')
+    const valuesContainer = page.locator('[aria-label="Core values"]')
+    await expect(valuesContainer).toBeVisible()
 
-    // Verify the source exists
-    await expect(videoSource).toHaveCount(1)
-
-    // Verify the source has the correct type
-    await expect(videoSource).toHaveAttribute('type', 'video/mp4')
+    for (const value of ['Unity', 'Gratitude', 'Service', 'Freedom']) {
+      await expect(valuesContainer.getByText(value)).toBeVisible()
+    }
   })
 })
