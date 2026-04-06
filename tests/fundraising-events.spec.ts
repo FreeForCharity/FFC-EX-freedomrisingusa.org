@@ -76,16 +76,16 @@ test.describe('Fundraising Events Section', () => {
     // Locate the Fundraising Events section
     const fundraisingEventsSection = page.locator('#fundraising-events')
 
-    // Find the Order Fish & Chips link
+    // Find the Buy BBQ Tickets link
     const orderLink = fundraisingEventsSection.getByRole('link', {
-      name: /Order Fish & Chips/i,
+      name: /Buy BBQ Tickets/i,
     })
     await expect(orderLink).toBeVisible()
 
     // Verify link has correct href
     await expect(orderLink).toHaveAttribute(
       'href',
-      'https://www.zeffy.com/en-US/ticketing/lent-friday-fish-fry'
+      'https://www.zeffy.com/en-US/ticketing/reeeal-good-bbq'
     )
 
     // Verify link opens in new tab
@@ -95,7 +95,7 @@ test.describe('Fundraising Events Section', () => {
     await expect(orderLink).toHaveAttribute('rel', 'noopener noreferrer')
 
     // Verify link text
-    await expect(orderLink).toContainText('Order Fish')
+    await expect(orderLink).toContainText('Buy BBQ Tickets')
   })
 
   test('should be accessible via #fundraising-events anchor link', async ({ page }) => {
@@ -140,7 +140,7 @@ test.describe('Fundraising Events Section', () => {
 
     // Verify order button is visible and accessible on mobile
     const orderLink = fundraisingEventsSection.getByRole('link', {
-      name: /Order Fish & Chips/i,
+      name: /Buy BBQ Tickets/i,
     })
     await expect(orderLink).toBeVisible()
   })
@@ -188,7 +188,7 @@ test.describe('Fundraising Events Section', () => {
 
     // Verify the Order button is keyboard accessible
     const orderLink = fundraisingEventsSection.getByRole('link', {
-      name: /Order Fish & Chips/i,
+      name: /Buy BBQ Tickets/i,
     })
     await expect(orderLink).toBeVisible()
 

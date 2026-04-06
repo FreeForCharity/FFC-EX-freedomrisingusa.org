@@ -29,8 +29,8 @@ export const fishFry: FishFryEvent = {
     { label: 'Fri, Mar 27', time: '4:30 \u2013 5:30 PM' },
     { label: 'Fri, Apr 3', time: '4:30 \u2013 5:30 PM' },
   ],
-  orderUrl: 'https://www.zeffy.com/en-US/ticketing/lent-friday-fish-fry',
-  orderLabel: 'Order Fish & Chips',
+  orderUrl: 'https://www.zeffy.com/en-US/ticketing/reeeal-good-bbq',
+  orderLabel: 'Buy BBQ Tickets',
   legionNote:
     'American Legion Post 245 is open to members at regular hours throughout the week. The dates and times listed above are specifically for the Freedom Rising USA fundraiser pickup window. Pre-orders through Zeffy are picked up between 4:30 and 5:30 on the day ordered. Nonrefundable if not picked up.',
 }
