@@ -29,32 +29,38 @@ const FundraisingEvents = () => {
                   <span className="font-[700] min-w-[120px]">Location:</span>
                   <span>{fishFry.location}</span>
                 </div>
-                <div className="flex items-start gap-4">
-                  <span className="font-[700] min-w-[120px]">Pickup Time:</span>
-                  <span>{fishFry.pickupTime}</span>
+                {fishFry.pickupTime && (
+                  <div className="flex items-start gap-4">
+                    <span className="font-[700] min-w-[120px]">Pickup Time:</span>
+                    <span>{fishFry.pickupTime}</span>
+                  </div>
+                )}
+              </div>
+            </div>
+
+            {fishFry.dates.length > 0 && (
+              <div className="bg-blue-50 rounded-lg p-6 mt-4">
+                <h3 className="text-[20px] font-[500] mb-3 text-[#002868]" id="faustina-font">
+                  Upcoming Dates
+                </h3>
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-3" id="lato-font">
+                  {fishFry.dates.map((date) => (
+                    <div key={date.label} className="bg-white rounded-lg p-3 text-center shadow-sm">
+                      <p className="font-[600] text-[#002868]">{date.label}</p>
+                      <p className="text-sm text-gray-600">{date.time}</p>
+                    </div>
+                  ))}
                 </div>
               </div>
-            </div>
+            )}
 
-            <div className="bg-blue-50 rounded-lg p-6 mt-4">
-              <h3 className="text-[20px] font-[500] mb-3 text-[#002868]" id="faustina-font">
-                Upcoming Dates
-              </h3>
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-3" id="lato-font">
-                {fishFry.dates.map((date) => (
-                  <div key={date.label} className="bg-white rounded-lg p-3 text-center shadow-sm">
-                    <p className="font-[600] text-[#002868]">{date.label}</p>
-                    <p className="text-sm text-gray-600">{date.time}</p>
-                  </div>
-                ))}
+            {fishFry.legionNote && (
+              <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-lg mt-4">
+                <p className="text-gray-800" id="lato-font">
+                  <strong>Note for Legion Members:</strong> {fishFry.legionNote}
+                </p>
               </div>
-            </div>
-
-            <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-lg mt-4">
-              <p className="text-gray-800" id="lato-font">
-                <strong>Note for Legion Members:</strong> {fishFry.legionNote}
-              </p>
-            </div>
+            )}
           </div>
 
           <div className="text-center mt-8">

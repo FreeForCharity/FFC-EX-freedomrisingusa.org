@@ -5,8 +5,8 @@ import { test, expect } from '@playwright/test'
  *
  * These tests verify that:
  * 1. The Fundraising Events section renders correctly on the homepage
- * 2. The Lent Friday Fish Fry heading is visible
- * 3. Event details (location, timing) are displayed
+ * 2. The Real Good BBQ heading is visible
+ * 3. Event details (location) are displayed
  * 4. External link to Zeffy ticketing platform works correctly
  * 5. Section is accessible via #fundraising-events anchor
  * 6. Component displays correctly on mobile viewport
@@ -28,7 +28,7 @@ test.describe('Fundraising Events Section', () => {
     await expect(heading).toContainText('Fundraising Events')
   })
 
-  test('should display Lent Friday Fish Fry heading', async ({ page }) => {
+  test('should display Real Good BBQ heading', async ({ page }) => {
     // Navigate to the homepage
     await page.goto('/')
 
@@ -36,14 +36,14 @@ test.describe('Fundraising Events Section', () => {
     const fundraisingEventsSection = page.locator('#fundraising-events')
     await expect(fundraisingEventsSection).toBeVisible()
 
-    // Verify Lent Friday Fish Fry heading is displayed
-    const fishFryHeading = fundraisingEventsSection.getByRole('heading', {
-      name: 'Lent Friday Fish Fry',
+    // Verify Real Good BBQ heading is displayed
+    const bbqHeading = fundraisingEventsSection.getByRole('heading', {
+      name: 'Real Good BBQ',
     })
-    await expect(fishFryHeading).toBeVisible()
+    await expect(bbqHeading).toBeVisible()
   })
 
-  test('should display event details (location and timing)', async ({ page }) => {
+  test('should display event details (location)', async ({ page }) => {
     // Navigate to the homepage
     await page.goto('/')
 
@@ -61,10 +61,6 @@ test.describe('Fundraising Events Section', () => {
     await expect(fundraisingEventsSection).toContainText(
       'American Legion Post 245, 1950 Pine Hall Rd, State College, PA 16801'
     )
-
-    // Verify timing information
-    await expect(fundraisingEventsSection).toContainText('Pickup Time:')
-    await expect(fundraisingEventsSection).toContainText('Fridays during Lent')
   })
 
   test('should have external link to Zeffy ticketing platform with correct attributes', async ({
@@ -76,9 +72,9 @@ test.describe('Fundraising Events Section', () => {
     // Locate the Fundraising Events section
     const fundraisingEventsSection = page.locator('#fundraising-events')
 
-    // Find the Buy BBQ Tickets link
+    // Find the BBQ Ticket Sales link
     const orderLink = fundraisingEventsSection.getByRole('link', {
-      name: /Buy BBQ Tickets/i,
+      name: /BBQ Ticket Sales/i,
     })
     await expect(orderLink).toBeVisible()
 
@@ -95,7 +91,7 @@ test.describe('Fundraising Events Section', () => {
     await expect(orderLink).toHaveAttribute('rel', 'noopener noreferrer')
 
     // Verify link text
-    await expect(orderLink).toContainText('Buy BBQ Tickets')
+    await expect(orderLink).toContainText('BBQ Ticket Sales')
   })
 
   test('should be accessible via #fundraising-events anchor link', async ({ page }) => {
@@ -135,12 +131,12 @@ test.describe('Fundraising Events Section', () => {
 
     // Verify event name is visible
     await expect(
-      fundraisingEventsSection.getByRole('heading', { name: 'Lent Friday Fish Fry' })
+      fundraisingEventsSection.getByRole('heading', { name: 'Real Good BBQ' })
     ).toBeVisible()
 
     // Verify order button is visible and accessible on mobile
     const orderLink = fundraisingEventsSection.getByRole('link', {
-      name: /Buy BBQ Tickets/i,
+      name: /BBQ Ticket Sales/i,
     })
     await expect(orderLink).toBeVisible()
   })
@@ -160,10 +156,10 @@ test.describe('Fundraising Events Section', () => {
 
     // Verify description text is present
     await expect(fundraisingEventsSection).toContainText(
-      'Join us for our annual Lent Friday Fish Fry fundraising event'
+      'Get your tickets for our Real Good BBQ fundraiser'
     )
     await expect(fundraisingEventsSection).toContainText(
-      "Enjoy delicious fish and chips while supporting Freedom Rising USA's mission"
+      "Enjoy great food while supporting Freedom Rising USA's mission"
     )
 
     // Verify section has separator line at bottom
@@ -188,7 +184,7 @@ test.describe('Fundraising Events Section', () => {
 
     // Verify the Order button is keyboard accessible
     const orderLink = fundraisingEventsSection.getByRole('link', {
-      name: /Buy BBQ Tickets/i,
+      name: /BBQ Ticket Sales/i,
     })
     await expect(orderLink).toBeVisible()
 
@@ -217,8 +213,7 @@ test.describe('Fundraising Events Section', () => {
     const detailsBox = fundraisingEventsSection.locator('.bg-\\[\\#002868\\]').first()
     await expect(detailsBox).toBeVisible()
 
-    // Verify details box contains location and timing
+    // Verify details box contains location
     await expect(detailsBox).toContainText('Location:')
-    await expect(detailsBox).toContainText('Pickup Time:')
   })
 })
