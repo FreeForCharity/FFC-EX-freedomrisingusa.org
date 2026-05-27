@@ -240,7 +240,7 @@ These variables are embedded during the build process:
 | Variable                         | Purpose                    | Default           | Required |
 | -------------------------------- | -------------------------- | ----------------- | -------- |
 | `NEXT_PUBLIC_BASE_PATH`          | Base path for GitHub Pages | (empty)           | No       |
-| `NEXT_PUBLIC_GA_MEASUREMENT_ID`  | Google Analytics ID        | `G-XXXXXXXXXX`    | No       |
+| `NEXT_PUBLIC_GA_MEASUREMENT_ID`  | Google Analytics ID        | `G-FHVLZGB0CY`    | No       |
 | `NEXT_PUBLIC_META_PIXEL_ID`      | Meta Pixel ID              | `XXXXXXXXXXXXXXX` | No       |
 | `NEXT_PUBLIC_CLARITY_PROJECT_ID` | Microsoft Clarity ID       | `XXXXXXXXXX`      | No       |
 
