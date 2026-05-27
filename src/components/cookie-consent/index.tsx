@@ -3,8 +3,9 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
 import Link from 'next/link'
 
-// Environment variables for tracking IDs (replace with actual values)
-const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || 'G-XXXXXXXXXX'
+// Tracking IDs. These are public identifiers (safe to commit), with optional
+// environment-variable overrides. GA4 property for freedomrisingusa.org.
+const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || 'G-FHVLZGB0CY'
 const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID || 'XXXXXXXXXXXXXXX'
 const CLARITY_PROJECT_ID = process.env.NEXT_PUBLIC_CLARITY_PROJECT_ID || 'XXXXXXXXXX'
 

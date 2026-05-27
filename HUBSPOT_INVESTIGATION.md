@@ -79,7 +79,7 @@ The application **does** intentionally integrate with the following third-party 
 
 **Location:** `src/components/cookie-consent/index.tsx`
 
-- **Google Analytics** (`G-XXXXXXXXXX`) - Loaded if analytics consent given
+- **Google Analytics** (`G-FHVLZGB0CY`) - Loaded if analytics consent given
 - **Meta Pixel** (Facebook) - Loaded if marketing consent given
 - **Microsoft Clarity** - Loaded if analytics consent given
 
@@ -107,7 +107,7 @@ The application **does** intentionally integrate with the following third-party 
 
 **Location:** `src/components/google-tag-manager/index.tsx`
 
-**GTM ID:** `GTM-TQ5H8HPR`  
+**GTM ID:** `GTM-K46LNVH2`  
 **Load Strategy:** `lazyOnload` for better performance
 
 ---

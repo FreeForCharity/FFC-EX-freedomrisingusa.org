@@ -118,7 +118,7 @@ test.describe('Google Tag Manager Integration', () => {
 
 test.describe('Google Tag Manager Configuration', () => {
   test('should load GTM script with hardcoded ID', async ({ page }) => {
-    // This test verifies that GTM loads with the hardcoded ID GTM-TQ5H8HPR
+    // This test verifies that GTM loads with the hardcoded ID GTM-K46LNVH2
     // The GTM_ID is hardcoded in the component (not from environment variable)
 
     await page.goto('/')
@@ -131,6 +131,6 @@ test.describe('Google Tag Manager Configuration', () => {
 
     // Verify the script contains the correct GTM ID
     const scriptContent = await page.locator('script[id="gtm-script"]').innerHTML()
-    expect(scriptContent).toContain('GTM-TQ5H8HPR')
+    expect(scriptContent).toContain('GTM-K46LNVH2')
   })
 })
