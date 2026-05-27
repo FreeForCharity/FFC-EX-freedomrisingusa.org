@@ -107,7 +107,7 @@ The application **does** intentionally integrate with the following third-party 
 
 **Location:** `src/components/google-tag-manager/index.tsx`
 
-**GTM ID:** `GTM-TQ5H8HPR`  
+**GTM ID:** `GTM-K46LNVH2`  
 **Load Strategy:** `lazyOnload` for better performance
 
 ---
