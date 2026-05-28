@@ -4,6 +4,7 @@ import Header from './../components/header'
 import Footer from './../components/footer'
 import CookieConsent from './../components/cookie-consent'
 import GoogleTagManager, { GoogleTagManagerNoScript } from './../components/google-tag-manager'
+import { OrganizationJsonLd } from './../components/structured-data'
 import {
   openSans,
   lato,
@@ -110,12 +111,28 @@ export default function RootLayout({
           fetchPriority="high"
         />
 
-        {/* Ensure GTM-compatible dataLayer exists as early as possible */}
+        {/* Google Consent Mode v2 defaults — must run before GTM/GA load */}
         <script
-          dangerouslySetInnerHTML={{ __html: 'window.dataLayer = window.dataLayer || [];' }}
+          id="consent-mode-default"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('consent', 'default', {
+                ad_storage: 'denied',
+                ad_user_data: 'denied',
+                ad_personalization: 'denied',
+                analytics_storage: 'denied',
+                functionality_storage: 'granted',
+                security_storage: 'granted',
+                wait_for_update: 500
+              });
+            `,
+          }}
         />
 
         <GoogleTagManager />
+        <OrganizationJsonLd />
       </head>
       <body
         className={[

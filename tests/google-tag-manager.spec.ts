@@ -25,7 +25,9 @@ test.describe('Google Tag Manager Integration', () => {
   test('should load GTM script with correct ID', async ({ page }) => {
     await page.goto('/')
 
-    // Check for GTM script element
+    // GTM uses lazyOnload — wait for the script element to be injected
+    await page.waitForSelector('script#gtm-script', { state: 'attached', timeout: 15000 })
+
     const gtmScript = await page.locator('script[id="gtm-script"]').count()
     expect(gtmScript).toBeGreaterThan(0)
 
@@ -122,6 +124,9 @@ test.describe('Google Tag Manager Configuration', () => {
     // The GTM_ID is hardcoded in the component (not from environment variable)
 
     await page.goto('/')
+
+    // GTM uses lazyOnload — wait for the script element to be injected
+    await page.waitForSelector('script#gtm-script', { state: 'attached', timeout: 15000 })
 
     // GTM script should always be present with the hardcoded ID
     const gtmScript = await page.locator('script[id="gtm-script"]').count()
