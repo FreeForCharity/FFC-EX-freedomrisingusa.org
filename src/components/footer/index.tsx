@@ -11,7 +11,11 @@ import { FaXTwitter } from 'react-icons/fa6'
 const Footer: React.FC = () => {
   const currentYear = React.useMemo(() => new Date().getFullYear(), [])
   const socialLinks = [
-    { icon: FaFacebookF, href: 'https://www.facebook.com/freedomrisingusa', label: 'Facebook' },
+    {
+      icon: FaFacebookF,
+      href: 'https://www.facebook.com/people/Freedom-Rising-USA/61586331055577/',
+      label: 'Facebook',
+    },
     { icon: FaXTwitter, href: 'https://x.com/USFreedomRising', label: 'X (Twitter)' },
     {
       icon: FaLinkedinIn,

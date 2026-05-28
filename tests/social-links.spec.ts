@@ -28,7 +28,7 @@ test.describe('Footer Social Links', () => {
     await page.goto('/')
 
     // Verify Facebook link is present
-    const facebookLink = page.locator('footer a[href*="facebook.com/freedomrisingusa"]')
+    const facebookLink = page.locator('footer a[href*="facebook.com/people/Freedom-Rising-USA"]')
     await expect(facebookLink).toBeVisible()
     await expect(facebookLink).toHaveAttribute('aria-label', 'Facebook')
 
