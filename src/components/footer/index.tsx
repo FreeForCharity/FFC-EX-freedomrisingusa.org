@@ -157,7 +157,7 @@ const Footer: React.FC = () => {
             </div>
 
             <a
-              href="https://www.google.com/maps/search/?api=1&query=State+College+PA+16803"
+              href="https://www.google.com/maps/search/?api=1&query=1950+Pine+Hall+Rd+Suite+90+State+College+PA+16801"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Open address in Google Maps"
@@ -167,7 +167,7 @@ const Footer: React.FC = () => {
               <div>
                 <p className="font-[500] text-[22px]">Address</p>
                 <p className="font-[500] text-[16px]" id="aria-font">
-                  State College, PA 16803
+                  1950 Pine Hall Rd Suite 90, State College, PA 16801
                 </p>
               </div>
             </a>
