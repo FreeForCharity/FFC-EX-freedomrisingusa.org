@@ -59,7 +59,7 @@ test.describe('Fundraising Events Section', () => {
     // Verify location information
     await expect(fundraisingEventsSection).toContainText('Location:')
     await expect(fundraisingEventsSection).toContainText(
-      'American Legion Post 245, 1950 Pine Hall Rd, State College, PA 16801'
+      'American Legion Post 245, 1950 Pine Hall Rd Suite 90, State College, PA 16801'
     )
 
     // Verify timing information

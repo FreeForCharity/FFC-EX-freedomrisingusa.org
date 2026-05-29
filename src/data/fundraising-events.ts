@@ -18,7 +18,7 @@ export const fishFry: FishFryEvent = {
   title: 'Lent Friday Fish Fry',
   description:
     "Join us for our annual Lent Friday Fish Fry fundraising event! Enjoy delicious fish and chips while supporting Freedom Rising USA's mission.",
-  location: 'American Legion Post 245, 1950 Pine Hall Rd, State College, PA 16801',
+  location: 'American Legion Post 245, 1950 Pine Hall Rd Suite 90, State College, PA 16801',
   pickupTime: 'Fridays during Lent, 4:30 PM \u2013 5:30 PM',
   dates: [
     { label: 'Fri, Feb 20', time: '4:30 \u2013 5:30 PM' },
