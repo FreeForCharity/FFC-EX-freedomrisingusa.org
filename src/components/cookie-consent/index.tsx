@@ -19,6 +19,7 @@ interface DataLayerEvent {
 declare global {
   interface Window {
     dataLayer: DataLayerEvent[]
+    gtag?: (...args: unknown[]) => void
     openCookiePreferences?: () => void
   }
 }
@@ -156,9 +157,19 @@ export default function CookieConsent() {
         }
       }
 
-      // Push consent update to GTM dataLayer
+      // Update Google Consent Mode v2 signals, then push the custom event
       if (typeof window !== 'undefined') {
         window.dataLayer = window.dataLayer || []
+
+        if (typeof window.gtag === 'function') {
+          window.gtag('consent', 'update', {
+            analytics_storage: prefs.analytics ? 'granted' : 'denied',
+            ad_storage: prefs.marketing ? 'granted' : 'denied',
+            ad_user_data: prefs.marketing ? 'granted' : 'denied',
+            ad_personalization: prefs.marketing ? 'granted' : 'denied',
+          })
+        }
+
         window.dataLayer.push({
           event: 'consent_update',
           functional_consent: prefs.functional ? 'granted' : 'denied',
