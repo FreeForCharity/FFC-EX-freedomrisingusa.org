@@ -62,9 +62,9 @@ export const metadata: Metadata = {
       'Honoring heritage and celebrating service. We celebrate and preserve American holiday traditions, honor veterans, and strengthen community bonds through vibrant events in Centre County, PA.',
     images: [
       {
-        url: '/web-app-manifest-512x512.png',
-        width: 512,
-        height: 512,
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
         alt: 'Freedom Rising USA',
       },
     ],
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
     title: 'Freedom Rising USA | Supporting Patriotism in Centre County PA',
     description:
       'Honoring heritage and celebrating service. We celebrate and preserve American holiday traditions, honor veterans, and strengthen community bonds through vibrant events in Centre County, PA.',
-    images: ['/web-app-manifest-512x512.png'],
+    images: ['/og-image.png'],
   },
   icons: {
     icon: [
