@@ -18,15 +18,16 @@ import { test, expect, type Page } from '@playwright/test'
 
 async function gotoFundraising(page: Page) {
   await page.goto('/')
-  // Wait for the app to settle/hydrate so the click triggers client-side routing
-  // rather than a full navigation (which the SPA-fallback preview can't resolve).
-  await page.waitForLoadState('networkidle')
-  // Dismiss the cookie-consent banner so it doesn't intercept the footer link
-  // (it is fixed to the bottom and overlaps the footer on small viewports).
-  const acceptCookies = page.getByRole('button', { name: 'Accept All' })
-  if (await acceptCookies.isVisible().catch(() => false)) {
-    await acceptCookies.click()
-  }
+  // Dismiss the cookie-consent banner if it appears. It is fixed to the bottom
+  // and can overlap/intercept the footer link, especially on small viewports.
+  // Waiting for the button to be clickable also confirms the app has hydrated,
+  // so the footer click does client-side routing (which the SPA-fallback preview
+  // needs) rather than a full navigation. We avoid `networkidle`, which never
+  // settles in CI because of long-lived analytics requests.
+  await page
+    .getByRole('button', { name: 'Accept All' })
+    .click({ timeout: 15000 })
+    .catch(() => {})
   const footerLink = page.locator('footer a[href="/fundraising"]').first()
   await footerLink.scrollIntoViewIfNeeded()
   await footerLink.click()
