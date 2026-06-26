@@ -25,12 +25,13 @@ test.describe('Google Tag Manager Integration', () => {
   test('should load GTM script with correct ID', async ({ page }) => {
     await page.goto('/')
 
-    // Check for GTM script element
-    const gtmScript = await page.locator('script[id="gtm-script"]').count()
-    expect(gtmScript).toBeGreaterThan(0)
+    // The GTM <Script> uses Next.js strategy="lazyOnload", so the element is
+    // injected client-side after load. Wait for it instead of counting immediately.
+    const gtmScript = page.locator('script[id="gtm-script"]')
+    await expect(gtmScript).toHaveCount(1)
 
     // Verify script contains GTM initialization code
-    const scriptContent = await page.locator('script[id="gtm-script"]').innerHTML()
+    const scriptContent = await gtmScript.innerHTML()
     expect(scriptContent).toContain('googletagmanager.com/gtm.js')
     expect(scriptContent).toContain('dataLayer')
   })
@@ -123,14 +124,12 @@ test.describe('Google Tag Manager Configuration', () => {
 
     await page.goto('/')
 
-    // GTM script should always be present with the hardcoded ID
-    const gtmScript = await page.locator('script[id="gtm-script"]').count()
-
-    // Script should be present
-    expect(gtmScript).toBeGreaterThan(0)
+    // strategy="lazyOnload" injects the script after load; wait for it.
+    const gtmScript = page.locator('script[id="gtm-script"]')
+    await expect(gtmScript).toHaveCount(1)
 
     // Verify the script contains the correct GTM ID
-    const scriptContent = await page.locator('script[id="gtm-script"]').innerHTML()
+    const scriptContent = await gtmScript.innerHTML()
     expect(scriptContent).toContain('GTM-K46LNVH2')
   })
 })

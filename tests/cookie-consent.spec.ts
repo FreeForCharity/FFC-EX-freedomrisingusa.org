@@ -15,9 +15,9 @@ test.describe('Cookie Consent Banner', () => {
   test.beforeEach(async ({ page, context }) => {
     // Clear cookies and localStorage before each test
     await context.clearCookies()
-    await page.goto('/')
+    await page.goto('/', { waitUntil: 'domcontentloaded' })
     await page.evaluate(() => localStorage.clear())
-    await page.reload()
+    await page.reload({ waitUntil: 'domcontentloaded' })
   })
 
   test('should display cookie consent banner on first visit', async ({ page }) => {
@@ -68,7 +68,7 @@ test.describe('Cookie Consent Banner', () => {
     await page.getByRole('button', { name: 'Accept All' }).click()
 
     // Reload the page
-    await page.reload()
+    await page.reload({ waitUntil: 'domcontentloaded' })
 
     // Banner should not be visible
     const banner = page.locator('[role="region"][aria-label="Cookie consent notice"]')
@@ -91,7 +91,7 @@ test.describe('Cookie Consent Banner', () => {
     await page.getByRole('button', { name: 'Decline All' }).click()
 
     // Reload the page
-    await page.reload()
+    await page.reload({ waitUntil: 'domcontentloaded' })
 
     // Banner should not be visible
     const banner = page.locator('[role="region"][aria-label="Cookie consent notice"]')
@@ -112,9 +112,9 @@ test.describe('Cookie Preferences Modal', () => {
   test.beforeEach(async ({ page, context }) => {
     // Clear cookies and localStorage before each test
     await context.clearCookies()
-    await page.goto('/')
+    await page.goto('/', { waitUntil: 'domcontentloaded' })
     await page.evaluate(() => localStorage.clear())
-    await page.reload()
+    await page.reload({ waitUntil: 'domcontentloaded' })
   })
 
   test('should open preferences modal when clicking Customize', async ({ page }) => {
@@ -274,7 +274,7 @@ test.describe('Cookie Preferences Modal', () => {
     expect(preferences.marketing).toBe(false)
 
     // Reload and verify banner doesn't appear
-    await page.reload()
+    await page.reload({ waitUntil: 'domcontentloaded' })
     await expect(banner).not.toBeVisible()
   })
 })
@@ -282,9 +282,9 @@ test.describe('Cookie Preferences Modal', () => {
 test.describe('Cookie Consent Accessibility', () => {
   test.beforeEach(async ({ page, context }) => {
     await context.clearCookies()
-    await page.goto('/')
+    await page.goto('/', { waitUntil: 'domcontentloaded' })
     await page.evaluate(() => localStorage.clear())
-    await page.reload()
+    await page.reload({ waitUntil: 'domcontentloaded' })
   })
 
   test('modal should have proper ARIA attributes', async ({ page }) => {
