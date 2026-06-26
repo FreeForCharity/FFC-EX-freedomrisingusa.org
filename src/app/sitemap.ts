@@ -3,7 +3,7 @@ import type { MetadataRoute } from 'next'
 export const dynamic = 'force-static'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://ffcworkingsite1.org'
+  const baseUrl = 'https://freedomrisingusa.org'
   const now = new Date()
   return [
     {
