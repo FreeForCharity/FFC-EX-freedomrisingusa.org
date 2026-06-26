@@ -27,7 +27,7 @@ export default function TeamMemberCard({
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, 192px"
-            priority
+            loading="lazy"
           />
         </div>
 
