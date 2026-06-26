@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import ParadeCountdown from '@/components/ui/ParadeCountdown'
+import ParadeDate from '@/components/ui/ParadeDate'
 
 const Events = () => {
   return (
@@ -37,7 +38,9 @@ const Events = () => {
             <div className="space-y-4 text-[18px]" id="lato-font">
               <div className="flex items-start gap-4">
                 <span className="font-[700] min-w-[100px]">Date:</span>
-                <span>Saturday, July 4, 2026</span>
+                <span>
+                  <ParadeDate />
+                </span>
               </div>
               <div className="flex items-start gap-4">
                 <span className="font-[700] min-w-[100px]">Location:</span>
