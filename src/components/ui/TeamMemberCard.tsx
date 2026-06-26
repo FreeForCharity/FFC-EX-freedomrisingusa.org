@@ -26,7 +26,7 @@ export default function TeamMemberCard({
             alt={name}
             fill
             className="object-cover"
-            sizes="(max-width: 768px) 100vw, 192px"
+            sizes="300px"
             loading="lazy"
           />
         </div>
