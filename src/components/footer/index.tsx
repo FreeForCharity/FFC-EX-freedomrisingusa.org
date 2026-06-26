@@ -63,6 +63,10 @@ const Footer: React.FC = () => {
                 name: 'Parade Brief',
                 href: '/parade-brief',
               },
+              {
+                name: 'Fundraising',
+                href: '/fundraising',
+              },
             ].map((link) => (
               <li key={link.name}>
                 <Link
