@@ -1,7 +1,7 @@
 /**
  * Helper function to construct asset paths that work with GitHub Pages basePath
  *
- * When deployed to GitHub Pages at freeforcharity.github.io/FFC_Single_Page_Template/,
+ * When deployed to GitHub Pages at freeforcharity.github.io/FFC-EX-freedomrisingusa.org/,
  * all assets need to be prefixed with the repository name.
  *
  * For the custom domain (freedomrisingusa.org), no basePath is needed.
