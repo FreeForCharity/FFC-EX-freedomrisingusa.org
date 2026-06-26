@@ -37,6 +37,13 @@ const CharityHeroBackground = () => {
             Supporting Patriotism in Centre County PA
           </p>
           <a
+            href="#events"
+            className="w-[300px] lg:w-[351px] h-[54px] opacity-100 rounded-[27px] px-[32px] py-[18px] flex items-center justify-center gap-[10px] bg-[#BF0A30] text-[#FFFFFF] text-[20px] font-[500] leading-[100%] mb-[10px] whitespace-nowrap hover:bg-[#a00828] transition-colors"
+            id="lato-font"
+          >
+            🇺🇸 July 4th Parade
+          </a>
+          <a
             href="#volunteer"
             className="top-[378px] w-[300px] lg:w-[351px] h-[54px] opacity-100 rounded-[27px] px-[32px] py-[18px] flex items-center justify-center gap-[10px] bg-[#FFFFFF] text-[#113563] text-[20px] font-[400] leading-[100%] mb-[10px] whitespace-nowrap"
             id="lato-font"
