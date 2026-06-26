@@ -74,7 +74,7 @@ test.describe('Events Section', () => {
 
     // Verify parade information details
     await expect(eventsSection.getByText('Date:')).toBeVisible()
-    await expect(eventsSection.getByText('July 4th (Annual)')).toBeVisible()
+    await expect(eventsSection.getByText('Saturday, July 4, 2026')).toBeVisible()
     await expect(eventsSection.getByText('Location:')).toBeVisible()
   })
 

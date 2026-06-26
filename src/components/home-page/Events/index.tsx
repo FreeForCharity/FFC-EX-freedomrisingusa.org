@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import ParadeCountdown from '@/components/ui/ParadeCountdown'
 
 const Events = () => {
   return (
@@ -27,6 +28,8 @@ const Events = () => {
             </p>
           </div>
 
+          <ParadeCountdown />
+
           <div className="bg-[#002868] text-white rounded-lg p-8 mb-8 max-w-[800px] mx-auto">
             <h3 className="text-[28px] font-[500] mb-6 text-center" id="faustina-font">
               Parade Information
@@ -34,7 +37,7 @@ const Events = () => {
             <div className="space-y-4 text-[18px]" id="lato-font">
               <div className="flex items-start gap-4">
                 <span className="font-[700] min-w-[100px]">Date:</span>
-                <span>July 4th (Annual)</span>
+                <span>Saturday, July 4, 2026</span>
               </div>
               <div className="flex items-start gap-4">
                 <span className="font-[700] min-w-[100px]">Location:</span>
@@ -59,6 +62,13 @@ const Events = () => {
                 id="lato-font"
               >
                 Register to Participate
+              </Link>
+              <Link
+                href="/#donate"
+                className="inline-block bg-[#F5C045] text-[#002868] px-8 py-3 rounded-full text-[18px] font-[600] hover:bg-[#e0ad33] transition-colors"
+                id="lato-font"
+              >
+                Donate to the Parade
               </Link>
             </div>
           </div>
