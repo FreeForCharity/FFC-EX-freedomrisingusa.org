@@ -227,3 +227,14 @@ test.describe.skip('Fundraising Events Section', () => {
     await expect(detailsBox).toContainText('Pickup Time:')
   })
 })
+
+// Always-on guard: while the seasonal suite above is skipped, this asserts the
+// fish-fry section really is absent from the homepage, so the removal stays
+// enforced in CI without re-enabling the full seasonal coverage.
+test.describe('Fundraising Events Section (seasonal removal guard)', () => {
+  test('fundraiser section is not present on the homepage', async ({ page }) => {
+    await page.goto('/', { waitUntil: 'domcontentloaded' })
+    await expect(page.locator('#fundraising-events')).toHaveCount(0)
+    await expect(page.getByText('Lent Friday Fish Fry')).toHaveCount(0)
+  })
+})
