@@ -17,6 +17,17 @@ export type Fundraiser = {
   linkLabel?: string
 }
 
+// Derive the fish-fry timeframe from its schedule so the label can never drift
+// out of sync with fundraising-events.ts (e.g. when next year's dates change).
+const fishFryDates = fishFry.dates
+const stripWeekday = (label: string) => label.replace(/^\w+,\s*/, '')
+const fishFryPeriod =
+  fishFryDates.length > 0
+    ? `Fridays during Lent (${stripWeekday(fishFryDates[0].label)} – ${stripWeekday(
+        fishFryDates[fishFryDates.length - 1].label
+      )})`
+    : 'Fridays during Lent'
+
 // All fundraising efforts, newest/active first. Add new fundraisers here.
 export const fundraisers: Fundraiser[] = [
   {
@@ -34,7 +45,7 @@ export const fundraisers: Fundraiser[] = [
     id: 'lent-friday-fish-fry',
     title: fishFry.title,
     status: 'completed',
-    period: 'Fridays during Lent (Feb 20 – Apr 3, 2026)',
+    period: fishFryPeriod,
     location: fishFry.location,
     description: fishFry.description,
     details: fishFry.dates.map((d) => `${d.label} · ${d.time}`),

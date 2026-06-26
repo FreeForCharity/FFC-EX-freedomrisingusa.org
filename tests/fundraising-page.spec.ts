@@ -68,13 +68,10 @@ test.describe('Fundraising Page', () => {
   })
 
   test('should be reachable from the footer', async ({ page }) => {
-    await page.goto('/')
-
-    const footerLink = page.locator('footer a[href="/fundraising"]').first()
-    await expect(footerLink).toBeVisible()
-    await footerLink.click()
-    await expect(page).toHaveURL(/\/fundraising$/)
-    await expect(page.getByRole('heading', { level: 1, name: 'Fundraising' })).toBeVisible()
+    // gotoFundraising navigates via the footer link (dismissing the cookie
+    // banner first), so it doubles as the footer-reachability check and keeps
+    // navigation consistent with the other tests.
+    await gotoFundraising(page)
   })
 
   test('should render on a mobile viewport', async ({ page }) => {
