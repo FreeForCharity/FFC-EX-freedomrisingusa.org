@@ -53,7 +53,7 @@ Tests deployment compatibility for both custom domain and GitHub Pages with base
      - Both logos use identical path
    - **Deployment Scenarios**:
      - ✅ Custom domain: `/web-app-manifest-512x512.png`
-     - ✅ GitHub Pages: `/FFC_Single_Page_Template/web-app-manifest-512x512.png`
+     - ✅ GitHub Pages: `/FFC-EX-freedomrisingusa.org/web-app-manifest-512x512.png`
 
 5. **`images should return 200 status code`**
    - **Purpose**: Verifies images load successfully via HTTP requests
@@ -101,7 +101,7 @@ Tests footer social media links to ensure only active platforms are displayed.
      - ✅ Facebook: `facebook.com/freeforcharity`
      - ✅ X (Twitter): `x.com/freeforcharity1`
      - ✅ LinkedIn: `linkedin.com/company/freeforcharity`
-     - ✅ GitHub: `github.com/FreeForCharity/FFC_Single_Page_Template`
+     - ✅ GitHub: `github.com/FreeForCharity/FFC-EX-freedomrisingusa.org`
 
 9. **`should have exactly 4 social media icons`**
    - **Purpose**: Ensures correct number of social icons are rendered
