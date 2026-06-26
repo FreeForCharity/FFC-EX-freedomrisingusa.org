@@ -72,9 +72,10 @@ test.describe('Events Section', () => {
     await expect(eventsSection.getByRole('heading', { name: 'Participate' })).toBeVisible()
     await expect(eventsSection.getByRole('heading', { name: 'Volunteer' })).toBeVisible()
 
-    // Verify parade information details
+    // Verify parade information details. The date is rendered dynamically
+    // (next July 4), so assert the year-agnostic "July 4" to stay valid each year.
     await expect(eventsSection.getByText('Date:')).toBeVisible()
-    await expect(eventsSection.getByText('July 4th (Annual)')).toBeVisible()
+    await expect(eventsSection.getByText(/July 4/).first()).toBeVisible()
     await expect(eventsSection.getByText('Location:')).toBeVisible()
   })
 
