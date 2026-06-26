@@ -38,7 +38,7 @@ Please check all areas you reviewed:
 
 ## Review Environment
 
-**Live Site URL:** [https://ffcworkingsite1.org](https://ffcworkingsite1.org)
+**Live Site URL:** [https://freedomrisingusa.org](https://freedomrisingusa.org)
 
 **Browser(s) Used:**
 
