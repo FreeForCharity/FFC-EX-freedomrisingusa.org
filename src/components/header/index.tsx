@@ -102,7 +102,9 @@ const Header: React.FC = () => {
                 <img
                   src={assetPath('/Images/freedom-rising-logo.jpg')}
                   alt="Freedom Rising USA"
-                  className={`transition-all duration-300 ${isScrolled ? 'h-7' : 'h-11'}`}
+                  width={200}
+                  height={200}
+                  className={`transition-all duration-300 w-auto ${isScrolled ? 'h-7' : 'h-11'}`}
                 />
               </Link>
             </div>
