@@ -84,7 +84,7 @@ jobs:
         env:
           # Set basePath for GitHub Pages deployment
           # This ensures images and assets work correctly at the subpath
-          NEXT_PUBLIC_BASE_PATH: /FFC_Single_Page_Template
+          NEXT_PUBLIC_BASE_PATH: /FFC-EX-freedomrisingusa.org
       - name: Run E2E tests
         run: npm run test:e2e
         env:
