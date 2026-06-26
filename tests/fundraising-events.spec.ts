@@ -11,9 +11,14 @@ import { test, expect } from '@playwright/test'
  * 5. Section is accessible via #fundraising-events anchor
  * 6. Component displays correctly on mobile viewport
  * 7. Section has proper structure and styling (bg-gray-50, py-[52px])
+ *
+ * NOTE: The Lent Friday Fish Fry is a seasonal fundraiser and is finished for
+ * the year, so the section is currently removed from the homepage (see
+ * src/app/home-page/index.tsx). These tests are skipped until the section is
+ * re-enabled next Lent season — the component and data are intentionally kept.
  */
 
-test.describe('Fundraising Events Section', () => {
+test.describe.skip('Fundraising Events Section', () => {
   test('should render the Fundraising Events section on homepage', async ({ page }) => {
     // Navigate to the homepage
     await page.goto('/')
