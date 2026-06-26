@@ -17,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/', changeFrequency: 'weekly', priority: 1 },
     { path: '/parade-brief', changeFrequency: 'monthly', priority: 0.8 },
     { path: '/parade-registration', changeFrequency: 'monthly', priority: 0.8 },
+    { path: '/fundraising', changeFrequency: 'monthly', priority: 0.7 },
     { path: '/cookie-policy', changeFrequency: 'yearly', priority: 0.3 },
     { path: '/donation-policy', changeFrequency: 'yearly', priority: 0.3 },
     { path: '/privacy-policy', changeFrequency: 'yearly', priority: 0.3 },
