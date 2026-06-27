@@ -293,7 +293,7 @@ export default function ParadeBrief() {
               <span className="hidden sm:inline">Previous</span>
             </button>
 
-            <div className="flex gap-2 items-center">
+            <div className="flex gap-1 items-center">
               <span className="text-gray-600 mr-2">
                 {currentSlide + 1} / {slides.length}
               </span>
@@ -301,11 +301,17 @@ export default function ParadeBrief() {
                 <button
                   key={index}
                   onClick={() => goToSlide(index)}
-                  className={`w-3 h-3 rounded-full transition-colors ${
-                    index === currentSlide ? 'bg-[#002868]' : 'bg-gray-300 hover:bg-gray-400'
-                  }`}
+                  className="group flex h-7 w-7 items-center justify-center rounded-full"
                   aria-label={`Go to slide ${index + 1}`}
-                />
+                >
+                  <span
+                    className={`block h-3 w-3 rounded-full transition-colors ${
+                      index === currentSlide
+                        ? 'bg-[#002868]'
+                        : 'bg-gray-300 group-hover:bg-gray-400'
+                    }`}
+                  />
+                </button>
               ))}
             </div>
 
