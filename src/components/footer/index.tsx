@@ -168,7 +168,7 @@ const Footer: React.FC = () => {
               href="https://www.google.com/maps/search/?api=1&query=1950+Pine+Hall+Rd+Suite+90+State+College+PA+16801"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Open address in Google Maps"
+              aria-label="Address: 1950 Pine Hall Rd Suite 90, State College, PA 16801, open in Google Maps"
               className="flex items-start gap-3 hover:opacity-80 transition-opacity"
             >
               <MapPin className="w-10 h-10 text-orange-500 flex-shrink-0 mt-0.5" />
