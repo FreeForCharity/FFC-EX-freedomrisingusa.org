@@ -42,6 +42,12 @@ describe('Header component', () => {
     expect(screen.getByText('Home')).toBeInTheDocument()
   })
 
+  it('should display a News link to the in-the-news page', () => {
+    render(<Header />)
+    const newsLink = screen.getByText('News').closest('a')
+    expect(newsLink).toHaveAttribute('href', '/in-the-news')
+  })
+
   it('should have navigation links', () => {
     render(<Header />)
     // Check that navigation has at least some links

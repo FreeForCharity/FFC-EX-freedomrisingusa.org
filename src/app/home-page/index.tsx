@@ -9,6 +9,7 @@ import Results2023 from '@/components/home-page/Results-2023'
 import TheFreeForCharityTeam from '@/components/home-page/TheFreeForCharityTeam'
 import FrequentlyAskedQuestions from '@/components/home-page/FrequentlyAskedQuestions'
 import Events from '@/components/home-page/Events'
+import InTheNews from '@/components/home-page/In-The-News'
 // Seasonal fundraiser (Lent Friday Fish Fry) — finished for the year.
 // Component and data (src/data/fundraising-events.ts) are kept; re-enable next Lent season.
 // import FundraisingEvents from '@/components/home-page/Fundraising-Events'
@@ -19,6 +20,8 @@ const index = () => {
       <Hero />
       {/* 4th of July parade — featured as the current site highlight before the event */}
       <Events />
+      {/* Latest press coverage teaser — full list lives at /in-the-news */}
+      <InTheNews />
       <Mission />
       <Results2023 />
       <VolunteerwithUs />
