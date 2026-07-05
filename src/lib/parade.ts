@@ -4,6 +4,10 @@ export type ParadeTiming = {
   isToday: boolean
   /** Full date label for the next July 4, e.g. "Saturday, July 4, 2026". */
   dateLabel: string
+  /** Whole days since the most recent July 4 (0 on the day itself). */
+  daysSincePrevious: number
+  /** Year of the most recent July 4 on or before today. */
+  previousYear: number
 }
 
 /**
@@ -30,5 +34,10 @@ export function nextIndependenceDay(now: Date = new Date()): ParadeTiming {
     year: 'numeric',
     timeZone: 'UTC',
   })
-  return { days, isToday: days === 0, dateLabel }
+  // On July 4 itself the "most recent" July 4 is today; otherwise it is the
+  // year before the upcoming one.
+  const previousYear = days === 0 ? year : year - 1
+  const previousUTC = Date.UTC(previousYear, 6, 4)
+  const daysSincePrevious = Math.round((todayUTC - previousUTC) / 86_400_000)
+  return { days, isToday: days === 0, dateLabel, daysSincePrevious, previousYear }
 }

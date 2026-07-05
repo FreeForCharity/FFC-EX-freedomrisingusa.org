@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useMemo } from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { FiMenu } from 'react-icons/fi'
 import { LiaSearchSolid } from 'react-icons/lia'
 import { RxCross2 } from 'react-icons/rx'
@@ -16,6 +17,7 @@ interface MenuItem {
 const SCROLL_OFFSET = 100
 
 const Header: React.FC = () => {
+  const pathname = usePathname()
   const [isScrolled, setIsScrolled] = useState(false)
   const [isSearchOpen, setIsSearchOpen] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -27,6 +29,7 @@ const Header: React.FC = () => {
       { label: 'Mission', path: '/#mission' },
       { label: 'Programs', path: '/#programs' },
       { label: 'Events', path: '/#events' },
+      { label: 'News', path: '/in-the-news' },
       { label: 'Volunteer', path: '/#volunteer' },
       { label: 'Donate', path: '/#donate' },
       { label: 'FAQ', path: '/#faq' },
@@ -37,7 +40,10 @@ const Header: React.FC = () => {
 
   const sections = useMemo(
     () =>
-      menuItems.map((item) => item.path.replace('/#', '')).filter((section) => section !== 'hero'),
+      menuItems
+        .filter((item) => item.path.startsWith('/#'))
+        .map((item) => item.path.replace('/#', ''))
+        .filter((section) => section !== 'hero'),
     [menuItems]
   )
 
@@ -79,8 +85,10 @@ const Header: React.FC = () => {
   }
 
   const isActive = (path: string) => {
+    // Page links (no anchor) are active when we're on that page.
+    if (!path.startsWith('/#')) return pathname === path
     const sectionId = path.replace('/#', '')
-    if (sectionId === 'hero') return activeSection === ''
+    if (sectionId === 'hero') return pathname === '/' && activeSection === ''
     return activeSection === sectionId
   }
 

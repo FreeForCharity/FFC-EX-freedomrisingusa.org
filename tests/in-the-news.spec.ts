@@ -81,4 +81,61 @@ test.describe('In the News Page', () => {
 
     await expect(page.getByRole('heading', { name: pressArticles[0].headline })).toBeVisible()
   })
+
+  test('should be reachable from the desktop header navigation', async ({ page }) => {
+    await page.goto('/')
+    await page
+      .getByRole('button', { name: 'Accept All' })
+      .click({ timeout: 15000 })
+      .catch(() => {})
+
+    const navLink = page.locator('header nav a[href="/in-the-news"]').first()
+    await expect(navLink).toBeVisible()
+    await navLink.click()
+    await expect(page).toHaveURL(/\/in-the-news$/)
+    await expect(page.getByRole('heading', { level: 1, name: 'In the News' })).toBeVisible()
+  })
+
+  test('should be reachable from the mobile header menu', async ({ page }) => {
+    await page.setViewportSize({ width: 375, height: 667 })
+    await page.goto('/')
+    await page
+      .getByRole('button', { name: 'Accept All' })
+      .click({ timeout: 15000 })
+      .catch(() => {})
+
+    await page.getByRole('button', { name: 'Open menu' }).click()
+    // The desktop nav renders the same link but is display-hidden on mobile,
+    // so filter to the visible one inside the opened mobile menu.
+    const mobileNavLink = page.locator('header a[href="/in-the-news"]:visible').first()
+    await expect(mobileNavLink).toBeVisible()
+    await mobileNavLink.click()
+    await expect(page).toHaveURL(/\/in-the-news$/)
+    await expect(page.getByRole('heading', { level: 1, name: 'In the News' })).toBeVisible()
+  })
+})
+
+test.describe('Home Page News Teaser', () => {
+  test('should show the latest press headlines with a link to full coverage', async ({ page }) => {
+    await page.goto('/')
+    await page
+      .getByRole('button', { name: 'Accept All' })
+      .click({ timeout: 15000 })
+      .catch(() => {})
+
+    const newsSection = page.locator('#news')
+    await newsSection.scrollIntoViewIfNeeded()
+    await expect(newsSection).toBeVisible()
+
+    // The teaser features the newest articles from the shared data file.
+    for (const article of pressArticles.slice(0, 3)) {
+      await expect(newsSection.getByRole('heading', { name: article.headline })).toBeVisible()
+    }
+
+    const seeAll = newsSection.getByRole('link', { name: 'See All Press Coverage' })
+    await expect(seeAll).toBeVisible()
+    await seeAll.click()
+    await expect(page).toHaveURL(/\/in-the-news$/)
+    await expect(page.getByRole('heading', { level: 1, name: 'In the News' })).toBeVisible()
+  })
 })
