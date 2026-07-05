@@ -87,8 +87,11 @@ const Header: React.FC = () => {
   const isActive = (path: string) => {
     // Page links (no anchor) are active when we're on that page.
     if (!path.startsWith('/#')) return pathname === path
+    // Anchor links only reflect scroll position on the home page; activeSection
+    // is otherwise stale after a client-side route change.
+    if (pathname !== '/') return false
     const sectionId = path.replace('/#', '')
-    if (sectionId === 'hero') return pathname === '/' && activeSection === ''
+    if (sectionId === 'hero') return activeSection === ''
     return activeSection === sectionId
   }
 
