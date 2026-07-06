@@ -110,10 +110,18 @@ test.describe('Events Section', () => {
     await page.goto('/')
 
     const eventsSection = page.locator('#events')
-    const photo = eventsSection.locator('img[src*="Parade-2026"]')
+    const photo = eventsSection.getByRole('img', {
+      name: /2026 Independence Day Parade in State College/,
+    })
     await photo.scrollIntoViewIfNeeded()
     await expect(photo).toBeVisible()
-    await expect(eventsSection.locator('figcaption')).toContainText('2026 Independence Day Parade')
+    // Scope the caption to the figure containing this photo, so additional
+    // figures added to the section later can't break the assertion. The has:
+    // locator is matched relative to each figure, so root it at the page.
+    const figure = eventsSection.locator('figure').filter({
+      has: page.getByRole('img', { name: /2026 Independence Day Parade in State College/ }),
+    })
+    await expect(figure.locator('figcaption')).toContainText('2026 Independence Day Parade')
   })
 
   test('should display veteran and community event sections', async ({ page }) => {

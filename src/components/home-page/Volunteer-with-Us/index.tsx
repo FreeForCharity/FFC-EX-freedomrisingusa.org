@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { VOLUNTEER_URL } from '@/data/constants'
+import { assetPath } from '@/lib/assetPath'
 
 const index = () => {
   return (
@@ -33,7 +34,7 @@ const index = () => {
         </a>
 
         <Image
-          src="/Images/Parade-Graphic.webp"
+          src={assetPath('/Images/Parade-Graphic.webp')}
           alt="4th of July Parade in State College"
           width={1083}
           height={610}

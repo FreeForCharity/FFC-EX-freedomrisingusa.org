@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import ParadeCountdown from '@/components/ui/ParadeCountdown'
 import ParadeDate from '@/components/ui/ParadeDate'
+import { assetPath } from '@/lib/assetPath'
 
 const Events = () => {
   return (
@@ -32,7 +33,7 @@ const Events = () => {
 
           <figure className="max-w-[800px] mx-auto mb-8">
             <Image
-              src="/Images/Parade-2026.webp"
+              src={assetPath('/Images/Parade-2026.webp')}
               alt="An inflatable bald eagle wearing an Uncle Sam hat rides atop a truck down South Allen Street, with crowds lining the sidewalks, during the 2026 Independence Day Parade in State College"
               width={993}
               height={658}
