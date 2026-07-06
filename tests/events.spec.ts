@@ -106,6 +106,16 @@ test.describe('Events Section', () => {
     await expect(page.getByRole('heading', { level: 1 })).toBeVisible()
   })
 
+  test('should display the 2026 parade photo with caption', async ({ page }) => {
+    await page.goto('/')
+
+    const eventsSection = page.locator('#events')
+    const photo = eventsSection.locator('img[src*="Parade-2026"]')
+    await photo.scrollIntoViewIfNeeded()
+    await expect(photo).toBeVisible()
+    await expect(eventsSection.locator('figcaption')).toContainText('2026 Independence Day Parade')
+  })
+
   test('should display veteran and community event sections', async ({ page }) => {
     // Navigate to the homepage
     await page.goto('/')
