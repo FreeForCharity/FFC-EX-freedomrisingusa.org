@@ -15,10 +15,10 @@ overrides:
   qs: ^6.15.3
   body-parser: ^1.20.5
   express: ^4.22.2
-  path-to-regexp: 0.1.13
   postcss: ^8.5.18
   nanoid@<3.3.18: ^3.3.18
   sharp: ^0.35.3
+  express>path-to-regexp: 0.1.13
 
 importers:
 
@@ -3572,6 +3572,9 @@ packages:
 
   path-to-regexp@0.1.13:
     resolution: {integrity: sha512-A/AGNMFN3c8bOlvV9RreMdrv7jsmF9XIfDeCd87+I8RNg6s78BhJxMu69NEMHBSJFxKidViTEdruRwEk/WIKqA==}
+
+  path-to-regexp@3.3.0:
+    resolution: {integrity: sha512-qyCH421YQPS2WFDxDjftfc1ZR5WKQzVzqsp4n9M2kQhVOo/ByahFoUNJfl58kOcEGfQ//7weFTDhm+ss8Ecxgw==}
 
   pend@1.2.0:
     resolution: {integrity: sha512-F3asv42UuXchdzt+xXqfW1OGlVBe+mxa2mqI0pg5yAHZPvFmY3Y6drSf/GQ1A86WgWEN9Kzh/WrgKa6iGcHXLg==}
@@ -8446,6 +8449,8 @@ snapshots:
 
   path-to-regexp@0.1.13: {}
 
+  path-to-regexp@3.3.0: {}
+
   pend@1.2.0: {}
 
   picocolors@1.1.1: {}
@@ -8772,7 +8777,7 @@ snapshots:
       mime-types: 2.1.18
       minimatch: 3.1.5
       path-is-inside: 1.0.2
-      path-to-regexp: 0.1.13
+      path-to-regexp: 3.3.0
       range-parser: 1.2.0
 
   serve-static@1.16.2:
