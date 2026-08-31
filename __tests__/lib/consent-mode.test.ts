@@ -195,9 +195,23 @@ describe('isConfigured (placeholder guard)', () => {
     expect(isConfigured('  G-XXXXXXXXXX  ')).toBe(false)
   })
 
-  it('accepts real-looking IDs', () => {
+  it('accepts real-looking IDs, including this site\u2019s own GA4 property', () => {
     expect(isConfigured('G-ABC1234567')).toBe(true)
     expect(isConfigured('GTM-TQ5H8HPR')).toBe(true)
     expect(isConfigured('abcdefghij')).toBe(true)
+    // The one real ID this fork actually ships. If the guard ever stops
+    // accepting it, analytics goes quiet on a live site.
+    expect(isConfigured('G-FHVLZGB0CY')).toBe(true)
+  })
+
+  it('rejects a HALF-edited placeholder, not only an all-X one', () => {
+    // The `X{6,}` test is unanchored on purpose. An anchored pattern
+    // (/^(G-|GTM-|UA-)?X+$/) accepts every value below, which would load a
+    // tag for an account that does not exist. This is the case that decides
+    // between the two, so it is asserted rather than left to a comment.
+    expect(isConfigured('G-XXXXXXXX12')).toBe(false)
+    expect(isConfigured('G-XXXXXX7Q2B')).toBe(false)
+    expect(isConfigured('G-ABCXXXXXXX')).toBe(false)
+    expect(isConfigured('GTM-XXXXXXX')).toBe(false)
   })
 })
