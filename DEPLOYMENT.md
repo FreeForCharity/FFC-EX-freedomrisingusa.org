@@ -263,7 +263,13 @@ For local development, create a `.env.local` file:
 # Optional: Set basePath for testing GitHub Pages locally
 NEXT_PUBLIC_BASE_PATH=
 
-# Optional: Analytics IDs (only loaded with user consent)
+# Optional: Analytics ID overrides. Each falls back to the value set at the
+# top of src/components/cookie-consent/index.tsx when left unset.
+#
+# "Loaded with consent" is not uniform across these three. Under Google
+# Consent Mode v2 the GA4 tag loads on every pageview and the visitor's
+# choice gates its cookie STORAGE; the Meta Pixel and Microsoft Clarity do
+# not speak Consent Mode, so they load only on an explicit opt-in.
 NEXT_PUBLIC_GA_MEASUREMENT_ID=
 NEXT_PUBLIC_META_PIXEL_ID=
 NEXT_PUBLIC_CLARITY_PROJECT_ID=
