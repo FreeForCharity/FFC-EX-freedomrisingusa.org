@@ -45,7 +45,10 @@ jobs:
       - name: Build site
         run: pnpm run build
         env:
-          NEXT_PUBLIC_BASE_PATH: /FFC-EX-freedomrisingusa.org
+          # deploy.yml sets no NEXT_PUBLIC_BASE_PATH, so it builds with an empty
+          # basePath and the site is served at the custom-domain root. Lighthouse
+          # has to build the same way or every asset URL 404s.
+          NEXT_PUBLIC_BASE_PATH: ''
 
       - name: Run Lighthouse CI
         run: |
